@@ -76,11 +76,19 @@ namespace Ag.Widgets {
             credentials_grid.attach (password_label, 0, 2, 1, 1);
             credentials_grid.attach (password_entry, 1, 2, 1, 1);
 
+            var image = new Gtk.Image.from_icon_name ("dialog-password", Gtk.IconSize.DIALOG);
+            var overlay_image = new Gtk.Image.from_icon_name (icon_name, Gtk.IconSize.LARGE_TOOLBAR);
+            overlay_image.halign = overlay_image.valign = Gtk.Align.END;
+
+            var overlay = new Gtk.Overlay ();
+            overlay.add (image);
+            overlay.add_overlay (overlay_image);
+
             var grid = new Gtk.Grid ();
             grid.column_spacing = 12;
             grid.row_spacing = 12;
             grid.margin_left = grid.margin_right = grid.margin_bottom = 12;
-            grid.attach (new Gtk.Image.from_icon_name (icon_name, Gtk.IconSize.DIALOG), 0, 0, 1, 2);
+            grid.attach (overlay, 0, 0, 1, 2);
             grid.attach (heading, 1, 0, 1, 1);
             grid.attach (new Gtk.Label (message), 1, 1, 1, 1);
             grid.attach (credentials_grid, 1, 2, 1, 1);
