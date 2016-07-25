@@ -14,7 +14,7 @@ add_definitions (-w)
 add_definitions (-DPOLKIT_AGENT_I_KNOW_API_IS_SUBJECT_TO_CHANGE)
 
 find_package (PkgConfig)
-pkg_check_modules (DEPS REQUIRED granite polkit-agent-1 polkit-gobject-1)
+pkg_check_modules (DEPS REQUIRED gtk+-3.0 polkit-agent-1 polkit-gobject-1)
 
 add_definitions (${DEPS_CFLAGS})
 link_directories (${DEPS_LIBRARY_DIRS})
