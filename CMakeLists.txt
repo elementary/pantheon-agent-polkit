@@ -27,3 +27,4 @@ include (ValaPrecompile)
 
 add_subdirectory (po)
 add_subdirectory (src)
+add_subdirectory (data)

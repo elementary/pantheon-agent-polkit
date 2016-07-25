@@ -2,7 +2,7 @@ vala_precompile(VALA_C ${EXEC_NAME}
     Agent.vala
     PolkitDialog.vala
 PACKAGES
-    granite
+    gtk+-3.0
     polkit-agent-1
     polkit-gobject-1
     posix
