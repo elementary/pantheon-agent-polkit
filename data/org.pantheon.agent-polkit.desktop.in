@@ -6,3 +6,4 @@ Terminal=false
 Type=Application
 StartupNotify=false
 NoDisplay=true
+X-GNOME-Gettext-Domain=@GETTEXT_PACKAGE@
