@@ -38,10 +38,8 @@ namespace Ag {
                 icon_name = "dialog-password";
             }
 
-            var dialog = new Widgets.PolkitDialog (action_id, message, icon_name, cookie, identities, cancellable);
-            dialog.done.connect (()=> {
-                initiate_authentication.callback ();
-            });     
+            var dialog = new Widgets.PolkitDialog (message, icon_name, cookie, identities, cancellable);
+            dialog.done.connect (() => initiate_authentication.callback ());
 
             dialog.show_all ();
             yield;

@@ -38,8 +38,8 @@ namespace Ag.Widgets {
         private Gtk.Label identity_label;
         private Gtk.ComboBox idents_combo;
 
-        public PolkitDialog (string action_id, string message, string icon_name, string _cookie,
-                                List<Polkit.Identity?>? _idents, GLib.Cancellable _cancellable) {
+        public PolkitDialog (string message, string icon_name, string _cookie,
+                            List<Polkit.Identity?>? _idents, GLib.Cancellable _cancellable) {
             Object (title: "", icon_name: "dialog-password", window_position: Gtk.WindowPosition.CENTER_ALWAYS, resizable: false, deletable: false, skip_taskbar_hint: true);
             idents = _idents;
             cookie = _cookie;
@@ -236,11 +236,9 @@ namespace Ag.Widgets {
 
         private void on_pk_request (string request, bool echo_on) {
             password_entry.visibility = echo_on;
-            if (request.has_prefix ("Password:")) {
-                return;
+            if (!request.has_prefix ("Password:")) {
+                password_label.label = request;
             }
-
-            password_label.label = request;
         }
 
         private void on_pk_show_error (string text) {
@@ -257,11 +255,7 @@ namespace Ag.Widgets {
                 case Gdk.Key.Escape:
                     cancel ();
                     return Gdk.EVENT_STOP;
-                case Gdk.Key.ISO_Enter:
                 case Gdk.Key.KP_Enter:
-                case Gdk.Key.3270_Enter:
-                case Gdk.Key.RockerEnter:
-                case Gdk.Key.ISO_Center_Object:
                     authenticate ();
                     return Gdk.EVENT_STOP;
             }
