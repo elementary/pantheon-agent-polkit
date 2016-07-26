@@ -45,9 +45,8 @@ namespace Ag.Widgets {
             cookie = _cookie;
             cancellable = _cancellable;
 
-            var heading = new Gtk.Label ("<span weight='bold' size='larger'>" + _("Authentication Required") + "</span>");
-            heading.get_style_context ().add_class ("larger");
-            heading.use_markup = true;
+            var heading = new Gtk.Label (_("Authentication Required"));
+            heading.get_style_context ().add_class ("primary");
             heading.halign = Gtk.Align.START;
 
             password_entry = new Gtk.Entry ();
@@ -107,6 +106,7 @@ namespace Ag.Widgets {
             var action_area = get_action_area ();
             action_area.margin_right = 6;
             action_area.margin_bottom = 6;
+            action_area.margin_top = 12;
 
             key_release_event.connect (on_key_release);
             update_idents ();
