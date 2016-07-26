@@ -33,7 +33,9 @@ namespace Ag.Widgets {
         private unowned List<Polkit.Identity?>? idents;
         private string cookie;
 
+        private Gtk.Revealer feedback_revealer;
         private Gtk.Label password_label;
+        private Gtk.Label password_feedback;
         private Gtk.Entry password_entry;
         private Gtk.Label identity_label;
         private Gtk.ComboBox idents_combo;
@@ -49,13 +51,27 @@ namespace Ag.Widgets {
 
             var heading = new Gtk.Label (_("Authentication Required"));
             heading.get_style_context ().add_class ("primary");
-            heading.halign = Gtk.Align.START;
+            heading.valign = Gtk.Align.END;
+            heading.xalign = 0;
+
+            var message_label = new Gtk.Label (message);
+            message_label.max_width_chars = 60;
+            message_label.wrap = true;
+            message_label.valign = Gtk.Align.START;
+            message_label.xalign = 0;
 
             password_entry = new Gtk.Entry ();
             password_entry.hexpand = true;
 
             password_label = new Gtk.Label (_("Password:"));
             password_label.halign = Gtk.Align.END;
+
+            password_feedback = new Gtk.Label (null);
+            password_feedback.halign = Gtk.Align.END;
+            password_feedback.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
+
+            feedback_revealer = new Gtk.Revealer ();
+            feedback_revealer.add (password_feedback);
 
             idents_combo = new Gtk.ComboBox ();
             idents_combo.hexpand = true;
@@ -71,27 +87,30 @@ namespace Ag.Widgets {
 
             var credentials_grid = new Gtk.Grid ();
             credentials_grid.column_spacing = 12;
-            credentials_grid.row_spacing = 12;
+            credentials_grid.row_spacing = 6;
+            credentials_grid.margin_top = 12;
             credentials_grid.attach (identity_label, 0, 0, 1, 1);
             credentials_grid.attach (idents_combo, 1, 0, 1, 1);            
             credentials_grid.attach (password_label, 0, 2, 1, 1);
             credentials_grid.attach (password_entry, 1, 2, 1, 1);
+            credentials_grid.attach (feedback_revealer, 0, 3, 2, 1);
 
             var image = new Gtk.Image.from_icon_name ("dialog-password", Gtk.IconSize.DIALOG);
             var overlay_image = new Gtk.Image.from_icon_name (icon_name, Gtk.IconSize.LARGE_TOOLBAR);
             overlay_image.halign = overlay_image.valign = Gtk.Align.END;
 
             var overlay = new Gtk.Overlay ();
+            overlay.valign = Gtk.Align.START;
             overlay.add (image);
             overlay.add_overlay (overlay_image);
 
             var grid = new Gtk.Grid ();
             grid.column_spacing = 12;
-            grid.row_spacing = 12;
-            grid.margin_left = grid.margin_right = grid.margin_bottom = 12;
+            grid.row_spacing = 6;
+            grid.margin_left = grid.margin_right = 12;
             grid.attach (overlay, 0, 0, 1, 2);
             grid.attach (heading, 1, 0, 1, 1);
-            grid.attach (new Gtk.Label (message), 1, 1, 1, 1);
+            grid.attach (message_label, 1, 1, 1, 1);
             grid.attach (credentials_grid, 1, 2, 1, 1);
 
             var cancel_button = (Gtk.Button)add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
@@ -108,7 +127,7 @@ namespace Ag.Widgets {
             var action_area = get_action_area ();
             action_area.margin_right = 6;
             action_area.margin_bottom = 6;
-            action_area.margin_top = 12;
+            action_area.margin_top = 14;
 
             key_release_event.connect (on_key_release);
             update_idents ();
@@ -186,7 +205,7 @@ namespace Ag.Widgets {
             }
 
             password_entry.secondary_icon_name = "";
-            password_entry.secondary_icon_tooltip_text = _("Authentication failed");
+            feedback_revealer.reveal_child = false;
 
             sensitive = false;
             pk_session.response (password_entry.get_text ());
@@ -224,7 +243,7 @@ namespace Ag.Widgets {
         private void on_pk_session_completed (bool authorized) {
             sensitive = true;
             if (!authorized || cancellable.is_cancelled ()) {
-                password_entry.secondary_icon_name = "dialog-error-symbolic";
+                on_pk_show_error (_("Authentication failed. Please try again."));
 
                 deselect_session ();
                 password_entry.set_text ("");
@@ -245,7 +264,8 @@ namespace Ag.Widgets {
 
         private void on_pk_show_error (string text) {
             password_entry.secondary_icon_name = "dialog-error-symbolic";
-            password_entry.secondary_icon_tooltip_text = text;
+            password_feedback.label = text;
+            feedback_revealer.reveal_child = true;
         }
 
         private void on_pk_show_info (string text) {
