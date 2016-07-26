@@ -256,6 +256,7 @@ namespace Ag.Widgets {
                     cancel ();
                     return Gdk.EVENT_STOP;
                 case Gdk.Key.KP_Enter:
+                case Gdk.Key.Return:
                     authenticate ();
                     return Gdk.EVENT_STOP;
             }
