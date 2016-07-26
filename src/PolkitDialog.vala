@@ -45,6 +45,8 @@ namespace Ag.Widgets {
             cookie = _cookie;
             cancellable = _cancellable;
 
+            set_keep_above (true);
+
             var heading = new Gtk.Label (_("Authentication Required"));
             heading.get_style_context ().add_class ("primary");
             heading.halign = Gtk.Align.START;
