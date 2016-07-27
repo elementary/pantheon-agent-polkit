@@ -1,5 +1,6 @@
 /*-
  * Copyright (c) 2015-2016 elementary LLC.
+ * Copyright (C) 2015-2016 Ikey Doherty <ikey@solus-project.com>   
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -15,6 +16,10 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  *
  * Authored by: Adam Bieńkowski <donadigos159@gmail.com>
+ */
+
+ /* Code based on budgie-desktop:
+ * https://github.com/solus-project/budgie-desktop
  */
 
 namespace Ag.Widgets {
