@@ -17,5 +17,5 @@ OPTIONS
 add_executable (${EXEC_NAME} ${VALA_C})
 target_link_libraries (${EXEC_NAME} ${DEPS_LIBRARIES})
 
-install (TARGETS ${EXEC_NAME} RUNTIME DESTINATION bin)
+install (TARGETS ${EXEC_NAME} DESTINATION ${EXECDIR})
 

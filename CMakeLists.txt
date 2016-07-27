@@ -9,6 +9,9 @@ set (EXEC_NAME ${CMAKE_PROJECT_NAME})
 set (VERSION "0.1")
 set (DOLLAR "$")
 
+set (LIBDIR "${CMAKE_INSTALL_PREFIX}/lib")
+set (EXECDIR "${LIBDIR}/policykit-1-pantheon")
+
 add_definitions (-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
 add_definitions (-w)
 add_definitions (-DPOLKIT_AGENT_I_KNOW_API_IS_SUBJECT_TO_CHANGE)

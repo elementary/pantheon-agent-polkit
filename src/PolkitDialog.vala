@@ -157,7 +157,7 @@ namespace Ag.Widgets {
         }
 
         private void update_idents () {
-            Gtk.ListStore model = new Gtk.ListStore (2, typeof (string), typeof (Polkit.Identity));
+            var model = new Gtk.ListStore (2, typeof (string), typeof (Polkit.Identity));
             Gtk.TreeIter iter;
 
             int length = 0;
