@@ -29,7 +29,7 @@ namespace Ag.Widgets {
 
         private PolkitAgent.Session? pk_session = null;
         private Polkit.Identity? pk_identity = null;
-        private unowned Cancellable? cancellable;
+        private unowned Cancellable cancellable;
 
         private ulong error_signal_id;
         private ulong request_signal_id;
@@ -49,7 +49,7 @@ namespace Ag.Widgets {
 
         public PolkitDialog (string message, string icon_name, string _cookie,
                             List<Polkit.Identity?>? _idents, GLib.Cancellable _cancellable) {
-            Object (title: "", icon_name: "dialog-password", window_position: Gtk.WindowPosition.CENTER, resizable: false, deletable: false, skip_taskbar_hint: true);
+            Object (title: "", window_position: Gtk.WindowPosition.CENTER, resizable: false, deletable: false, skip_taskbar_hint: true);
             idents = _idents;
             cookie = _cookie;
             cancellable = _cancellable;
@@ -103,13 +103,16 @@ namespace Ag.Widgets {
             credentials_grid.attach (feedback_revealer, 0, 3, 2, 1);
 
             var image = new Gtk.Image.from_icon_name ("dialog-password", Gtk.IconSize.DIALOG);
-            var overlay_image = new Gtk.Image.from_icon_name (icon_name, Gtk.IconSize.LARGE_TOOLBAR);
-            overlay_image.halign = overlay_image.valign = Gtk.Align.END;
 
             var overlay = new Gtk.Overlay ();
             overlay.valign = Gtk.Align.START;
             overlay.add (image);
-            overlay.add_overlay (overlay_image);
+
+            if (icon_name != "") {
+                var overlay_image = new Gtk.Image.from_icon_name (icon_name, Gtk.IconSize.LARGE_TOOLBAR);
+                overlay_image.halign = overlay_image.valign = Gtk.Align.END;
+                overlay.add_overlay (overlay_image);
+            }            
 
             var grid = new Gtk.Grid ();
             grid.column_spacing = 12;
@@ -139,6 +142,18 @@ namespace Ag.Widgets {
             key_release_event.connect (on_key_release);
             update_idents ();
             select_session ();
+        }
+
+        public override void show () {
+            base.show ();
+
+            var window = get_window ();
+            if (window == null) {
+                return;
+            }
+
+            window.focus (Gdk.CURRENT_TIME);
+            password_entry.grab_focus ();
         }
 
         private void update_idents () {
