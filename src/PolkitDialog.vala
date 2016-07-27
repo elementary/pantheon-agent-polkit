@@ -38,6 +38,7 @@ namespace Ag.Widgets {
 
         private unowned List<Polkit.Identity?>? idents;
         private string cookie;
+        private bool canceling = false;
 
         private Gtk.Revealer feedback_revealer;
         private Gtk.Label password_label;
@@ -48,7 +49,7 @@ namespace Ag.Widgets {
 
         public PolkitDialog (string message, string icon_name, string _cookie,
                             List<Polkit.Identity?>? _idents, GLib.Cancellable _cancellable) {
-            Object (title: "", icon_name: "dialog-password", window_position: Gtk.WindowPosition.CENTER_ALWAYS, resizable: false, deletable: false, skip_taskbar_hint: true);
+            Object (title: "", icon_name: "dialog-password", window_position: Gtk.WindowPosition.CENTER, resizable: false, deletable: false, skip_taskbar_hint: true);
             idents = _idents;
             cookie = _cookie;
             cancellable = _cancellable;
@@ -218,14 +219,16 @@ namespace Ag.Widgets {
         }
 
         private void cancel () {
-            if (pk_session != null) {
-                pk_session.cancel ();
-            }
-
+            canceling = true;
             if (!cancellable.is_cancelled ()) {
                 cancellable.cancel ();
             }
 
+            if (pk_session != null) {
+                pk_session.cancel ();
+            }
+
+            canceling = false;
             done ();
         }
 
@@ -249,7 +252,9 @@ namespace Ag.Widgets {
         private void on_pk_session_completed (bool authorized) {
             sensitive = true;
             if (!authorized || cancellable.is_cancelled ()) {
-                on_pk_show_error (_("Authentication failed. Please try again."));
+                if (!canceling) {
+                    on_pk_show_error (_("Authentication failed. Please try again."));
+                }
 
                 deselect_session ();
                 password_entry.set_text ("");
@@ -272,6 +277,30 @@ namespace Ag.Widgets {
             password_entry.secondary_icon_name = "dialog-error-symbolic";
             password_feedback.label = text;
             feedback_revealer.reveal_child = true;
+            shake ();
+        }
+
+        // From https://github.com/GNOME/PolicyKit-gnome/blob/master/src/polkitgnomeauthenticationdialog.c#L901
+        private void shake () {
+            int x, y;
+            get_position (out x, out y);
+
+            for (int n = 0; n < 10; n++) {
+                int diff = 15;
+                if (n % 2 == 0) {
+                    diff = -15;
+                }
+
+                move (x + diff, y);
+
+                while (Gtk.events_pending ()) {
+                    Gtk.main_iteration ();
+                }
+
+                Thread.usleep (10000);
+            }
+
+            move (x, y);
         }
 
         private void on_pk_show_info (string text) {
