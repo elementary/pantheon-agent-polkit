@@ -1,6 +1,6 @@
 [Desktop Entry]
 _Name=Authentication Dialog
-Exec=pantheon-agent-polkit
+Exec=${LIBDIR}/policykit-1-pantheon/pantheon-agent-polkit 
 Icon=dialog-password
 Terminal=false
 Type=Application
