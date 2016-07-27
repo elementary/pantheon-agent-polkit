@@ -18,7 +18,8 @@
  * Authored by: Adam Bieńkowski <donadigos159@gmail.com>
  */
 
- /* Code based on budgie-desktop:
+/*
+ * Code based on budgie-desktop:
  * https://github.com/solus-project/budgie-desktop
  */
 

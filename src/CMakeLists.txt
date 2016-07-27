@@ -1,6 +1,8 @@
 vala_precompile(VALA_C ${EXEC_NAME}
     Agent.vala
     PolkitDialog.vala
+    Interfaces.vala
+    Utils.vala
 PACKAGES
     gtk+-3.0
     polkit-agent-1

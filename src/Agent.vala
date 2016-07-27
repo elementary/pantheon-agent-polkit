@@ -18,7 +18,8 @@
  * Authored by: Adam Bieńkowski <donadigos159@gmail.com>
  */
 
-/* Code based on budgie-desktop:
+/*
+ * Code based on budgie-desktop:
  * https://github.com/solus-project/budgie-desktop
  */
 
@@ -28,7 +29,7 @@ namespace Ag {
             register_with_session.begin ((obj, res)=> {
                 bool success = register_with_session.end (res);
                 if (!success) {
-                    critical ("Failed to register with Session manager");
+                    warning ("Failed to register with Session manager");
                 }
             });
         }
@@ -54,7 +55,28 @@ namespace Ag {
         }
 
         private async bool register_with_session () {
+            var sclient = yield Utils.register_with_session ("org.pantheon.agent-polkit");
+            if (sclient == null) {
+                return false;
+            }
+
+            sclient.query_end_session.connect (session_respond);
+            sclient.end_session.connect (session_respond);
+            sclient.stop.connect (session_stop);
+
             return true;
+        }
+
+        private void session_respond (SessionClient sclient, uint flags) {
+            try {
+                sclient.end_session_response (true, "");
+            } catch (Error e) {
+                warning ("Unable to respond to session manager: %s", e.message);
+            }
+        }
+
+        private void session_stop () {
+            Gtk.main_quit ();
         }
     }
 
