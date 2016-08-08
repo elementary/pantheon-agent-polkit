@@ -108,11 +108,11 @@ namespace Ag.Widgets {
             overlay.valign = Gtk.Align.START;
             overlay.add (image);
 
-            if (icon_name != "") {
+            if (icon_name != "" && Gtk.IconTheme.get_default ().has_icon (icon_name)) {
                 var overlay_image = new Gtk.Image.from_icon_name (icon_name, Gtk.IconSize.LARGE_TOOLBAR);
                 overlay_image.halign = overlay_image.valign = Gtk.Align.END;
                 overlay.add_overlay (overlay_image);
-            }            
+            }
 
             var grid = new Gtk.Grid ();
             grid.column_spacing = 12;
