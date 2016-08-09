@@ -1,6 +1,6 @@
 /*-
  * Copyright (c) 2015-2016 elementary LLC.
- * Copyright (C) 2015-2016 Ikey Doherty <ikey@solus-project.com>   
+ * Copyright (C) 2015-2016 Ikey Doherty <ikey@solus-project.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -49,7 +49,7 @@ namespace Ag.Widgets {
 
         public PolkitDialog (string message, string icon_name, string _cookie,
                             List<Polkit.Identity?>? _idents, GLib.Cancellable _cancellable) {
-            Object (title: "", window_position: Gtk.WindowPosition.CENTER, resizable: false, deletable: false, skip_taskbar_hint: true);
+            Object (title: _("Authentication Dialog"), window_position: Gtk.WindowPosition.CENTER, resizable: false, deletable: false, skip_taskbar_hint: true);
             idents = _idents;
             cookie = _cookie;
             cancellable = _cancellable;
@@ -87,7 +87,7 @@ namespace Ag.Widgets {
             var render = new Gtk.CellRendererText ();
             idents_combo.pack_start (render, true);
             idents_combo.add_attribute (render, "text", 0);
-            idents_combo.set_id_column (0);            
+            idents_combo.set_id_column (0);
 
             identity_label = new Gtk.Label (_("Identity:"));
             identity_label.halign = Gtk.Align.END;
@@ -97,7 +97,7 @@ namespace Ag.Widgets {
             credentials_grid.row_spacing = 6;
             credentials_grid.margin_top = 12;
             credentials_grid.attach (identity_label, 0, 0, 1, 1);
-            credentials_grid.attach (idents_combo, 1, 0, 1, 1);            
+            credentials_grid.attach (idents_combo, 1, 0, 1, 1);
             credentials_grid.attach (password_label, 0, 2, 1, 1);
             credentials_grid.attach (password_entry, 1, 2, 1, 1);
             credentials_grid.attach (feedback_revealer, 0, 3, 2, 1);
