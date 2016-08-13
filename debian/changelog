@@ -1,5 +1,5 @@
-pantheon-agent-polkit (0.1.0) UNRELEASED; urgency=low
+pantheon-agent-polkit (0.1.0) xenial; urgency=medium
 
   * Initial Release.
 
- -- Cody Garver <cody@elementary.io>  Wed, 27 Jul 2016 14:39:20 -0500
+ -- Cody Garver <cody@elementary.io>  Sat, 13 Aug 2016 06:24:23 -0500
