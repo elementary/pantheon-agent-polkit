@@ -69,9 +69,8 @@ namespace Ag.Widgets {
 
             password_entry = new Gtk.Entry ();
             password_entry.hexpand = true;
-
-            password_label = new Gtk.Label (_("Password:"));
-            password_label.halign = Gtk.Align.END;
+            password_entry.primary_icon_name = "dialog-password-symbolic";
+            password_entry.primary_icon_tooltip_text = _("Password");
 
             password_feedback = new Gtk.Label (null);
             password_feedback.halign = Gtk.Align.END;
@@ -98,9 +97,8 @@ namespace Ag.Widgets {
             credentials_grid.margin_top = 12;
             credentials_grid.attach (identity_label, 0, 0, 1, 1);
             credentials_grid.attach (idents_combo, 1, 0, 1, 1);
-            credentials_grid.attach (password_label, 0, 2, 1, 1);
-            credentials_grid.attach (password_entry, 1, 2, 1, 1);
-            credentials_grid.attach (feedback_revealer, 0, 3, 2, 1);
+            credentials_grid.attach (password_entry, 0, 2, 1, 1);
+            credentials_grid.attach (feedback_revealer, 0, 3, 1, 1);
 
             var image = new Gtk.Image.from_icon_name ("dialog-password", Gtk.IconSize.DIALOG);
 
