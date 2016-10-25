@@ -8,7 +8,7 @@ Build-Depends: cmake (>= 2.8),
                libgtk-3-dev (>= 3.10),
                libpolkit-gobject-1-dev,
                libpolkit-agent-1-dev,
-               valac (>= 0.22)
+               valac (>= 0.34.1)
 Standards-Version: 3.9.6
 Homepage: https://launchpad.net/pantheon-agent-polkit
 Vcs-Bzr: lp:pantheon-agent-polkit
