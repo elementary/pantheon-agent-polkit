@@ -35,7 +35,7 @@ namespace Ag {
         }
 
         public override async bool initiate_authentication (string action_id, string message, string icon_name,
-            Polkit.Details details, string cookie, GLib.List<Polkit.Identity?>? identities, GLib.Cancellable cancellable) {
+            Polkit.Details details, string cookie, GLib.List<Polkit.Identity> identities, GLib.Cancellable? cancellable) {
             if (identities == null) {
                 return false;
             }
@@ -84,7 +84,7 @@ namespace Ag {
 
         Polkit.Subject? subject = null;
         try {
-            subject = Polkit.UnixSession.new_for_process_sync (pid, null);
+            subject = new Polkit.UnixSession.for_process_sync (pid, null);
         } catch (Error e) {
             critical ("Unable to initiate Polkit: %s", e.message);
             return 1;
