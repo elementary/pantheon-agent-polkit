@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 14:14-0700\n"
+"POT-Creation-Date: 2016-10-29 20:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,29 +18,33 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../src/PolkitDialog.vala:52
+msgid "Authentication Dialog"
+msgstr ""
+
+#: ../src/PolkitDialog.vala:59
 msgid "Authentication Required"
 msgstr ""
 
-#: ../src/PolkitDialog.vala:66
-msgid "Password:"
+#: ../src/PolkitDialog.vala:73
+msgid "Password"
 msgstr ""
 
-#: ../src/PolkitDialog.vala:85
+#: ../src/PolkitDialog.vala:91
 msgid "Identity:"
 msgstr ""
 
-#: ../src/PolkitDialog.vala:116
+#: ../src/PolkitDialog.vala:124
 msgid "Cancel"
 msgstr ""
 
-#: ../src/PolkitDialog.vala:119
+#: ../src/PolkitDialog.vala:127
 msgid "Authenticate"
 msgstr ""
 
-#: ../src/PolkitDialog.vala:158
+#: ../src/PolkitDialog.vala:178
 msgid "Group: %s"
 msgstr ""
 
-#: ../src/PolkitDialog.vala:246
+#: ../src/PolkitDialog.vala:269
 msgid "Authentication failed. Please try again."
 msgstr ""
