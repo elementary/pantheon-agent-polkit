@@ -3,18 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-29 20:16+0200\n"
-"PO-Revision-Date: 2016-08-03 10:01+0000\n"
+"PO-Revision-Date: 2016-10-31 09:54+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-10-30 06:17+0000\n"
+"X-Launchpad-Export-Date: 2016-11-01 07:24+0000\n"
 "X-Generator: Launchpad (build 18246)\n"
 
 #: ../src/PolkitDialog.vala:52
 msgid "Authentication Dialog"
-msgstr ""
+msgstr "Tapatybės nustatymo dialogas"
 
 #: ../src/PolkitDialog.vala:59
 msgid "Authentication Required"
@@ -22,7 +22,7 @@ msgstr "Reikalingas tapatybės nustatymas"
 
 #: ../src/PolkitDialog.vala:73
 msgid "Password"
-msgstr ""
+msgstr "Slaptažodis"
 
 #: ../src/PolkitDialog.vala:91
 msgid "Identity:"
