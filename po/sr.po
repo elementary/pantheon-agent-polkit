@@ -3,26 +3,26 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-29 20:16+0200\n"
-"PO-Revision-Date: 2016-07-28 14:45+0000\n"
-"Last-Translator: Aleksandar Stefanovic <theonewithideas@gmail.com>\n"
+"PO-Revision-Date: 2017-01-06 08:15+0000\n"
+"Last-Translator: filip <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-10-30 06:17+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2017-01-07 07:08+0000\n"
+"X-Generator: Launchpad (build 18302)\n"
 
 #: ../src/PolkitDialog.vala:52
 msgid "Authentication Dialog"
-msgstr ""
+msgstr "Прозорче за потврђивање идентитета"
 
 #: ../src/PolkitDialog.vala:59
 msgid "Authentication Required"
-msgstr "Потребна је аутентификација"
+msgstr "Потребно је потврђивање идентитета"
 
 #: ../src/PolkitDialog.vala:73
 msgid "Password"
-msgstr ""
+msgstr "Лозинка"
 
 #: ../src/PolkitDialog.vala:91
 msgid "Identity:"
@@ -42,4 +42,4 @@ msgstr "Група: %s"
 
 #: ../src/PolkitDialog.vala:269
 msgid "Authentication failed. Please try again."
-msgstr "Аутентификација није успела. Покушајте поново."
+msgstr "Потврђивање идентитета није успело. Покушајте поново."
