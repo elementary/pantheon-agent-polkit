@@ -88,15 +88,11 @@ namespace Ag.Widgets {
             idents_combo.add_attribute (render, "text", 0);
             idents_combo.set_id_column (0);
 
-            identity_label = new Gtk.Label (_("Identity:"));
-            identity_label.halign = Gtk.Align.END;
-
             var credentials_grid = new Gtk.Grid ();
             credentials_grid.column_spacing = 12;
             credentials_grid.row_spacing = 6;
             credentials_grid.margin_top = 12;
-            credentials_grid.attach (identity_label, 0, 0, 1, 1);
-            credentials_grid.attach (idents_combo, 1, 0, 1, 1);
+            credentials_grid.attach (idents_combo, 0, 0, 1, 1);
             credentials_grid.attach (password_entry, 0, 2, 1, 1);
             credentials_grid.attach (feedback_revealer, 0, 3, 1, 1);
 
