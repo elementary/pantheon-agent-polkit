@@ -3,22 +3,22 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-29 20:16+0200\n"
-"PO-Revision-Date: 2017-01-23 16:31+0000\n"
+"PO-Revision-Date: 2017-02-01 23:55+0000\n"
 "Last-Translator: Christos Iatropoulos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-01-24 06:14+0000\n"
-"X-Generator: Launchpad (build 18312)\n"
+"X-Launchpad-Export-Date: 2017-02-02 06:26+0000\n"
+"X-Generator: Launchpad (build 18315)\n"
 
 #: ../src/PolkitDialog.vala:52
 msgid "Authentication Dialog"
-msgstr ""
+msgstr "Διάλογος επαλήθευσης"
 
 #: ../src/PolkitDialog.vala:59
 msgid "Authentication Required"
-msgstr ""
+msgstr "Απαιτείται επαλήθευση"
 
 #: ../src/PolkitDialog.vala:73
 msgid "Password"
@@ -34,7 +34,7 @@ msgstr "Ακύρωση"
 
 #: ../src/PolkitDialog.vala:127
 msgid "Authenticate"
-msgstr ""
+msgstr "Επαλήθευση"
 
 #: ../src/PolkitDialog.vala:178
 msgid "Group: %s"
@@ -42,4 +42,4 @@ msgstr "Ομάδα: %s"
 
 #: ../src/PolkitDialog.vala:269
 msgid "Authentication failed. Please try again."
-msgstr ""
+msgstr "Η επαλήθευση απέτυχε. Παρακαλώ δοκιμάστε ξανά."
