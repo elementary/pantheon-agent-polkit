@@ -1,3 +1,9 @@
+pantheon-agent-polkit (0.1.2) xenial; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementary.io>  Sun, 12 Feb 2017 04:04:49 -0600
+
 pantheon-agent-polkit (0.1.1) xenial; urgency=medium
 
   * New upstream release.
