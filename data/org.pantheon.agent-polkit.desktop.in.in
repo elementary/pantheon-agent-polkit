@@ -1,6 +1,6 @@
 [Desktop Entry]
 _Name=Authentication Dialog
-Exec=${PKEXECDIR}/pantheon-agent-polkit 
+Exec=${PKEXECDIR}/${EXEC_NAME}
 Icon=dialog-password
 Terminal=false
 Type=Application
