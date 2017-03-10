@@ -1,6 +1,7 @@
 project (pantheon-agent-polkit)
-
 cmake_minimum_required (VERSION 2.8)
+
+include (GNUInstallDirs)
 
 set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
 set (PKGDATADIR "${DATADIR}/${CMAKE_PROJECT_NAME}")
@@ -9,8 +10,7 @@ set (EXEC_NAME ${CMAKE_PROJECT_NAME})
 set (VERSION "0.1.2")
 set (DOLLAR "$")
 
-set (LIBDIR "${CMAKE_INSTALL_PREFIX}/lib")
-set (EXECDIR "${LIBDIR}/policykit-1-pantheon")
+set (PKEXECDIR "${CMAKE_INSTALL_FULL_LIBEXECDIR}/policykit-1-pantheon")
 
 add_definitions (-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
 add_definitions (-w)
