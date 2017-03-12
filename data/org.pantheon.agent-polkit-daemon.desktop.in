@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=PolicyKit Authentication Agent
+Comment=PolicyKit Authentication Agent
+Exec=${PKEXECDIR}/${EXEC_NAME}
+Terminal=false
+Type=Application
+Categories=
+NoDisplay=true
+OnlyShowIn=Pantheon;
+X-GNOME-AutoRestart=true
+AutostartCondition=GNOME3 unless-session gnome
