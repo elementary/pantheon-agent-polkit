@@ -3,43 +3,46 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-29 20:16+0200\n"
-"PO-Revision-Date: 2016-07-28 02:23+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-04-25 12:58+0000\n"
+"Last-Translator: Vlad Kourbatski <i1954@xe.am>\n"
+"Language-Team: English (United Kingdom) "
+"<https://l10n.elementary.io/projects/desktop/pantheon-agent-polkit/en_GB/>\n"
+"Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:08+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: ../src/PolkitDialog.vala:52
 msgid "Authentication Dialog"
-msgstr ""
+msgstr "Authentication Dialog"
 
 #: ../src/PolkitDialog.vala:59
 msgid "Authentication Required"
-msgstr ""
+msgstr "Authentication Required"
 
 #: ../src/PolkitDialog.vala:73
 msgid "Password"
-msgstr ""
+msgstr "Password"
 
 #: ../src/PolkitDialog.vala:91
 msgid "Identity:"
-msgstr ""
+msgstr "Identity:"
 
 #: ../src/PolkitDialog.vala:124
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel"
 
 #: ../src/PolkitDialog.vala:127
 msgid "Authenticate"
-msgstr ""
+msgstr "Authenticate"
 
 #: ../src/PolkitDialog.vala:178
 msgid "Group: %s"
-msgstr ""
+msgstr "Group: %s"
 
 #: ../src/PolkitDialog.vala:269
 msgid "Authentication failed. Please try again."
-msgstr ""
+msgstr "Authentication failed. Please try again."
