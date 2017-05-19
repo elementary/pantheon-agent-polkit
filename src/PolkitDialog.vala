@@ -134,6 +134,8 @@ namespace Ag.Widgets {
             action_area.margin_top = 14;
 
             key_release_event.connect (on_key_release);
+            close.connect (cancel);
+            
             update_idents ();
             select_session ();
         }
@@ -318,9 +320,6 @@ namespace Ag.Widgets {
 
         private bool on_key_release (Gdk.EventKey key) {
             switch (key.keyval) {
-                case Gdk.Key.Escape:
-                    cancel ();
-                    return Gdk.EVENT_STOP;
                 case Gdk.Key.KP_Enter:
                 case Gdk.Key.Return:
                     authenticate ();
