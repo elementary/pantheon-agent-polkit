@@ -82,10 +82,14 @@ namespace Ag.Widgets {
             idents_combo.hexpand = true;
             idents_combo.changed.connect (on_ident_changed);
 
-            var render = new Gtk.CellRendererText ();
-            idents_combo.pack_start (render, true);
-            idents_combo.add_attribute (render, "text", 0);
-            idents_combo.set_id_column (0);
+            Gtk.CellRenderer renderer = new Gtk.CellRendererPixbuf ();
+            idents_combo.pack_start (renderer, false);
+            idents_combo.add_attribute (renderer, "icon-name", 0);
+
+            renderer = new Gtk.CellRendererText ();
+            idents_combo.pack_start (renderer, true);
+            idents_combo.add_attribute (renderer, "text", 1);
+            idents_combo.set_id_column (1);
 
             var credentials_grid = new Gtk.Grid ();
             credentials_grid.column_spacing = 12;
@@ -152,7 +156,7 @@ namespace Ag.Widgets {
         }
 
         private void update_idents () {
-            var model = new Gtk.ListStore (2, typeof (string), typeof (Polkit.Identity));
+            var model = new Gtk.ListStore (3, typeof (string), typeof (string), typeof (Polkit.Identity));
             Gtk.TreeIter iter;
 
             int length = 0;
@@ -184,7 +188,7 @@ namespace Ag.Widgets {
                 }
 
                 model.append (out iter);
-                model.set (iter, 0, name, 1, ident);
+                model.set (iter, 0, "avatar-default-symbolic", 1, name, 2, ident);
                 length++;
             }
 
@@ -263,7 +267,7 @@ namespace Ag.Widgets {
                 return;
             }
 
-            model.get (iter, 1, out pk_identity, -1);
+            model.get (iter, 2, out pk_identity, -1);
             select_session ();
         }
 
