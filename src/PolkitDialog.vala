@@ -87,7 +87,7 @@ namespace Ag.Widgets {
             idents_combo.add_attribute (renderer, "icon-name", 0);
 
             renderer = new Gtk.CellRendererText ();
-            renderer.xpad = 3;
+            renderer.xpad = 6;
             idents_combo.pack_start (renderer, true);
             idents_combo.add_attribute (renderer, "text", 1);
             idents_combo.set_id_column (1);
