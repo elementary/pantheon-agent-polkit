@@ -44,7 +44,6 @@ namespace Ag.Widgets {
         private Gtk.Label password_label;
         private Gtk.Label password_feedback;
         private Gtk.Entry password_entry;
-        private Gtk.Label identity_label;
         private Gtk.ComboBox idents_combo;
 
         public PolkitDialog (string message, string icon_name, string _cookie,
@@ -186,11 +185,7 @@ namespace Ag.Widgets {
             idents_combo.active = 0;
 
             if (length < 2) {
-                identity_label.no_show_all = true;
-                identity_label.visible = false;
-
-                idents_combo.no_show_all = true;
-                idents_combo.visible = false;
+                idents_combo.sensitive = false;
             }
         }
 
