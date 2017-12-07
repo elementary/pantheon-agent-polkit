@@ -44,7 +44,6 @@ namespace Ag.Widgets {
         private Gtk.Label password_label;
         private Gtk.Label password_feedback;
         private Gtk.Entry password_entry;
-        private Gtk.Label identity_label;
         private Gtk.ComboBox idents_combo;
 
         public PolkitDialog (string message, string icon_name, string _cookie,
@@ -158,6 +157,8 @@ namespace Ag.Widgets {
 
             int length = 0;
 
+            string? target_user = null;
+
             foreach (unowned Polkit.Identity? ident in idents) {
                 if (ident == null) {
                     continue;
@@ -168,7 +169,12 @@ namespace Ag.Widgets {
                 if (ident is Polkit.UnixUser) {
                     unowned Posix.Passwd? pwd = Posix.getpwuid (((Polkit.UnixUser)ident).get_uid ());
                     if (pwd != null) {
-                        name = pwd.pw_name;
+                        string pw_name = pwd.pw_name;
+                        if (target_user == null && length < 2) {
+                            target_user = pw_name;
+                        }
+
+                        name = pw_name;
                     }
                 } else if (ident is Polkit.UnixGroup) {
                     unowned Posix.Group? gwd = Posix.getgrgid (((Polkit.UnixGroup)ident).get_gid ());
@@ -186,11 +192,12 @@ namespace Ag.Widgets {
             idents_combo.active = 0;
 
             if (length < 2) {
-                identity_label.no_show_all = true;
-                identity_label.visible = false;
-
-                idents_combo.no_show_all = true;
-                idents_combo.visible = false;
+                if (target_user == Environment.get_user_name ()) {
+                    idents_combo.visible = false;
+                    idents_combo.no_show_all = true;
+                } else {
+                    idents_combo.sensitive = false;
+                }
             }
         }
 
