@@ -26,7 +26,7 @@ executable(
 
 conf_data = configuration_data()
 conf_data.set('EXEC_NAME', meson.project_name())
-conf_data.set('PKEXECDIR', join_paths(get_option('prefix'), get_option('libexecdir')) + '/policykit-1-pantheon')
+conf_data.set('PKEXECDIR', join_paths(get_option('prefix'), get_option('libexecdir'), 'policykit-1-pantheon'))
 
 subdir('data')
 subdir('po')
