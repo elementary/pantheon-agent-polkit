@@ -49,11 +49,11 @@ namespace Ag.Widgets {
         public PolkitDialog (string message, string icon_name, string _cookie,
                              List<Polkit.Identity?>? _idents, GLib.Cancellable _cancellable) {
             Object (
-              title: _("Authentication Dialog"),
-              window_position: Gtk.WindowPosition.CENTER,
-              resizable: false,
-              deletable: false,
-              skip_taskbar_hint: true
+                title: _("Authentication Dialog"),
+                window_position: Gtk.WindowPosition.CENTER,
+                resizable: false,
+                deletable: false,
+                skip_taskbar_hint: true
             );
 
             idents = _idents;
