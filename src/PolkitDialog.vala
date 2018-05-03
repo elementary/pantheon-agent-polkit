@@ -27,6 +27,7 @@ namespace Ag.Widgets {
     public class PolkitDialog : Gtk.Dialog {
         public signal void done ();
 
+        public Act.User? user { get; construct; }
         private PolkitAgent.Session? pk_session = null;
         private Polkit.Identity? pk_identity = null;
         private unowned Cancellable cancellable;
@@ -139,7 +140,7 @@ namespace Ag.Widgets {
 
             key_release_event.connect (on_key_release);
             close.connect (cancel);
-            
+
             update_idents ();
             select_session ();
         }
