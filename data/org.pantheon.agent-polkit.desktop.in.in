@@ -1,6 +1,6 @@
 [Desktop Entry]
 _Name=Authentication Dialog
-Exec=${PKEXECDIR}/${EXEC_NAME}
+Exec=@PKEXECDIR@/@EXEC_NAME@
 Icon=dialog-password
 Terminal=false
 Type=Application
