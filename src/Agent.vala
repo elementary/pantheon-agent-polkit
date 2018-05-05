@@ -48,7 +48,7 @@ namespace Ag {
 
             dialog.destroy ();
 
-            if (cancellable.is_cancelled()) {
+            if (dialog.was_canceled) {
                 throw new Polkit.Error.CANCELLED ("Authentication dialog was dismissed by the user");
             }
 
