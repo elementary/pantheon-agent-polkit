@@ -3,6 +3,8 @@ project('pantheon-agent-polkit', 'vala', 'c')
 i18n = import('i18n')
 
 add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format(meson.project_name()), language:'c')
+add_project_arguments(['--vapidir', join_paths(meson.current_source_dir(), 'vapi')],
+                      language: 'vala')
 
 executable(
     meson.project_name(),
@@ -10,7 +12,9 @@ executable(
     'src/PolkitDialog.vala',
     'src/Interfaces.vala',
     'src/Utils.vala',
+    'src/Services/UserManager.vala',
     dependencies: [
+        dependency('accountsservice'),
         dependency('glib-2.0'),
         dependency('gobject-2.0'),
         dependency('gtk+-3.0'),
