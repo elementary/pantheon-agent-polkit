@@ -35,9 +35,11 @@ namespace Ag {
         }
 
         public override async bool initiate_authentication (string action_id, string message, string icon_name,
-            Polkit.Details details, string cookie, GLib.List<Polkit.Identity> identities, GLib.Cancellable? cancellable) {
+            Polkit.Details details, string cookie, GLib.List<Polkit.Identity> identities, GLib.Cancellable? cancellable, out GLib.Error? error) {
+            error = null;
             if (identities == null) {
-                return false;
+                error = new Polkit.Error.FAILED (_("No identity to use"));
+                return true;
             }
 
             var dialog = new Widgets.PolkitDialog (message, icon_name, cookie, identities, cancellable);
@@ -47,7 +49,7 @@ namespace Ag {
             yield;
 
             dialog.destroy ();
-            return true;
+            return false;
         }
 
         private async bool register_with_session () {
