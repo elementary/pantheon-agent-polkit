@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-29 20:16+0200\n"
+"POT-Creation-Date: 2018-05-07 08:34-0700\n"
 "PO-Revision-Date: 2017-07-10 15:32+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/desktop/pantheon-"
@@ -15,35 +15,35 @@ msgstr ""
 "X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:07+0000\n"
 
-#: ../src/PolkitDialog.vala:52
+#: src/PolkitDialog.vala:52
 msgid "Authentication Dialog"
 msgstr "Authentifizierungsdialog"
 
-#: ../src/PolkitDialog.vala:59
+#: src/PolkitDialog.vala:65
 msgid "Authentication Required"
 msgstr "Authentifizierung erforderlich"
 
-#: ../src/PolkitDialog.vala:73
+#: src/PolkitDialog.vala:79
 msgid "Password"
 msgstr "Passwort"
 
-#: ../src/PolkitDialog.vala:91
-msgid "Identity:"
-msgstr "Identität:"
-
-#: ../src/PolkitDialog.vala:124
+#: src/PolkitDialog.vala:131
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: ../src/PolkitDialog.vala:127
+#: src/PolkitDialog.vala:134
 msgid "Authenticate"
 msgstr "Authentifizieren"
 
-#: ../src/PolkitDialog.vala:178
+#: src/PolkitDialog.vala:195
+#, c-format
 msgid "Group: %s"
 msgstr "Gruppe: %s"
 
-#: ../src/PolkitDialog.vala:269
+#: src/PolkitDialog.vala:292
 msgid "Authentication failed. Please try again."
 msgstr ""
 "Die Authentifizierung ist fehlgeschlagen. Bitte versuchen Sie es erneut."
+
+#~ msgid "Identity:"
+#~ msgstr "Identität:"

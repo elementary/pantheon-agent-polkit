@@ -1,0 +1,31 @@
+# Danish translations for extra package.
+# Copyright (C) 2018 THE extra'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# Automatically generated, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-07 08:35-0700\n"
+"PO-Revision-Date: 2018-05-07 08:35-0700\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: data/org.pantheon.agent-polkit.desktop.in.in:3
+msgid "Authentication Dialog"
+msgstr ""
+
+#: data/org.pantheon.agent-polkit.desktop.in.in:5
+msgid "dialog-password"
+msgstr ""
+
+#: data/org.pantheon.agent-polkit-daemon.desktop.in:3
+#: data/org.pantheon.agent-polkit-daemon.desktop.in:4
+msgid "PolicyKit Authentication Agent"
+msgstr ""

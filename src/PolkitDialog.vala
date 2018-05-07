@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2015-2016 elementary LLC.
+ * Copyright (c) 2015-2018 elementary LLC.
  * Copyright (C) 2015-2016 Ikey Doherty <ikey@solus-project.com>
  *
  * This program is free software: you can redistribute it and/or modify
@@ -48,8 +48,15 @@ namespace Ag.Widgets {
         private Gtk.ComboBox idents_combo;
 
         public PolkitDialog (string message, string icon_name, string _cookie,
-                            List<Polkit.Identity?>? _idents, GLib.Cancellable _cancellable) {
-            Object (title: _("Authentication Dialog"), window_position: Gtk.WindowPosition.CENTER, resizable: false, deletable: false, skip_taskbar_hint: true);
+                             List<Polkit.Identity?>? _idents, GLib.Cancellable _cancellable) {
+            Object (
+                title: _("Authentication Dialog"),
+                window_position: Gtk.WindowPosition.CENTER,
+                resizable: false,
+                deletable: false,
+                skip_taskbar_hint: true
+            );
+
             idents = _idents;
             cookie = _cookie;
             cancellable = _cancellable;
@@ -162,6 +169,7 @@ namespace Ag.Widgets {
             Gtk.TreeIter iter;
 
             int length = 0;
+            int active = 0;
 
             string? target_user = null;
 
@@ -191,11 +199,16 @@ namespace Ag.Widgets {
 
                 model.append (out iter);
                 model.set (iter, 0, "avatar-default-symbolic", 1, name, 2, ident);
+
+                if (name == Environment.get_user_name ()) {
+                    active = length;
+                }
+
                 length++;
             }
 
             idents_combo.set_model (model);
-            idents_combo.active = 0;
+            idents_combo.active = active;
 
             if (length < 2) {
                 if (target_user == Environment.get_user_name ()) {
