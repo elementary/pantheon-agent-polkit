@@ -1,4 +1,35 @@
 msgid ""
 msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-07 08:34-0700\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+
+#: src/PolkitDialog.vala:52
+msgid "Authentication Dialog"
+msgstr ""
+
+#: src/PolkitDialog.vala:65
+msgid "Authentication Required"
+msgstr ""
+
+#: src/PolkitDialog.vala:79
+msgid "Password"
+msgstr ""
+
+#: src/PolkitDialog.vala:131
+msgid "Cancel"
+msgstr ""
+
+#: src/PolkitDialog.vala:134
+msgid "Authenticate"
+msgstr ""
+
+#: src/PolkitDialog.vala:195
+#, c-format
+msgid "Group: %s"
+msgstr ""
+
+#: src/PolkitDialog.vala:292
+msgid "Authentication failed. Please try again."
+msgstr ""
