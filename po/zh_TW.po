@@ -2,12 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-29 20:16+0200\n"
+"POT-Creation-Date: 2018-05-07 08:34-0700\n"
 "PO-Revision-Date: 2017-07-22 09:15+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
-"Language-Team: Chinese (Traditional) "
-"<https://weblate.elementary.io/projects/desktop/pantheon-agent-polkit/zh_TW/>"
-"\n"
+"Language-Team: Chinese (Traditional) <https://weblate.elementary.io/projects/"
+"desktop/pantheon-agent-polkit/zh_TW/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,34 +15,34 @@ msgstr ""
 "X-Generator: Weblate 2.15\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:08+0000\n"
 
-#: ../src/PolkitDialog.vala:52
+#: src/PolkitDialog.vala:52
 msgid "Authentication Dialog"
 msgstr "身份核對對話盒"
 
-#: ../src/PolkitDialog.vala:59
+#: src/PolkitDialog.vala:65
 msgid "Authentication Required"
 msgstr "需要核對身份"
 
-#: ../src/PolkitDialog.vala:73
+#: src/PolkitDialog.vala:79
 msgid "Password"
 msgstr "密碼"
 
-#: ../src/PolkitDialog.vala:91
-msgid "Identity:"
-msgstr "身份："
-
-#: ../src/PolkitDialog.vala:124
+#: src/PolkitDialog.vala:131
 msgid "Cancel"
 msgstr "取消"
 
-#: ../src/PolkitDialog.vala:127
+#: src/PolkitDialog.vala:134
 msgid "Authenticate"
 msgstr "核對"
 
-#: ../src/PolkitDialog.vala:178
+#: src/PolkitDialog.vala:195
+#, c-format
 msgid "Group: %s"
 msgstr "群組：%s"
 
-#: ../src/PolkitDialog.vala:269
+#: src/PolkitDialog.vala:292
 msgid "Authentication failed. Please try again."
 msgstr "身份核對失敗。請重試。"
+
+#~ msgid "Identity:"
+#~ msgstr "身份："
