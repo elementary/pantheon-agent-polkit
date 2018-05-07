@@ -51,7 +51,7 @@ namespace Ag {
         }
 
         private async bool register_with_session () {
-            var sclient = yield Utils.register_with_session ("org.pantheon.agent-polkit");
+            var sclient = yield Utils.register_with_session ("io.elementary.pantheon-agent-polkit");
             if (sclient == null) {
                 return false;
             }
