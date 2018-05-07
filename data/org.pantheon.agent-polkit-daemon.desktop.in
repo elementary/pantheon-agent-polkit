@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=PolicyKit Authentication Agent
 Comment=PolicyKit Authentication Agent
-Exec=${PKEXECDIR}/${EXEC_NAME}
+Exec=@PKEXECDIR@/@EXEC_NAME@
 Terminal=false
 Type=Application
 Categories=
