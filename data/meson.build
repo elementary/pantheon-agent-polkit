@@ -19,5 +19,5 @@ configure_file(
     input: 'org.pantheon.agent-polkit-daemon.desktop.in',
     output: '@BASENAME@',
     configuration: conf_data,
-    install_dir: join_paths(get_option('datadir'), 'applications')
+    install_dir: join_paths(get_option('sysconfdir'), 'xdg', 'autostart')
 )
