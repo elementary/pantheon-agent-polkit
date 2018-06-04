@@ -1,4 +1,8 @@
-project('io.elementary.pantheon-agent-polkit', 'vala', 'c')
+project(
+    'io.elementary.pantheon-agent-polkit',
+    'vala', 'c',
+    version: '0.1.4'
+)
 
 install_path = join_paths(get_option('prefix'), get_option('libexecdir'), 'policykit-1-pantheon')
 i18n = import('i18n')
