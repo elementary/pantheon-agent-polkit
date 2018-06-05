@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-07 08:34-0700\n"
 "PO-Revision-Date: 2018-06-05 17:38+0000\n"
-"Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
+"Last-Translator: Csepi Árpád <banderaszkormos@gmail.com>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/desktop"
 "/pantheon-agent-polkit/hu/>\n"
 "Language: hu\n"
@@ -21,7 +21,7 @@ msgstr "Hitelesítési párbeszéd ablak"
 
 #: src/PolkitDialog.vala:65
 msgid "Authentication Required"
-msgstr ""
+msgstr "Azonosítás szükséges"
 
 #: src/PolkitDialog.vala:79
 msgid "Password"
