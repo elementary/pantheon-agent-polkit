@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-07 08:34-0700\n"
 "PO-Revision-Date: 2018-06-05 17:38+0000\n"
-"Last-Translator: Csepi Árpád <banderaszkormos@gmail.com>\n"
+"Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/desktop"
 "/pantheon-agent-polkit/hu/>\n"
 "Language: hu\n"
@@ -29,7 +29,7 @@ msgstr "Jelszó"
 
 #: src/PolkitDialog.vala:131
 msgid "Cancel"
-msgstr ""
+msgstr "Mégsem"
 
 #: src/PolkitDialog.vala:134
 msgid "Authenticate"
