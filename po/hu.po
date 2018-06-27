@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-07 08:34-0700\n"
+"POT-Creation-Date: 2018-06-27 10:26-0700\n"
 "PO-Revision-Date: 2018-06-06 00:08+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
-"Language-Team: Hungarian <https://weblate.elementary.io/projects/desktop"
-"/pantheon-agent-polkit/hu/>\n"
+"Language-Team: Hungarian <https://weblate.elementary.io/projects/desktop/"
+"pantheon-agent-polkit/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,31 +15,31 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:07+0000\n"
 
-#: src/PolkitDialog.vala:52
+#: src/PolkitDialog.vala:53
 msgid "Authentication Dialog"
 msgstr "Hitelesítési párbeszéd ablak"
 
-#: src/PolkitDialog.vala:65
+#: src/PolkitDialog.vala:67
 msgid "Authentication Required"
 msgstr "Hitelesítés szükséges"
 
-#: src/PolkitDialog.vala:79
+#: src/PolkitDialog.vala:81
 msgid "Password"
 msgstr "Jelszó"
 
-#: src/PolkitDialog.vala:131
+#: src/PolkitDialog.vala:133
 msgid "Cancel"
 msgstr "Mégsem"
 
-#: src/PolkitDialog.vala:134
+#: src/PolkitDialog.vala:136
 msgid "Authenticate"
 msgstr "Hitelesítés"
 
-#: src/PolkitDialog.vala:195
+#: src/PolkitDialog.vala:197
 #, c-format
 msgid "Group: %s"
 msgstr "Csoport: %s"
 
-#: src/PolkitDialog.vala:292
+#: src/PolkitDialog.vala:293
 msgid "Authentication failed. Please try again."
 msgstr "Hitelesítés sikertelen. Kérem próbálja újra."

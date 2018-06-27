@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-07 08:34-0700\n"
+"POT-Creation-Date: 2018-06-27 10:26-0700\n"
 "PO-Revision-Date: 2016-12-11 13:45+0000\n"
 "Last-Translator: Martin Korpala <Unknown>\n"
 "Language-Team: Slovak <>\n"
@@ -16,32 +16,32 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-02-20 06:08+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 
-#: src/PolkitDialog.vala:52
+#: src/PolkitDialog.vala:53
 msgid "Authentication Dialog"
 msgstr "Overovací Dialóg"
 
-#: src/PolkitDialog.vala:65
+#: src/PolkitDialog.vala:67
 msgid "Authentication Required"
 msgstr "Overenie Nevyhnutné"
 
-#: src/PolkitDialog.vala:79
+#: src/PolkitDialog.vala:81
 msgid "Password"
 msgstr "Heslo"
 
-#: src/PolkitDialog.vala:131
+#: src/PolkitDialog.vala:133
 msgid "Cancel"
 msgstr "Zrušenie"
 
-#: src/PolkitDialog.vala:134
+#: src/PolkitDialog.vala:136
 msgid "Authenticate"
 msgstr "Over"
 
-#: src/PolkitDialog.vala:195
+#: src/PolkitDialog.vala:197
 #, c-format
 msgid "Group: %s"
 msgstr "Skupina: %s"
 
-#: src/PolkitDialog.vala:292
+#: src/PolkitDialog.vala:293
 msgid "Authentication failed. Please try again."
 msgstr "Overenie zlyhalo. Skúste znova prosím."
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-07 08:34-0700\n"
+"POT-Creation-Date: 2018-06-27 10:26-0700\n"
 "PO-Revision-Date: 2018-02-23 20:58+0000\n"
 "Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
 "Language-Team: English (Canada) <https://weblate.elementary.io/projects/"
@@ -15,32 +15,32 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:08+0000\n"
 
-#: src/PolkitDialog.vala:52
+#: src/PolkitDialog.vala:53
 msgid "Authentication Dialog"
 msgstr "Authentication Dialog"
 
-#: src/PolkitDialog.vala:65
+#: src/PolkitDialog.vala:67
 msgid "Authentication Required"
 msgstr "Authentication Required"
 
-#: src/PolkitDialog.vala:79
+#: src/PolkitDialog.vala:81
 msgid "Password"
 msgstr "Password"
 
-#: src/PolkitDialog.vala:131
+#: src/PolkitDialog.vala:133
 msgid "Cancel"
 msgstr "Cancel"
 
-#: src/PolkitDialog.vala:134
+#: src/PolkitDialog.vala:136
 msgid "Authenticate"
 msgstr "Authenticate"
 
-#: src/PolkitDialog.vala:195
+#: src/PolkitDialog.vala:197
 #, c-format
 msgid "Group: %s"
 msgstr "Group: %s"
 
-#: src/PolkitDialog.vala:292
+#: src/PolkitDialog.vala:293
 msgid "Authentication failed. Please try again."
 msgstr "Authentication failed. Please try again."
 

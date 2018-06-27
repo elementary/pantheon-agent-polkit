@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-07 08:34-0700\n"
+"POT-Creation-Date: 2018-06-27 10:26-0700\n"
 "PO-Revision-Date: 2016-08-19 13:23+0000\n"
 "Last-Translator: Nate <natejms@outlook.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,32 +13,32 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-02-20 06:08+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 
-#: src/PolkitDialog.vala:52
+#: src/PolkitDialog.vala:53
 msgid "Authentication Dialog"
 msgstr ""
 
-#: src/PolkitDialog.vala:65
+#: src/PolkitDialog.vala:67
 msgid "Authentication Required"
 msgstr "Authentification obligatoire"
 
-#: src/PolkitDialog.vala:79
+#: src/PolkitDialog.vala:81
 msgid "Password"
 msgstr ""
 
-#: src/PolkitDialog.vala:131
+#: src/PolkitDialog.vala:133
 msgid "Cancel"
 msgstr "Annuler"
 
-#: src/PolkitDialog.vala:134
+#: src/PolkitDialog.vala:136
 msgid "Authenticate"
 msgstr "Authentifier"
 
-#: src/PolkitDialog.vala:195
+#: src/PolkitDialog.vala:197
 #, c-format
 msgid "Group: %s"
 msgstr "Groupe: %s"
 
-#: src/PolkitDialog.vala:292
+#: src/PolkitDialog.vala:293
 msgid "Authentication failed. Please try again."
 msgstr "Authentification ratée. Réessayer, s'il vous plaît."
 
