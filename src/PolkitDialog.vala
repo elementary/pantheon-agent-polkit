@@ -81,7 +81,10 @@ namespace Ag.Widgets {
             password_entry.primary_icon_tooltip_text = _("Password");
 
             password_feedback = new Gtk.Label (null);
-            password_feedback.halign = Gtk.Align.END;
+            password_feedback.justify = Gtk.Justification.RIGHT;
+            password_feedback.max_width_chars = 40;
+            password_feedback.wrap = true;
+            password_feedback.xalign = 1;
             password_feedback.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
 
             feedback_revealer = new Gtk.Revealer ();
