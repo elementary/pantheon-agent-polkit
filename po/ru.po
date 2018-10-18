@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 14:19-0700\n"
+"POT-Creation-Date: 2018-10-18 10:27+0200\n"
 "PO-Revision-Date: 2016-11-29 08:36+0000\n"
 "Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,20 +25,20 @@ msgstr "Требуется аутентификация"
 msgid "Password"
 msgstr "Пароль"
 
-#: src/PolkitDialog.vala:133
+#: src/PolkitDialog.vala:136
 msgid "Cancel"
 msgstr "Отменить"
 
-#: src/PolkitDialog.vala:136
+#: src/PolkitDialog.vala:139
 msgid "Authenticate"
 msgstr "Аутентифицировать"
 
-#: src/PolkitDialog.vala:197
+#: src/PolkitDialog.vala:200
 #, c-format
 msgid "Group: %s"
 msgstr "Группа: %s"
 
-#: src/PolkitDialog.vala:293
+#: src/PolkitDialog.vala:296
 msgid "Authentication failed. Please try again."
 msgstr "Ошибка аутентификации. Попробуйте снова."
 

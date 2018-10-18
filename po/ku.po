@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 14:19-0700\n"
+"POT-Creation-Date: 2018-10-18 10:27+0200\n"
 "PO-Revision-Date: 2017-01-28 14:52+0000\n"
 "Last-Translator: Rokar ✌ <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,20 +25,20 @@ msgstr "Piştrastkirina Nasnameyê Divê"
 msgid "Password"
 msgstr "Şîfre"
 
-#: src/PolkitDialog.vala:133
+#: src/PolkitDialog.vala:136
 msgid "Cancel"
 msgstr "Betal bike"
 
-#: src/PolkitDialog.vala:136
+#: src/PolkitDialog.vala:139
 msgid "Authenticate"
 msgstr "Naskirina nasnamê"
 
-#: src/PolkitDialog.vala:197
+#: src/PolkitDialog.vala:200
 #, c-format
 msgid "Group: %s"
 msgstr "kom: %s"
 
-#: src/PolkitDialog.vala:293
+#: src/PolkitDialog.vala:296
 msgid "Authentication failed. Please try again."
 msgstr "resenî ketî. kerema xwe dîsa dest pê bike."
 

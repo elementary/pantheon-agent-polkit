@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 14:19-0700\n"
+"POT-Creation-Date: 2018-10-18 10:27+0200\n"
 "PO-Revision-Date: 2018-05-27 00:04+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/desktop/"
@@ -25,19 +25,19 @@ msgstr "Autentificare necesară"
 msgid "Password"
 msgstr "Parolă"
 
-#: src/PolkitDialog.vala:133
+#: src/PolkitDialog.vala:136
 msgid "Cancel"
 msgstr "Anulare"
 
-#: src/PolkitDialog.vala:136
+#: src/PolkitDialog.vala:139
 msgid "Authenticate"
 msgstr "Autentifică"
 
-#: src/PolkitDialog.vala:197
+#: src/PolkitDialog.vala:200
 #, c-format
 msgid "Group: %s"
 msgstr "Grup: %s"
 
-#: src/PolkitDialog.vala:293
+#: src/PolkitDialog.vala:296
 msgid "Authentication failed. Please try again."
 msgstr "Autentificare eșuată. Vă rugăm să încercați din nou."

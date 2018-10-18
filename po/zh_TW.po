@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 14:19-0700\n"
+"POT-Creation-Date: 2018-10-18 10:27+0200\n"
 "PO-Revision-Date: 2017-07-22 09:15+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.elementary.io/projects/"
@@ -27,20 +27,20 @@ msgstr "需要核對身份"
 msgid "Password"
 msgstr "密碼"
 
-#: src/PolkitDialog.vala:133
+#: src/PolkitDialog.vala:136
 msgid "Cancel"
 msgstr "取消"
 
-#: src/PolkitDialog.vala:136
+#: src/PolkitDialog.vala:139
 msgid "Authenticate"
 msgstr "核對"
 
-#: src/PolkitDialog.vala:197
+#: src/PolkitDialog.vala:200
 #, c-format
 msgid "Group: %s"
 msgstr "群組：%s"
 
-#: src/PolkitDialog.vala:293
+#: src/PolkitDialog.vala:296
 msgid "Authentication failed. Please try again."
 msgstr "身份核對失敗。請重試。"
 

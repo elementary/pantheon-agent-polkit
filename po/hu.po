@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 14:19-0700\n"
+"POT-Creation-Date: 2018-10-18 10:27+0200\n"
 "PO-Revision-Date: 2018-06-06 00:08+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/desktop/"
@@ -27,19 +27,19 @@ msgstr "Hitelesítés szükséges"
 msgid "Password"
 msgstr "Jelszó"
 
-#: src/PolkitDialog.vala:133
+#: src/PolkitDialog.vala:136
 msgid "Cancel"
 msgstr "Mégsem"
 
-#: src/PolkitDialog.vala:136
+#: src/PolkitDialog.vala:139
 msgid "Authenticate"
 msgstr "Hitelesítés"
 
-#: src/PolkitDialog.vala:197
+#: src/PolkitDialog.vala:200
 #, c-format
 msgid "Group: %s"
 msgstr "Csoport: %s"
 
-#: src/PolkitDialog.vala:293
+#: src/PolkitDialog.vala:296
 msgid "Authentication failed. Please try again."
 msgstr "Hitelesítés sikertelen. Kérem próbálja újra."

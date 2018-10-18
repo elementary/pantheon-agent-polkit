@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 14:19-0700\n"
+"POT-Creation-Date: 2018-10-18 10:27+0200\n"
 "PO-Revision-Date: 2016-07-29 21:18+0000\n"
 "Last-Translator: Hillol Debnath <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,20 +25,20 @@ msgstr "পরিচয় নিশ্চিতকরণ প্রয়োজন"
 msgid "Password"
 msgstr ""
 
-#: src/PolkitDialog.vala:133
+#: src/PolkitDialog.vala:136
 msgid "Cancel"
 msgstr "বাতিল করুন"
 
-#: src/PolkitDialog.vala:136
+#: src/PolkitDialog.vala:139
 msgid "Authenticate"
 msgstr "পরিচয় নিশ্চিতকরণ"
 
-#: src/PolkitDialog.vala:197
+#: src/PolkitDialog.vala:200
 #, fuzzy, c-format
 msgid "Group: %s"
 msgstr "গ্রূপ:"
 
-#: src/PolkitDialog.vala:293
+#: src/PolkitDialog.vala:296
 msgid "Authentication failed. Please try again."
 msgstr "পরিচয় নিশ্চিতকরণ ব্যর্থ হয়েছে। আবার চেষ্টা করুন।"
 
