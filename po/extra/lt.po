@@ -8,15 +8,19 @@ msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 14:20-0700\n"
-"PO-Revision-Date: 2016-08-02 11:43+0000\n"
+"PO-Revision-Date: 2019-05-17 11:14+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
-"Language-Team: Lithuanian <lt@li.org>\n"
+"Language-Team: Lithuanian <https://l10n.elementary.io/projects/desktop/"
+"polkit-agent-extra/lt/>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > "
+"19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? "
+"1 : 2);\n"
+"X-Generator: Weblate 3.6.1\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:08+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: data/io.elementary.pantheon-agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
@@ -24,10 +28,9 @@ msgstr "Tapatybės nustatymo langas"
 
 #: data/io.elementary.pantheon-agent-polkit.desktop.in.in:5
 msgid "dialog-password"
-msgstr ""
+msgstr "dialog-password"
 
 #: data/io.elementary.pantheon-agent-polkit-daemon.desktop.in:3
 #: data/io.elementary.pantheon-agent-polkit-daemon.desktop.in:4
-#, fuzzy
 msgid "PolicyKit Authentication Agent"
-msgstr "Tapatybės nustatymo langas"
+msgstr "PolicyKit tapatybės nustatymo agentas"
