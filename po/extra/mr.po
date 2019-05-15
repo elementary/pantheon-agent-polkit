@@ -8,23 +8,26 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 14:20-0700\n"
-"PO-Revision-Date: 2018-05-07 08:35-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2019-05-17 11:14+0000\n"
+"Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
+"Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/"
+"polkit-agent-extra/mr/>\n"
 "Language: mr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.6.1\n"
 
 #: data/io.elementary.pantheon-agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
-msgstr ""
+msgstr "प्रमाणीकरण संवाद"
 
 #: data/io.elementary.pantheon-agent-polkit.desktop.in.in:5
 msgid "dialog-password"
-msgstr ""
+msgstr "dialog-password"
 
 #: data/io.elementary.pantheon-agent-polkit-daemon.desktop.in:3
 #: data/io.elementary.pantheon-agent-polkit-daemon.desktop.in:4
 msgid "PolicyKit Authentication Agent"
-msgstr ""
+msgstr "पॉलिसीकिट प्रमाणीकरण एजंट"
