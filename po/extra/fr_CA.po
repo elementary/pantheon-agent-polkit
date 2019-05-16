@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-07 08:35-0700\n"
+"POT-Creation-Date: 2018-10-13 14:20-0700\n"
 "PO-Revision-Date: 2016-08-19 13:14+0000\n"
 "Last-Translator: Nate <natejms@outlook.com>\n"
 "Language-Team: French (Canada) <fr_CA@li.org>\n"
@@ -18,16 +18,16 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-02-20 06:08+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 
-#: data/org.pantheon.agent-polkit.desktop.in.in:3
+#: data/io.elementary.pantheon-agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
 msgstr "Dialogue d'Authentification"
 
-#: data/org.pantheon.agent-polkit.desktop.in.in:5
+#: data/io.elementary.pantheon-agent-polkit.desktop.in.in:5
 msgid "dialog-password"
 msgstr ""
 
-#: data/org.pantheon.agent-polkit-daemon.desktop.in:3
-#: data/org.pantheon.agent-polkit-daemon.desktop.in:4
+#: data/io.elementary.pantheon-agent-polkit-daemon.desktop.in:3
+#: data/io.elementary.pantheon-agent-polkit-daemon.desktop.in:4
 #, fuzzy
 msgid "PolicyKit Authentication Agent"
 msgstr "Dialogue d'Authentification"

@@ -35,7 +35,7 @@ namespace Ag {
         }
 
         public override async bool initiate_authentication (string action_id, string message, string icon_name,
-            Polkit.Details details, string cookie, GLib.List<Polkit.Identity> identities, GLib.Cancellable? cancellable) {
+            Polkit.Details details, string cookie, GLib.List<Polkit.Identity> identities, GLib.Cancellable? cancellable) throws Polkit.Error {
             if (identities == null) {
                 return false;
             }
@@ -47,11 +47,16 @@ namespace Ag {
             yield;
 
             dialog.destroy ();
+
+            if (dialog.was_canceled) {
+                throw new Polkit.Error.CANCELLED ("Authentication dialog was dismissed by the user");
+            }
+
             return true;
         }
 
         private async bool register_with_session () {
-            var sclient = yield Utils.register_with_session ("org.pantheon.agent-polkit");
+            var sclient = yield Utils.register_with_session ("io.elementary.pantheon-agent-polkit");
             if (sclient == null) {
                 return false;
             }

@@ -1,5 +1,10 @@
-project('pantheon-agent-polkit', 'vala', 'c')
+project(
+    'io.elementary.pantheon-agent-polkit',
+    'vala', 'c',
+    version: '0.1.6'
+)
 
+install_path = join_paths(get_option('prefix'), get_option('libexecdir'), 'policykit-1-pantheon')
 i18n = import('i18n')
 
 add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format(meson.project_name()), language:'c')
@@ -25,12 +30,13 @@ executable(
     c_args: [
         '-DPOLKIT_AGENT_I_KNOW_API_IS_SUBJECT_TO_CHANGE',
     ],
-    install: true
+    install: true,
+    install_dir: install_path
 )
 
 conf_data = configuration_data()
 conf_data.set('EXEC_NAME', meson.project_name())
-conf_data.set('PKEXECDIR', join_paths(get_option('prefix'), get_option('libexecdir'), 'policykit-1-pantheon'))
+conf_data.set('PKEXECDIR', install_path)
 
 subdir('data')
 subdir('po')

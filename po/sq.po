@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-07 08:34-0700\n"
+"POT-Creation-Date: 2018-10-18 10:27+0200\n"
 "PO-Revision-Date: 2016-08-29 23:27+0000\n"
 "Last-Translator: Indrit Bashkimi <indrit.bashkimi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,32 +13,32 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-02-20 06:07+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 
-#: src/PolkitDialog.vala:52
+#: src/PolkitDialog.vala:53
 msgid "Authentication Dialog"
 msgstr ""
 
-#: src/PolkitDialog.vala:65
+#: src/PolkitDialog.vala:67
 msgid "Authentication Required"
 msgstr "Kërkohet identifikimi"
 
-#: src/PolkitDialog.vala:79
+#: src/PolkitDialog.vala:81
 msgid "Password"
 msgstr ""
 
-#: src/PolkitDialog.vala:131
+#: src/PolkitDialog.vala:136
 msgid "Cancel"
 msgstr "Anulo"
 
-#: src/PolkitDialog.vala:134
+#: src/PolkitDialog.vala:139
 msgid "Authenticate"
 msgstr "Identifiko"
 
-#: src/PolkitDialog.vala:195
+#: src/PolkitDialog.vala:200
 #, c-format
 msgid "Group: %s"
 msgstr "Grupi: %s"
 
-#: src/PolkitDialog.vala:292
+#: src/PolkitDialog.vala:296
 msgid "Authentication failed. Please try again."
 msgstr "Identifikimi dështoi. Provo përsëri."
 

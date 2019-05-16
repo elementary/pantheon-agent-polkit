@@ -2,42 +2,44 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-07 08:34-0700\n"
-"PO-Revision-Date: 2016-07-28 02:23+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2018-10-18 10:27+0200\n"
+"PO-Revision-Date: 2018-10-27 13:50+0000\n"
+"Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
+"Language-Team: Marathi <https://weblate.elementary.io/projects/desktop/"
+"pantheon-agent-polkit/mr/>\n"
+"Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:07+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
-#: src/PolkitDialog.vala:52
+#: src/PolkitDialog.vala:53
 msgid "Authentication Dialog"
-msgstr ""
+msgstr "प्रमाणीकरण संवाद"
 
-#: src/PolkitDialog.vala:65
+#: src/PolkitDialog.vala:67
 msgid "Authentication Required"
-msgstr ""
+msgstr "प्रमाणीकरण आवश्यक"
 
-#: src/PolkitDialog.vala:79
+#: src/PolkitDialog.vala:81
 msgid "Password"
-msgstr ""
+msgstr "पासवर्ड"
 
-#: src/PolkitDialog.vala:131
+#: src/PolkitDialog.vala:136
 msgid "Cancel"
-msgstr ""
+msgstr "रद्द"
 
-#: src/PolkitDialog.vala:134
+#: src/PolkitDialog.vala:139
 msgid "Authenticate"
-msgstr ""
+msgstr "प्रमाणित करा"
 
-#: src/PolkitDialog.vala:195
+#: src/PolkitDialog.vala:200
 #, c-format
 msgid "Group: %s"
-msgstr ""
+msgstr "गटः%s"
 
-#: src/PolkitDialog.vala:292
+#: src/PolkitDialog.vala:296
 msgid "Authentication failed. Please try again."
-msgstr ""
+msgstr "प्रमाणीकरण अयशस्वी. कृपया पुन्हा प्रयत्न करा."

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the pantheon-agent-polkit package.
+# This file is distributed under the same license as the io.elementary.pantheon-agent-polkit package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: pantheon-agent-polkit\n"
+"Project-Id-Version: io.elementary.pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-07 08:34-0700\n"
+"POT-Creation-Date: 2018-10-18 10:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,31 +17,31 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/PolkitDialog.vala:52
+#: src/PolkitDialog.vala:53
 msgid "Authentication Dialog"
 msgstr ""
 
-#: src/PolkitDialog.vala:65
+#: src/PolkitDialog.vala:67
 msgid "Authentication Required"
 msgstr ""
 
-#: src/PolkitDialog.vala:79
+#: src/PolkitDialog.vala:81
 msgid "Password"
 msgstr ""
 
-#: src/PolkitDialog.vala:131
+#: src/PolkitDialog.vala:136
 msgid "Cancel"
 msgstr ""
 
-#: src/PolkitDialog.vala:134
+#: src/PolkitDialog.vala:139
 msgid "Authenticate"
 msgstr ""
 
-#: src/PolkitDialog.vala:195
+#: src/PolkitDialog.vala:200
 #, c-format
 msgid "Group: %s"
 msgstr ""
 
-#: src/PolkitDialog.vala:292
+#: src/PolkitDialog.vala:296
 msgid "Authentication failed. Please try again."
 msgstr ""

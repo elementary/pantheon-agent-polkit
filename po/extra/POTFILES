@@ -1,2 +1,2 @@
-data/org.pantheon.agent-polkit.desktop.in.in
-data/org.pantheon.agent-polkit-daemon.desktop.in
+data/io.elementary.pantheon-agent-polkit.desktop.in.in
+data/io.elementary.pantheon-agent-polkit-daemon.desktop.in

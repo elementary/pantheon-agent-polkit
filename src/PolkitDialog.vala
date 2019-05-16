@@ -26,6 +26,7 @@
 namespace Ag.Widgets {
     public class PolkitDialog : Gtk.Dialog {
         public signal void done ();
+        public bool was_canceled = false;
 
         public Act.User? user { get; construct; }
         private PolkitAgent.Session? pk_session = null;
@@ -60,6 +61,7 @@ namespace Ag.Widgets {
             idents = _idents;
             cookie = _cookie;
             cancellable = _cancellable;
+            cancellable.cancelled.connect (cancel);
 
             set_keep_above (true);
 
@@ -80,7 +82,10 @@ namespace Ag.Widgets {
             password_entry.primary_icon_tooltip_text = _("Password");
 
             password_feedback = new Gtk.Label (null);
-            password_feedback.halign = Gtk.Align.END;
+            password_feedback.justify = Gtk.Justification.RIGHT;
+            password_feedback.max_width_chars = 40;
+            password_feedback.wrap = true;
+            password_feedback.xalign = 1;
             password_feedback.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
 
             feedback_revealer = new Gtk.Revealer ();
@@ -257,13 +262,12 @@ namespace Ag.Widgets {
 
         private void cancel () {
             canceling = true;
-            if (!cancellable.is_cancelled ()) {
-                cancellable.cancel ();
-            }
-
             if (pk_session != null) {
                 pk_session.cancel ();
             }
+
+            debug ("Authentication cancelled");
+            was_canceled = true;
 
             canceling = false;
             done ();

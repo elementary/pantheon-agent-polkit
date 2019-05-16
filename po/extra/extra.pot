@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-07 08:35-0700\n"
+"POT-Creation-Date: 2018-10-13 14:20-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: data/org.pantheon.agent-polkit.desktop.in.in:3
+#: data/io.elementary.pantheon-agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
 msgstr ""
 
-#: data/org.pantheon.agent-polkit.desktop.in.in:5
+#: data/io.elementary.pantheon-agent-polkit.desktop.in.in:5
 msgid "dialog-password"
 msgstr ""
 
-#: data/org.pantheon.agent-polkit-daemon.desktop.in:3
-#: data/org.pantheon.agent-polkit-daemon.desktop.in:4
+#: data/io.elementary.pantheon-agent-polkit-daemon.desktop.in:3
+#: data/io.elementary.pantheon-agent-polkit-daemon.desktop.in:4
 msgid "PolicyKit Authentication Agent"
 msgstr ""
