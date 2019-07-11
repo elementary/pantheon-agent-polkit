@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:44+0200\n"
-"PO-Revision-Date: 2019-07-02 22:46+0000\n"
+"PO-Revision-Date: 2019-07-12 05:46+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/desktop/"
 "pantheon-agent-polkit/eo/>\n"
@@ -17,15 +17,15 @@ msgstr ""
 
 #: src/PolkitDialog.vala:53
 msgid "Authentication Dialog"
-msgstr ""
+msgstr "Aŭtentiga dialogo"
 
 #: src/PolkitDialog.vala:67
 msgid "Authentication Required"
-msgstr ""
+msgstr "Necesas aŭtentigo"
 
 #: src/PolkitDialog.vala:81
 msgid "Password"
-msgstr ""
+msgstr "Pasvorto"
 
 #: src/PolkitDialog.vala:136
 msgid "Cancel"
@@ -33,13 +33,13 @@ msgstr "Rezigni"
 
 #: src/PolkitDialog.vala:139
 msgid "Authenticate"
-msgstr ""
+msgstr "Aŭtentigi"
 
 #: src/PolkitDialog.vala:200
 #, c-format
 msgid "Group: %s"
-msgstr ""
+msgstr "Grupo: %s"
 
 #: src/PolkitDialog.vala:296
 msgid "Authentication failed. Please try again."
-msgstr ""
+msgstr "Malsukcesis aŭtentigo. Reprovu."
