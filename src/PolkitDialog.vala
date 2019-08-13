@@ -77,6 +77,7 @@ namespace Ag.Widgets {
 
             password_entry = new Gtk.Entry ();
             password_entry.hexpand = true;
+            password_entry.input_purpose = Gtk.InputPurpose.PASSWORD;
             password_entry.primary_icon_name = "dialog-password-symbolic";
             password_entry.primary_icon_tooltip_text = _("Password");
 
