@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:44+0200\n"
 "PO-Revision-Date: 2019-09-10 17:22+0000\n"
-"Last-Translator: James Qian <sotux82@gmail.com>\n"
+"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Chinese <https://l10n.elementary.io/projects/desktop/"
 "polkit-agent-extra/zh/>\n"
 "Language: zh\n"
@@ -25,7 +25,7 @@ msgstr "验证对话框"
 
 #: data/io.elementary.pantheon-agent-polkit.desktop.in.in:5
 msgid "dialog-password"
-msgstr ""
+msgstr "dialog-password"
 
 #: data/io.elementary.pantheon-agent-polkit-daemon.desktop.in:3
 #: data/io.elementary.pantheon-agent-polkit-daemon.desktop.in:4
