@@ -37,5 +37,5 @@ namespace Ag {
         public signal void query_end_session (uint flags);
         public signal void end_session (uint flags);
         public signal void cancel_end_session ();
-    }    
+    }
 }
