@@ -1,5 +1,5 @@
 project(
-    'io.elementary.pantheon-agent-polkit',
+    'io.elementary.desktop.agent-polkit',
     'vala', 'c',
     version: '0.1.6'
 )
