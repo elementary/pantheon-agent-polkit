@@ -1,2 +1,3 @@
 data/io.elementary.pantheon-agent-polkit.desktop.in.in
 data/io.elementary.pantheon-agent-polkit-daemon.desktop.in
+data/agent-polkit.appdata.xml.in
