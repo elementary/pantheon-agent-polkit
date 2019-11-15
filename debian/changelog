@@ -1,3 +1,25 @@
+pantheon-agent-polkit (1.0.0) bionic; urgency=medium
+
+  * Release 1.0.0 (#53)
+  * Appdata (#52)
+  * Add Release to Actions
+  * Add Gettext Updates to Actions
+  * Add Lint to CI (#50)
+  * Fix code style issues
+  * run installation in CI (#51)
+  * Build with GitHub CI (#49)
+  * Delete CODE_OF_CONDUCT.md
+  * Delete FUNDING.yml
+  * PolkitDialog: Rewrite as Granite.MessageDialog subclass (#46)
+  * Fix DBus warning
+  * PolkitDialog: Set InputPurpose to PASSWORD (#47)
+  * Fix merge conflicts
+  * Add Silesian and update translation template
+  * Create FUNDING.yml
+  * Travis: use juno-unstable docker container
+
+ -- Cody Garver <cody@elementary.io>  Fri, 15 Nov 2019 21:55:46 +0000
+
 pantheon-agent-polkit (0.1.6) bionic; urgency=medium
 
   * New upstream release.
