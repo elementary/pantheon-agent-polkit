@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:44+0200\n"
-"PO-Revision-Date: 2019-08-13 18:22+0000\n"
+"PO-Revision-Date: 2020-03-30 18:09+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop/"
 "polkit-agent-extra/pt/>\n"
@@ -17,16 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:08+0000\n"
 
 #: data/io.elementary.pantheon-agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
-msgstr "Janela de Autenticação"
+msgstr "Janela de autenticação"
 
 #: data/io.elementary.pantheon-agent-polkit.desktop.in.in:5
 msgid "dialog-password"
-msgstr "senha-diálogo"
+msgstr "palavra-passe-diálogo"
 
 #: data/io.elementary.pantheon-agent-polkit-daemon.desktop.in:3
 #: data/io.elementary.pantheon-agent-polkit-daemon.desktop.in:4
