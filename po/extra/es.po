@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:44+0200\n"
-"PO-Revision-Date: 2019-10-06 14:23+0000\n"
-"Last-Translator: Daniel R. <riesp@pm.me>\n"
+"PO-Revision-Date: 2020-04-01 07:09+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/"
 "polkit-agent-extra/es/>\n"
 "Language: es\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:08+0000\n"
 
 #: data/io.elementary.pantheon-agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
-msgstr "Diálogo de Autenticación"
+msgstr "Diálogo de autenticación"
 
 #: data/io.elementary.pantheon-agent-polkit.desktop.in.in:5
 msgid "dialog-password"
@@ -31,4 +31,4 @@ msgstr "dialog-password"
 #: data/io.elementary.pantheon-agent-polkit-daemon.desktop.in:3
 #: data/io.elementary.pantheon-agent-polkit-daemon.desktop.in:4
 msgid "PolicyKit Authentication Agent"
-msgstr "Agente de autentificación de PolicyKit"
+msgstr "Agente de autenticación de PolicyKit"
