@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:44+0200\n"
+"POT-Creation-Date: 2020-04-01 17:02+0000\n"
 "PO-Revision-Date: 2019-09-10 17:22+0000\n"
 "Last-Translator: jafaree <xalid.cefer36@gmail.com>\n"
 "Language-Team: Azerbaijani <https://l10n.elementary.io/projects/desktop/"
@@ -19,15 +19,38 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.7.1\n"
 
-#: data/io.elementary.pantheon-agent-polkit.desktop.in.in:3
+#: data/agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
 msgstr "Kimlik doğrulama informasiya qutusu"
 
-#: data/io.elementary.pantheon-agent-polkit.desktop.in.in:5
+#: data/agent-polkit.desktop.in.in:5
 msgid "dialog-password"
 msgstr "dialog-password"
 
-#: data/io.elementary.pantheon-agent-polkit-daemon.desktop.in:3
-#: data/io.elementary.pantheon-agent-polkit-daemon.desktop.in:4
+#: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
 msgid "PolicyKit Authentication Agent"
 msgstr "PolicyKit Kimlik tesdiqleme aleti"
+
+#: data/agent-polkit.appdata.xml.in:8
+#, fuzzy
+#| msgid "PolicyKit Authentication Agent"
+msgid "Authentication Agent"
+msgstr "PolicyKit Kimlik tesdiqleme aleti"
+
+#: data/agent-polkit.appdata.xml.in:9
+msgid "Approve or deny access to administrative powers"
+msgstr ""
+
+#: data/agent-polkit.appdata.xml.in:11
+msgid ""
+"The authentication agent appears whenever an application wants to request "
+"permission to use administrative powers."
+msgstr ""
+
+#: data/agent-polkit.appdata.xml.in:17
+msgid "Updated translations"
+msgstr ""
+
+#: data/agent-polkit.appdata.xml.in:55
+msgid "elementary, Inc."
+msgstr ""
