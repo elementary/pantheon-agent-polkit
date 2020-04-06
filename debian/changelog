@@ -1,3 +1,13 @@
+pantheon-agent-polkit (1.0.1) bionic; urgency=medium
+
+  * Release 1.0.1 (#55)
+  * Update translation files
+  * Update translation files
+  * Update translation template
+  * Fix pot file
+
+ -- Cody Garver <cody@elementary.io>  Mon, 06 Apr 2020 17:14:00 +0000
+
 pantheon-agent-polkit (1.0.0) bionic; urgency=medium
 
   * Release 1.0.0 (#53)
