@@ -11,6 +11,13 @@
     <p>The authentication agent appears whenever an application wants to request permission to use administrative powers.</p>
   </description>
   <releases>
+    <release version="1.0.1" date="2020-04-06" urgency="medium">
+      <description>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.0.0" date="2019-11-15" urgency="medium">
       <description>
         <ul>
