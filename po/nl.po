@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:44+0200\n"
+"POT-Creation-Date: 2020-04-01 17:03+0000\n"
 "PO-Revision-Date: 2017-04-09 16:42+0000\n"
 "Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
 "Language-Team: Dutch <http://weblate.elementary.io/projects/desktop/pantheon-"
@@ -19,28 +19,28 @@ msgstr ""
 msgid "Authentication Dialog"
 msgstr "Authenticatie dialoog"
 
-#: src/PolkitDialog.vala:67
+#: src/PolkitDialog.vala:61
 msgid "Authentication Required"
 msgstr "Authenticatie vereist"
 
-#: src/PolkitDialog.vala:81
+#: src/PolkitDialog.vala:70
 msgid "Password"
 msgstr "Wachtwoord"
 
-#: src/PolkitDialog.vala:136
+#: src/PolkitDialog.vala:111
 msgid "Cancel"
 msgstr "Annuleren"
 
-#: src/PolkitDialog.vala:139
+#: src/PolkitDialog.vala:114
 msgid "Authenticate"
 msgstr "Authenticeer"
 
-#: src/PolkitDialog.vala:200
+#: src/PolkitDialog.vala:168
 #, c-format
 msgid "Group: %s"
 msgstr "Groep: %s"
 
-#: src/PolkitDialog.vala:296
+#: src/PolkitDialog.vala:264
 msgid "Authentication failed. Please try again."
 msgstr "Authenticatie mislukt. Gelieve opnieuw te proberen."
 

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the io.elementary.pantheon-agent-polkit package.
+# This file is distributed under the same license as the io.elementary.desktop.agent-polkit package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: io.elementary.pantheon-agent-polkit\n"
+"Project-Id-Version: io.elementary.desktop.agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:44+0200\n"
+"POT-Creation-Date: 2020-04-01 17:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,27 +21,27 @@ msgstr ""
 msgid "Authentication Dialog"
 msgstr ""
 
-#: src/PolkitDialog.vala:67
+#: src/PolkitDialog.vala:61
 msgid "Authentication Required"
 msgstr ""
 
-#: src/PolkitDialog.vala:81
+#: src/PolkitDialog.vala:70
 msgid "Password"
 msgstr ""
 
-#: src/PolkitDialog.vala:136
+#: src/PolkitDialog.vala:111
 msgid "Cancel"
 msgstr ""
 
-#: src/PolkitDialog.vala:139
+#: src/PolkitDialog.vala:114
 msgid "Authenticate"
 msgstr ""
 
-#: src/PolkitDialog.vala:200
+#: src/PolkitDialog.vala:168
 #, c-format
 msgid "Group: %s"
 msgstr ""
 
-#: src/PolkitDialog.vala:296
+#: src/PolkitDialog.vala:264
 msgid "Authentication failed. Please try again."
 msgstr ""

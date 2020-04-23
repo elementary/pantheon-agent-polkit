@@ -26,16 +26,16 @@
 namespace Ag {
     [DBus (name = "org.gnome.SessionManager")]
     public interface SessionManager : Object {
-        public abstract async ObjectPath register_client (string app_id, string client_start_id) throws IOError;
+        public abstract async ObjectPath register_client (string app_id, string client_start_id) throws GLib.Error;
     }
 
     [DBus (name = "org.gnome.SessionManager.ClientPrivate")]
     public interface SessionClient : Object {
-        public abstract void end_session_response (bool is_ok, string reason) throws IOError;
+        public abstract void end_session_response (bool is_ok, string reason) throws GLib.Error;
 
         public signal void stop ();
         public signal void query_end_session (uint flags);
         public signal void end_session (uint flags);
         public signal void cancel_end_session ();
-    }    
+    }
 }

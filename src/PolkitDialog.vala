@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2015-2018 elementary LLC.
+ * Copyright (c) 2015-2019 elementary, Inc. (https://elementary.io)
  * Copyright (C) 2015-2016 Ikey Doherty <ikey@solus-project.com>
  *
  * This program is free software: you can redistribute it and/or modify
@@ -24,7 +24,7 @@
  */
 
 namespace Ag.Widgets {
-    public class PolkitDialog : Gtk.Dialog {
+    public class PolkitDialog : Granite.MessageDialog {
         public signal void done ();
         public bool was_canceled = false;
 
@@ -50,11 +50,7 @@ namespace Ag.Widgets {
         public PolkitDialog (string message, string icon_name, string _cookie,
                              List<Polkit.Identity?>? _idents, GLib.Cancellable _cancellable) {
             Object (
-                title: _("Authentication Dialog"),
-                window_position: Gtk.WindowPosition.CENTER,
-                resizable: false,
-                deletable: false,
-                skip_taskbar_hint: true
+                title: _("Authentication Dialog")
             );
 
             idents = _idents;
@@ -62,21 +58,14 @@ namespace Ag.Widgets {
             cancellable = _cancellable;
             cancellable.cancelled.connect (cancel);
 
+            primary_text = _("Authentication Required");
+            secondary_text = message;
+            skip_taskbar_hint = true;
             set_keep_above (true);
-
-            var heading = new Gtk.Label (_("Authentication Required"));
-            heading.get_style_context ().add_class ("primary");
-            heading.valign = Gtk.Align.END;
-            heading.xalign = 0;
-
-            var message_label = new Gtk.Label (message);
-            message_label.max_width_chars = 60;
-            message_label.wrap = true;
-            message_label.valign = Gtk.Align.START;
-            message_label.xalign = 0;
 
             password_entry = new Gtk.Entry ();
             password_entry.hexpand = true;
+            password_entry.input_purpose = Gtk.InputPurpose.PASSWORD;
             password_entry.primary_icon_name = "dialog-password-symbolic";
             password_entry.primary_icon_tooltip_text = _("Password");
 
@@ -107,47 +96,26 @@ namespace Ag.Widgets {
             var credentials_grid = new Gtk.Grid ();
             credentials_grid.column_spacing = 12;
             credentials_grid.row_spacing = 6;
-            credentials_grid.margin_top = 12;
             credentials_grid.attach (idents_combo, 0, 0, 1, 1);
             credentials_grid.attach (password_entry, 0, 2, 1, 1);
             credentials_grid.attach (feedback_revealer, 0, 3, 1, 1);
 
-            var image = new Gtk.Image.from_icon_name ("dialog-password", Gtk.IconSize.DIALOG);
-
-            var overlay = new Gtk.Overlay ();
-            overlay.valign = Gtk.Align.START;
-            overlay.add (image);
+            image_icon = new ThemedIcon ("dialog-password");
 
             if (icon_name != "" && Gtk.IconTheme.get_default ().has_icon (icon_name)) {
-                var overlay_image = new Gtk.Image.from_icon_name (icon_name, Gtk.IconSize.LARGE_TOOLBAR);
-                overlay_image.halign = overlay_image.valign = Gtk.Align.END;
-                overlay.add_overlay (overlay_image);
+                badge_icon = new ThemedIcon (icon_name);
             }
 
-            var grid = new Gtk.Grid ();
-            grid.column_spacing = 12;
-            grid.row_spacing = 6;
-            grid.margin_left = grid.margin_right = 12;
-            grid.attach (overlay, 0, 0, 1, 2);
-            grid.attach (heading, 1, 0, 1, 1);
-            grid.attach (message_label, 1, 1, 1, 1);
-            grid.attach (credentials_grid, 1, 2, 1, 1);
+            custom_bin.add (credentials_grid);
 
             var cancel_button = (Gtk.Button)add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
             cancel_button.clicked.connect (() => cancel ());
 
             var authenticate_button = (Gtk.Button)add_button (_("Authenticate"), Gtk.ResponseType.APPLY);
-            authenticate_button.get_style_context ().add_class ("suggested-action");
+            authenticate_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
             authenticate_button.clicked.connect (authenticate);
 
             set_default (authenticate_button);
-
-            get_content_area ().add (grid);
-
-            var action_area = get_action_area ();
-            action_area.margin_right = 6;
-            action_area.margin_bottom = 6;
-            action_area.margin_top = 14;
 
             key_release_event.connect (on_key_release);
             close.connect (cancel);

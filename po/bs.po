@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:44+0200\n"
+"POT-Creation-Date: 2020-04-01 17:03+0000\n"
 "PO-Revision-Date: 2018-11-03 12:52+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/desktop/"
@@ -20,27 +20,27 @@ msgstr ""
 msgid "Authentication Dialog"
 msgstr "Dijalog autentifikacije"
 
-#: src/PolkitDialog.vala:67
+#: src/PolkitDialog.vala:61
 msgid "Authentication Required"
 msgstr "Potrebna je autentifikacija"
 
-#: src/PolkitDialog.vala:81
+#: src/PolkitDialog.vala:70
 msgid "Password"
 msgstr "Lozinka"
 
-#: src/PolkitDialog.vala:136
+#: src/PolkitDialog.vala:111
 msgid "Cancel"
 msgstr "Otkaži"
 
-#: src/PolkitDialog.vala:139
+#: src/PolkitDialog.vala:114
 msgid "Authenticate"
 msgstr "Autentificiraj"
 
-#: src/PolkitDialog.vala:200
+#: src/PolkitDialog.vala:168
 #, c-format
 msgid "Group: %s"
 msgstr "Grupa: %s"
 
-#: src/PolkitDialog.vala:296
+#: src/PolkitDialog.vala:264
 msgid "Authentication failed. Please try again."
 msgstr "Neuspješna autentifikacija. Pokušajte opet."

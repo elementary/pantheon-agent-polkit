@@ -1,5 +1,5 @@
 # Pantheon Polkit Agent
-[![Translation status](https://l10n.elementary.io/widgets/desktop/pantheon-agent-polkit/svg-badge.svg)](https://l10n.elementary.io/projects/desktop/pantheon-agent-polkit/?utm_source=widget)
+[![Translation status](https://l10n.elementary.io/widgets/desktop/-/pantheon-agent-polkit/svg-badge.svg)](https://l10n.elementary.io/engage/desktop/?utm_source=widget)
 
 ## Building, Testing, and Installation
 

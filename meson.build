@@ -1,7 +1,7 @@
 project(
-    'io.elementary.pantheon-agent-polkit',
+    'io.elementary.desktop.agent-polkit',
     'vala', 'c',
-    version: '0.1.6'
+    version: '1.0.1'
 )
 
 install_path = join_paths(get_option('prefix'), get_option('libexecdir'), 'policykit-1-pantheon')
@@ -18,6 +18,7 @@ executable(
     dependencies: [
         dependency('glib-2.0'),
         dependency('gobject-2.0'),
+        dependency('granite', version: '>=5.2.0'),
         dependency('gtk+-3.0'),
         dependency('polkit-agent-1'),
         dependency('polkit-gobject-1'),

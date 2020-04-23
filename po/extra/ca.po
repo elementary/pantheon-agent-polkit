@@ -7,28 +7,51 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:44+0200\n"
-"PO-Revision-Date: 2019-05-17 11:14+0000\n"
+"POT-Creation-Date: 2020-04-01 17:02+0000\n"
+"PO-Revision-Date: 2020-04-03 12:10+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/polkit-"
-"agent-extra/ca/>\n"
+"Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/"
+"polkit-agent-extra/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:08+0000\n"
 
-#: data/io.elementary.pantheon-agent-polkit.desktop.in.in:3
+#: data/agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
 msgstr "Diàleg d'autenticació"
 
-#: data/io.elementary.pantheon-agent-polkit.desktop.in.in:5
+#: data/agent-polkit.desktop.in.in:5
 msgid "dialog-password"
 msgstr "diàleg-contrasenya"
 
-#: data/io.elementary.pantheon-agent-polkit-daemon.desktop.in:3
-#: data/io.elementary.pantheon-agent-polkit-daemon.desktop.in:4
+#: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
 msgid "PolicyKit Authentication Agent"
 msgstr "Diàleg d'autenticació de PolicyKit"
+
+#: data/agent-polkit.appdata.xml.in:8
+msgid "Authentication Agent"
+msgstr "Agent d'autenticació"
+
+#: data/agent-polkit.appdata.xml.in:9
+msgid "Approve or deny access to administrative powers"
+msgstr "Aproveu o denegueu accés a poders administratius."
+
+#: data/agent-polkit.appdata.xml.in:11
+msgid ""
+"The authentication agent appears whenever an application wants to request "
+"permission to use administrative powers."
+msgstr ""
+"L’agent d’autenticació apareix sempre que una aplicació vol sol·licitar "
+"permís per utilitzar poders administratius."
+
+#: data/agent-polkit.appdata.xml.in:17
+msgid "Updated translations"
+msgstr "Traduccions actualitzades"
+
+#: data/agent-polkit.appdata.xml.in:55
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
