@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-01 17:02+0000\n"
-"PO-Revision-Date: 2020-05-25 19:11+0000\n"
+"PO-Revision-Date: 2020-05-26 20:11+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/desktop/"
 "polkit-agent-extra/da/>\n"
@@ -21,29 +21,31 @@ msgstr ""
 
 #: data/agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
-msgstr ""
+msgstr "Autentificeringsdialog"
 
 #: data/agent-polkit.desktop.in.in:5
 msgid "dialog-password"
-msgstr ""
+msgstr "dialog-adgangskode"
 
 #: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
 msgid "PolicyKit Authentication Agent"
-msgstr ""
+msgstr "PolicyKit Godkendelses Agent"
 
 #: data/agent-polkit.appdata.xml.in:8
 msgid "Authentication Agent"
-msgstr ""
+msgstr "Godkendelses Agent"
 
 #: data/agent-polkit.appdata.xml.in:9
 msgid "Approve or deny access to administrative powers"
-msgstr ""
+msgstr "Godkend eller nægt adgang til administrative beføjelser"
 
 #: data/agent-polkit.appdata.xml.in:11
 msgid ""
 "The authentication agent appears whenever an application wants to request "
 "permission to use administrative powers."
 msgstr ""
+"Autentificerings agenten vises, når en applikation ønsker at anmode om "
+"tilladelse til at bruge administrative beføjelser."
 
 #: data/agent-polkit.appdata.xml.in:17
 msgid "Updated translations"
@@ -51,4 +53,4 @@ msgstr "Opdaterede oversættelser"
 
 #: data/agent-polkit.appdata.xml.in:55
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Incorporated."
