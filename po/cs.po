@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-01 17:03+0000\n"
-"PO-Revision-Date: 2020-05-11 19:10+0000\n"
+"PO-Revision-Date: 2020-05-28 18:48+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/desktop/"
 "pantheon-agent-polkit/cs/>\n"
@@ -17,11 +17,11 @@ msgstr ""
 
 #: src/PolkitDialog.vala:53
 msgid "Authentication Dialog"
-msgstr "Dialog ověření se"
+msgstr "Dialog pro ověření se"
 
 #: src/PolkitDialog.vala:61
 msgid "Authentication Required"
-msgstr "Je vyžadováno ověření"
+msgstr "Je vyžadováno ověření se"
 
 #: src/PolkitDialog.vala:70
 msgid "Password"
