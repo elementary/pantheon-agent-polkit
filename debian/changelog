@@ -1,3 +1,10 @@
+pantheon-agent-polkit (1.0.2) bionic; urgency=medium
+
+  * Release 1.0.2 (#57)
+  * Support system-wide dark preference (#42)
+
+ -- Cody Garver <cody@elementary.io>  Thu, 28 May 2020 18:48:40 +0000
+
 pantheon-agent-polkit (1.0.1) bionic; urgency=medium
 
   * Release 1.0.1 (#55)
