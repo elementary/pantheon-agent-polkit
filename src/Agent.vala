@@ -1,6 +1,6 @@
 /*-
  * Copyright (c) 2015-2016 elementary LLC.
- * Copyright (C) 2015-2016 Ikey Doherty <ikey@solus-project.com>   
+ * Copyright (C) 2015-2016 Ikey Doherty <ikey@solus-project.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -61,8 +61,8 @@ namespace Ag {
                 return false;
             }
 
-            sclient.query_end_session.connect (session_respond);
-            sclient.end_session.connect (session_respond);
+            sclient.query_end_session.connect ((flags) => session_respond (sclient, flags));
+            sclient.end_session.connect ((flags) => session_respond (sclient, flags));
             sclient.stop.connect (session_stop);
 
             return true;
