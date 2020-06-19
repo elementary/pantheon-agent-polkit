@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-01 17:03+0000\n"
+"POT-Creation-Date: 2020-06-19 19:02+0000\n"
 "PO-Revision-Date: 2016-12-13 11:16+0000\n"
 "Last-Translator: Marius Albina <marius.albina@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,12 +33,12 @@ msgstr "Anulează"
 msgid "Authenticate"
 msgstr "Autentificare"
 
-#: src/PolkitDialog.vala:168
+#: src/PolkitDialog.vala:177
 #, c-format
 msgid "Group: %s"
 msgstr "Grup: %s"
 
-#: src/PolkitDialog.vala:264
+#: src/PolkitDialog.vala:273
 msgid "Authentication failed. Please try again."
 msgstr "Autentificare eșuată. Reîncercați."
 
