@@ -1,3 +1,10 @@
+pantheon-agent-polkit (1.0.3) bionic; urgency=medium
+
+  * Release 1.0.3 (#59)
+  * Fix end-session signal signature (#58)
+
+ -- Cody Garver <cody@elementary.io>  Fri, 19 Jun 2020 19:03:01 +0000
+
 pantheon-agent-polkit (1.0.2) bionic; urgency=medium
 
   * Release 1.0.2 (#57)
