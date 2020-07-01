@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-19 19:02+0000\n"
-"PO-Revision-Date: 2020-06-20 07:25+0000\n"
+"PO-Revision-Date: 2020-07-02 02:55+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "polkit-agent-extra/ja/>\n"
@@ -50,7 +50,7 @@ msgstr ""
 
 #: data/agent-polkit.appdata.xml.in:17
 msgid "Fix a potential issue when ending the session"
-msgstr "セッション終了時に発生する可能性のある問題を修正"
+msgstr "セッション終了時に発生する可能性のある不具合を修正"
 
 #: data/agent-polkit.appdata.xml.in:18 data/agent-polkit.appdata.xml.in:25
 #: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
