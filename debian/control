@@ -16,5 +16,6 @@ Package: pantheon-agent-polkit
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends}
+Provides: polkit-1-auth-agent
 Description: Polkit authorization designed for Pantheon
  An agent for Polkit authorization designed for Pantheon desktop environment.
