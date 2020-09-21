@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-19 19:02+0000\n"
-"PO-Revision-Date: 2020-09-11 19:31+0000\n"
+"PO-Revision-Date: 2020-09-22 14:23+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/"
 "polkit-agent-extra/uk/>\n"
@@ -23,35 +23,35 @@ msgstr ""
 
 #: data/agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
-msgstr "Діолог автентифікації"
+msgstr "Запит автентифікації"
 
 #: data/agent-polkit.desktop.in.in:5
 msgid "dialog-password"
-msgstr ""
+msgstr "dialog-password"
 
 #: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
-#, fuzzy
 msgid "PolicyKit Authentication Agent"
-msgstr "Діолог автентифікації"
+msgstr "Служба автентифікації PolicyKit"
 
 #: data/agent-polkit.appdata.xml.in:8
-#, fuzzy
 msgid "Authentication Agent"
-msgstr "Діолог автентифікації"
+msgstr "Служба автентифікації"
 
 #: data/agent-polkit.appdata.xml.in:9
 msgid "Approve or deny access to administrative powers"
-msgstr ""
+msgstr "Затверджуйте або забороняйте доступ до прав адміністратора"
 
 #: data/agent-polkit.appdata.xml.in:11
 msgid ""
 "The authentication agent appears whenever an application wants to request "
 "permission to use administrative powers."
 msgstr ""
+"Служба автентифікації надсилає запит щоразу, коли застосунок хоче запитати "
+"дозвіл на отримання прав адміністратора."
 
 #: data/agent-polkit.appdata.xml.in:17
 msgid "Fix a potential issue when ending the session"
-msgstr ""
+msgstr "Виправлено загрозу проблеми завершення сеансу"
 
 #: data/agent-polkit.appdata.xml.in:18 data/agent-polkit.appdata.xml.in:25
 #: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
