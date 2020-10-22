@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-19 19:02+0000\n"
-"PO-Revision-Date: 2020-10-14 18:14+0000\n"
+"PO-Revision-Date: 2020-10-23 18:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/desktop/"
 "polkit-agent-extra/it/>\n"
@@ -26,31 +26,32 @@ msgstr "Finestra di autenticazione"
 
 #: data/agent-polkit.desktop.in.in:5
 msgid "dialog-password"
-msgstr ""
+msgstr "dialog-password"
 
 #: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
-#, fuzzy
 msgid "PolicyKit Authentication Agent"
-msgstr "Finestra di autenticazione"
+msgstr "Agente di autenticazione PolicyKit"
 
 #: data/agent-polkit.appdata.xml.in:8
-#, fuzzy
 msgid "Authentication Agent"
-msgstr "Finestra di autenticazione"
+msgstr "Agente di autenticazione"
 
 #: data/agent-polkit.appdata.xml.in:9
 msgid "Approve or deny access to administrative powers"
-msgstr ""
+msgstr "Approva o nega l'accesso ai permessi di amministratore"
 
 #: data/agent-polkit.appdata.xml.in:11
 msgid ""
 "The authentication agent appears whenever an application wants to request "
 "permission to use administrative powers."
 msgstr ""
+"L'agente di autenticazione viene visualizzato ogni volta che un'applicazione "
+"desidera richiedere l'autorizzazione per utilizzare i permessi di "
+"amministratore."
 
 #: data/agent-polkit.appdata.xml.in:17
 msgid "Fix a potential issue when ending the session"
-msgstr ""
+msgstr "Risolve un potenziale problema al termine della sessione"
 
 #: data/agent-polkit.appdata.xml.in:18 data/agent-polkit.appdata.xml.in:25
 #: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
