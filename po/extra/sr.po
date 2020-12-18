@@ -8,15 +8,18 @@ msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-19 19:02+0000\n"
-"PO-Revision-Date: 2016-10-20 07:26+0000\n"
+"PO-Revision-Date: 2020-12-19 10:16+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
-"Language-Team: Serbian <sr@li.org>\n"
+"Language-Team: Serbian <https://l10n.elementary.io/projects/desktop/"
+"polkit-agent-extra/sr/>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:08+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: data/agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
@@ -24,37 +27,37 @@ msgstr "Прозорче за потврђивање идентитета"
 
 #: data/agent-polkit.desktop.in.in:5
 msgid "dialog-password"
-msgstr ""
+msgstr "dialog-password"
 
 #: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
-#, fuzzy
 msgid "PolicyKit Authentication Agent"
-msgstr "Прозорче за потврђивање идентитета"
+msgstr "Агент потврђивања идентитета „PolicyKit“"
 
 #: data/agent-polkit.appdata.xml.in:8
-#, fuzzy
 msgid "Authentication Agent"
-msgstr "Прозорче за потврђивање идентитета"
+msgstr "Агент потврђивања идентитета"
 
 #: data/agent-polkit.appdata.xml.in:9
 msgid "Approve or deny access to administrative powers"
-msgstr ""
+msgstr "Прихвата или одбија приступ администраторским моћима"
 
 #: data/agent-polkit.appdata.xml.in:11
 msgid ""
 "The authentication agent appears whenever an application wants to request "
 "permission to use administrative powers."
 msgstr ""
+"Агент потврђивања идентитета се појављује кад год неки програм жели да "
+"затражи дозволу за коришћење администраторских моћи."
 
 #: data/agent-polkit.appdata.xml.in:17
 msgid "Fix a potential issue when ending the session"
-msgstr ""
+msgstr "Поправља могући проблем приликом завршавања сесије"
 
 #: data/agent-polkit.appdata.xml.in:18 data/agent-polkit.appdata.xml.in:25
 #: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
 msgid "Updated translations"
-msgstr ""
+msgstr "Освежени преводи"
 
 #: data/agent-polkit.appdata.xml.in:77
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
