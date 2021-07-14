@@ -1,6 +1,8 @@
 # Pantheon Polkit Agent
 [![Translation status](https://l10n.elementary.io/widgets/desktop/-/pantheon-agent-polkit/svg-badge.svg)](https://l10n.elementary.io/engage/desktop/?utm_source=widget)
 
+![](https://raw.githubusercontent.com/elementary/pantheon-agent-polkit/master/data/screenshot.png)
+
 ## Building, Testing, and Installation
 
 You'll need the following dependencies:
