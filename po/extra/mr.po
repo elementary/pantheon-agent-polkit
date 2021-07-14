@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-19 19:02+0000\n"
+"POT-Creation-Date: 2021-07-14 18:14+0000\n"
 "PO-Revision-Date: 2020-10-14 18:14+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
-"Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/"
-"polkit-agent-extra/mr/>\n"
+"Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/polkit-"
+"agent-extra/mr/>\n"
 "Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,15 +47,16 @@ msgstr ""
 "अनुप्रयोग जेव्हा प्रशासकीय शक्ती वापरण्याच्या परवानगीची विनंती करु इच्छिते तेव्हा "
 "प्रमाणीकरण एजंट दिसून येतो."
 
-#: data/agent-polkit.appdata.xml.in:17
-msgid "Fix a potential issue when ending the session"
-msgstr "सत्र संपताना संभाव्य समस्येचे निराकरण करा"
-
-#: data/agent-polkit.appdata.xml.in:18 data/agent-polkit.appdata.xml.in:25
+#: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:25
 #: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
+#: data/agent-polkit.appdata.xml.in:46
 msgid "Updated translations"
 msgstr "अद्ययावत भाषांतर"
 
-#: data/agent-polkit.appdata.xml.in:77
+#: data/agent-polkit.appdata.xml.in:24
+msgid "Fix a potential issue when ending the session"
+msgstr "सत्र संपताना संभाव्य समस्येचे निराकरण करा"
+
+#: data/agent-polkit.appdata.xml.in:89
 msgid "elementary, Inc."
 msgstr "एलिमेंटरी,Inc."

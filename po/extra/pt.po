@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-19 19:02+0000\n"
+"POT-Creation-Date: 2021-07-14 18:14+0000\n"
 "PO-Revision-Date: 2021-02-10 18:32+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop/"
@@ -48,15 +48,16 @@ msgstr ""
 "O agente de autenticação aparece sempre que um pedido pretende solicitar "
 "autorização para utilizar poderes administrativos."
 
-#: data/agent-polkit.appdata.xml.in:17
-msgid "Fix a potential issue when ending the session"
-msgstr "Corrige um problema potencial ao terminar a sessão"
-
-#: data/agent-polkit.appdata.xml.in:18 data/agent-polkit.appdata.xml.in:25
+#: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:25
 #: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
+#: data/agent-polkit.appdata.xml.in:46
 msgid "Updated translations"
 msgstr "Traduções atualizadas"
 
-#: data/agent-polkit.appdata.xml.in:77
+#: data/agent-polkit.appdata.xml.in:24
+msgid "Fix a potential issue when ending the session"
+msgstr "Corrige um problema potencial ao terminar a sessão"
+
+#: data/agent-polkit.appdata.xml.in:89
 msgid "elementary, Inc."
 msgstr "elementary, Inc."

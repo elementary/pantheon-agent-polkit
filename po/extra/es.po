@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-19 19:02+0000\n"
+"POT-Creation-Date: 2021-07-14 18:14+0000\n"
 "PO-Revision-Date: 2020-07-01 22:27+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
-"Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/"
-"polkit-agent-extra/es/>\n"
+"Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/polkit-"
+"agent-extra/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -48,15 +48,16 @@ msgstr ""
 "El agente de autenticación aparece siempre que una aplicación solicita un "
 "permiso para utilizar funciones administrativas."
 
-#: data/agent-polkit.appdata.xml.in:17
-msgid "Fix a potential issue when ending the session"
-msgstr "Se corrigió un problema en potencia al finalizar la sesión"
-
-#: data/agent-polkit.appdata.xml.in:18 data/agent-polkit.appdata.xml.in:25
+#: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:25
 #: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
+#: data/agent-polkit.appdata.xml.in:46
 msgid "Updated translations"
 msgstr "Traducciones actualizadas"
 
-#: data/agent-polkit.appdata.xml.in:77
+#: data/agent-polkit.appdata.xml.in:24
+msgid "Fix a potential issue when ending the session"
+msgstr "Se corrigió un problema en potencia al finalizar la sesión"
+
+#: data/agent-polkit.appdata.xml.in:89
 msgid "elementary, Inc."
 msgstr "elementary, Inc."

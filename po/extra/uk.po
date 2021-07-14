@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-19 19:02+0000\n"
+"POT-Creation-Date: 2021-07-14 18:14+0000\n"
 "PO-Revision-Date: 2020-09-22 14:23+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
-"Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/"
-"polkit-agent-extra/uk/>\n"
+"Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/polkit-"
+"agent-extra/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:08+0000\n"
 
@@ -49,15 +49,16 @@ msgstr ""
 "Служба автентифікації надсилає запит щоразу, коли застосунок хоче запитати "
 "дозвіл на отримання прав адміністратора."
 
-#: data/agent-polkit.appdata.xml.in:17
-msgid "Fix a potential issue when ending the session"
-msgstr "Виправлено загрозу проблеми завершення сеансу"
-
-#: data/agent-polkit.appdata.xml.in:18 data/agent-polkit.appdata.xml.in:25
+#: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:25
 #: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
+#: data/agent-polkit.appdata.xml.in:46
 msgid "Updated translations"
 msgstr "Оновлено переклади"
 
-#: data/agent-polkit.appdata.xml.in:77
+#: data/agent-polkit.appdata.xml.in:24
+msgid "Fix a potential issue when ending the session"
+msgstr "Виправлено загрозу проблеми завершення сеансу"
+
+#: data/agent-polkit.appdata.xml.in:89
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
