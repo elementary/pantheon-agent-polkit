@@ -11,6 +11,13 @@
     <p>The authentication agent appears whenever an application wants to request permission to use administrative powers.</p>
   </description>
   <releases>
+    <release version="1.0.4" date="2021-07-14" urgency="medium">
+      <description>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.0.3" date="2020-06-19" urgency="medium">
       <description>
         <ul>
@@ -44,6 +51,11 @@
   <provides>
     <binary>io.elementary.desktop.agent-polkit</binary>
   </provides>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/pantheon-agent-polkit/master/data/screenshot.png</image>
+    </screenshot>
+  </screenshots>
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">none</content_attribute>
     <content_attribute id="violence-fantasy">none</content_attribute>
