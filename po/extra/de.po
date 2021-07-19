@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:14+0000\n"
-"PO-Revision-Date: 2020-07-10 12:12+0000\n"
-"Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
-"Language-Team: German <https://l10n.elementary.io/projects/desktop/polkit-"
-"agent-extra/de/>\n"
+"PO-Revision-Date: 2021-07-19 21:06+0000\n"
+"Last-Translator: supaeasy <ismo+github@wolffson.ch>\n"
+"Language-Team: German <https://l10n.elementary.io/projects/desktop/"
+"polkit-agent-extra/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:08+0000\n"
 
 #: data/agent-polkit.desktop.in.in:3
@@ -29,14 +29,12 @@ msgid "dialog-password"
 msgstr ""
 
 #: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
-#, fuzzy
 msgid "PolicyKit Authentication Agent"
-msgstr "Authentifizierung"
+msgstr "PolicyKit Authentication Agent"
 
 #: data/agent-polkit.appdata.xml.in:8
-#, fuzzy
 msgid "Authentication Agent"
-msgstr "Authentifizierung"
+msgstr "Authentication Agent"
 
 #: data/agent-polkit.appdata.xml.in:9
 msgid "Approve or deny access to administrative powers"
@@ -56,7 +54,7 @@ msgstr "Aktualisierte Übersetzungen"
 
 #: data/agent-polkit.appdata.xml.in:24
 msgid "Fix a potential issue when ending the session"
-msgstr ""
+msgstr "Problem behoben, das manchmal beim Beenden der Session auftrat"
 
 #: data/agent-polkit.appdata.xml.in:89
 msgid "elementary, Inc."
