@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:14+0000\n"
-"PO-Revision-Date: 2021-07-19 21:06+0000\n"
+"PO-Revision-Date: 2021-07-20 06:30+0000\n"
 "Last-Translator: supaeasy <ismo+github@wolffson.ch>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/desktop/"
 "polkit-agent-extra/de/>\n"
@@ -38,13 +38,15 @@ msgstr "Authentication Agent"
 
 #: data/agent-polkit.appdata.xml.in:9
 msgid "Approve or deny access to administrative powers"
-msgstr ""
+msgstr "Administratorenrechte gewähren oder verbieten"
 
 #: data/agent-polkit.appdata.xml.in:11
 msgid ""
 "The authentication agent appears whenever an application wants to request "
 "permission to use administrative powers."
 msgstr ""
+"Der Authentifizierungsagent erscheint, wenn eine Anwendung "
+"Administratorenrechte anfordern möchte."
 
 #: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:25
 #: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
