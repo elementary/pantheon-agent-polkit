@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:14+0000\n"
-"PO-Revision-Date: 2021-07-03 09:52+0000\n"
+"PO-Revision-Date: 2021-07-22 02:17+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/desktop/"
 "polkit-agent-extra/nb/>\n"
@@ -61,5 +61,6 @@ msgid "Fix a potential issue when ending the session"
 msgstr "Fikset potensielt problem ved avslutting av økt"
 
 #: data/agent-polkit.appdata.xml.in:89
+#, fuzzy
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
