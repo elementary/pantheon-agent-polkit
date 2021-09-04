@@ -3,22 +3,22 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:14+0000\n"
-"PO-Revision-Date: 2020-05-16 04:10+0000\n"
-"Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
-"Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/pantheon-"
-"agent-polkit/ar/>\n"
+"PO-Revision-Date: 2021-09-04 17:03+0000\n"
+"Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
+"Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/"
+"pantheon-agent-polkit/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:07+0000\n"
 
 #: src/PolkitDialog.vala:53
 msgid "Authentication Dialog"
-msgstr "حوار المصادقة"
+msgstr "رسالة التوثيق"
 
 #: src/PolkitDialog.vala:61
 msgid "Authentication Required"
@@ -26,15 +26,15 @@ msgstr "التوثيق مطلوب"
 
 #: src/PolkitDialog.vala:70
 msgid "Password"
-msgstr "كلمة السر"
+msgstr "كلمة المرور"
 
 #: src/PolkitDialog.vala:111
 msgid "Cancel"
-msgstr "الغاء"
+msgstr "ألغ"
 
 #: src/PolkitDialog.vala:114
 msgid "Authenticate"
-msgstr "توثيق"
+msgstr "وثق"
 
 #: src/PolkitDialog.vala:177
 #, c-format
