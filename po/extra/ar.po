@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:14+0000\n"
-"PO-Revision-Date: 2021-08-27 18:48+0000\n"
+"PO-Revision-Date: 2021-09-04 17:03+0000\n"
 "Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/"
 "polkit-agent-extra/ar/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: data/agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
-msgstr "حوار المصادقة"
+msgstr "رسالة التوثيق"
 
 #: data/agent-polkit.desktop.in.in:5
 msgid "dialog-password"
@@ -30,23 +30,21 @@ msgstr "dialog-password"
 
 #: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
 msgid "PolicyKit Authentication Agent"
-msgstr "عامل مصادقة PolicyKit"
+msgstr "مفوض توثيق PolicyKit"
 
 #: data/agent-polkit.appdata.xml.in:8
-#, fuzzy
-#| msgid "PolicyKit Authentication Agent"
 msgid "Authentication Agent"
-msgstr "عامل مصادقة PolicyKit"
+msgstr "مفوض التوثيق"
 
 #: data/agent-polkit.appdata.xml.in:9
 msgid "Approve or deny access to administrative powers"
-msgstr ""
+msgstr "وافق على أو ارفض الوصول للصلاحيات الإدارية"
 
 #: data/agent-polkit.appdata.xml.in:11
 msgid ""
 "The authentication agent appears whenever an application wants to request "
 "permission to use administrative powers."
-msgstr ""
+msgstr "يظهر مفوض التوثيق في أي وقت يقوم تطبيق بطلب إذن للصلاحيات الإدارية."
 
 #: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:25
 #: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
@@ -56,7 +54,7 @@ msgstr "تحديثات على الترجمة"
 
 #: data/agent-polkit.appdata.xml.in:24
 msgid "Fix a potential issue when ending the session"
-msgstr ""
+msgstr "إصلاح مشكلة محتملة عند إنهاء الجلسة"
 
 #: data/agent-polkit.appdata.xml.in:89
 msgid "elementary, Inc."
