@@ -3,15 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:14+0000\n"
-"PO-Revision-Date: 2016-12-31 15:39+0000\n"
-"Last-Translator: İbrahim Ethem Göl <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-10-22 20:43+0000\n"
+"Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
+"Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/"
+"pantheon-agent-polkit/tr/>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:08+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: src/PolkitDialog.vala:53
 msgid "Authentication Dialog"
@@ -27,7 +29,7 @@ msgstr "Parola"
 
 #: src/PolkitDialog.vala:111
 msgid "Cancel"
-msgstr "İptal Et"
+msgstr "İptal"
 
 #: src/PolkitDialog.vala:114
 msgid "Authenticate"
