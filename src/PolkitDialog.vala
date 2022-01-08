@@ -60,24 +60,27 @@ namespace Ag.Widgets {
 
             primary_text = _("Authentication Required");
             secondary_text = message;
-            skip_taskbar_hint = true;
-            set_keep_above (true);
+            // skip_taskbar_hint = true;
+            // set_keep_above (true);
 
-            password_entry = new Gtk.Entry ();
-            password_entry.hexpand = true;
-            password_entry.input_purpose = Gtk.InputPurpose.PASSWORD;
-            password_entry.primary_icon_name = "dialog-password-symbolic";
-            password_entry.primary_icon_tooltip_text = _("Password");
+            password_entry = new Gtk.Entry () {
+                activates_default = true,
+                hexpand = true,
+                input_purpose = Gtk.InputPurpose.PASSWORD,
+                primary_icon_name = "dialog-password-symbolic",
+                primary_icon_tooltip_text = _("Password")
+            };
 
             password_feedback = new Gtk.Label (null);
             password_feedback.justify = Gtk.Justification.RIGHT;
             password_feedback.max_width_chars = 40;
             password_feedback.wrap = true;
             password_feedback.xalign = 1;
-            password_feedback.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
+            password_feedback.add_css_class (Granite.STYLE_CLASS_ERROR);
 
-            feedback_revealer = new Gtk.Revealer ();
-            feedback_revealer.add (password_feedback);
+            feedback_revealer = new Gtk.Revealer () {
+                child = password_feedback
+            };
 
             idents_combo = new Gtk.ComboBox ();
             idents_combo.hexpand = true;
@@ -102,22 +105,22 @@ namespace Ag.Widgets {
 
             image_icon = new ThemedIcon ("dialog-password");
 
-            if (icon_name != "" && Gtk.IconTheme.get_default ().has_icon (icon_name)) {
+            if (icon_name != "" && Gtk.IconTheme.get_for_display (Gdk.Display.get_default ()).has_icon (icon_name)) {
                 badge_icon = new ThemedIcon (icon_name);
             }
 
-            custom_bin.add (credentials_grid);
+            custom_bin.append (credentials_grid);
 
             var cancel_button = (Gtk.Button)add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
             cancel_button.clicked.connect (() => cancel ());
 
             var authenticate_button = (Gtk.Button)add_button (_("Authenticate"), Gtk.ResponseType.APPLY);
-            authenticate_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+            // authenticate.receives_default = true;
+            authenticate_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
             authenticate_button.clicked.connect (authenticate);
 
-            set_default (authenticate_button);
+            // set_default (authenticate_button);
 
-            key_release_event.connect (on_key_release);
             close.connect (cancel);
 
             update_idents ();
@@ -136,12 +139,12 @@ namespace Ag.Widgets {
         public override void show () {
             base.show ();
 
-            var window = get_window ();
-            if (window == null) {
-                return;
-            }
+            // var window = get_window ();
+            // if (window == null) {
+            //     return;
+            // }
 
-            window.focus (Gdk.CURRENT_TIME);
+            // window.focus (Gdk.CURRENT_TIME);
             password_entry.grab_focus ();
         }
 
@@ -194,7 +197,6 @@ namespace Ag.Widgets {
             if (length < 2) {
                 if (target_user == Environment.get_user_name ()) {
                     idents_combo.visible = false;
-                    idents_combo.no_show_all = true;
                 } else {
                     idents_combo.sensitive = false;
                 }
@@ -299,40 +301,29 @@ namespace Ag.Widgets {
 
         // From https://github.com/GNOME/PolicyKit-gnome/blob/master/src/polkitgnomeauthenticationdialog.c#L901
         private void shake () {
-            int x, y;
-            get_position (out x, out y);
+            // int x, y;
+            // get_position (out x, out y);
 
-            for (int n = 0; n < 10; n++) {
-                int diff = 15;
-                if (n % 2 == 0) {
-                    diff = -15;
-                }
+            // for (int n = 0; n < 10; n++) {
+            //     int diff = 15;
+            //     if (n % 2 == 0) {
+            //         diff = -15;
+            //     }
 
-                move (x + diff, y);
+            //     move (x + diff, y);
 
-                while (Gtk.events_pending ()) {
-                    Gtk.main_iteration ();
-                }
+            //     while (Gtk.events_pending ()) {
+            //         Gtk.main_iteration ();
+            //     }
 
-                Thread.usleep (10000);
-            }
+            //     Thread.usleep (10000);
+            // }
 
-            move (x, y);
+            // move (x, y);
         }
 
         private void on_pk_show_info (string text) {
             info (text);
-        }
-
-        private bool on_key_release (Gdk.EventKey key) {
-            switch (key.keyval) {
-                case Gdk.Key.KP_Enter:
-                case Gdk.Key.Return:
-                    authenticate ();
-                    return Gdk.EVENT_STOP;
-            }
-
-            return Gdk.EVENT_PROPAGATE;
         }
     }
 }

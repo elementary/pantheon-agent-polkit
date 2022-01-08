@@ -43,7 +43,7 @@ namespace Ag {
             var dialog = new Widgets.PolkitDialog (message, icon_name, cookie, identities, cancellable);
             dialog.done.connect (() => initiate_authentication.callback ());
 
-            dialog.show_all ();
+            dialog.present ();
             yield;
 
             dialog.destroy ();
@@ -77,12 +77,12 @@ namespace Ag {
         }
 
         private void session_stop () {
-            Gtk.main_quit ();
+            // Gtk.main_quit ();
         }
     }
 
     public static int main (string[] args) {
-        Gtk.init (ref args);
+        Gtk.init ();
 
         var agent = new Agent ();
         int pid = Posix.getpid ();
@@ -101,7 +101,7 @@ namespace Ag {
             return 1;
         }
 
-        Gtk.main ();
+        // Gtk.main ();
         return 0;
     }
 }
