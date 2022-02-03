@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:14+0000\n"
-"PO-Revision-Date: 2022-02-03 15:04+0000\n"
+"PO-Revision-Date: 2022-02-03 19:18+0000\n"
 "Last-Translator: Joel Jose <joel750jose@gmail.com>\n"
 "Language-Team: Malayalam <https://l10n.elementary.io/projects/desktop/"
 "polkit-agent-extra/ml/>\n"
@@ -49,7 +49,7 @@ msgstr ""
 #: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
 #: data/agent-polkit.appdata.xml.in:46
 msgid "Updated translations"
-msgstr ""
+msgstr "അപ്ഡേറ്റ് ചെയ്ത വിവർത്തനങ്ങൾ"
 
 #: data/agent-polkit.appdata.xml.in:24
 msgid "Fix a potential issue when ending the session"
