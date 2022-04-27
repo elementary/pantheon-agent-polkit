@@ -11,7 +11,7 @@
     <p>The authentication agent appears whenever an application wants to request permission to use administrative powers.</p>
   </description>
   <releases>
-    <release version="1.0.5" date="2022-04-26" urgency="medium">
+    <release version="1.0.5" date="2022-04-27" urgency="medium">
       <description>
         <ul>
           <li>Updated translations</li>
