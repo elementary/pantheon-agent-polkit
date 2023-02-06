@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 18:14+0000\n"
-"PO-Revision-Date: 2020-07-04 12:12+0000\n"
+"PO-Revision-Date: 2023-02-07 16:25+0000\n"
 "Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/"
 "desktop/polkit-agent-extra/nn/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: data/agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
@@ -29,11 +29,11 @@ msgstr ""
 
 #: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
 msgid "PolicyKit Authentication Agent"
-msgstr ""
+msgstr "PolicyKit autentiseringsprogram"
 
 #: data/agent-polkit.appdata.xml.in:8
 msgid "Authentication Agent"
-msgstr ""
+msgstr "Autentiseringsagent"
 
 #: data/agent-polkit.appdata.xml.in:9
 msgid "Approve or deny access to administrative powers"
@@ -49,7 +49,7 @@ msgstr ""
 #: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
 #: data/agent-polkit.appdata.xml.in:46
 msgid "Updated translations"
-msgstr "Oppdaterte oversettingar"
+msgstr "Oppdatert oversetning"
 
 #: data/agent-polkit.appdata.xml.in:24
 msgid "Fix a potential issue when ending the session"
