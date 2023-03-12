@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 18:14+0000\n"
+"POT-Creation-Date: 2023-03-12 22:26+0000\n"
 "PO-Revision-Date: 2020-07-02 02:55+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/polkit-"
@@ -23,10 +23,6 @@ msgstr ""
 #: data/agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
 msgstr "認証ダイアログ"
-
-#: data/agent-polkit.desktop.in.in:5
-msgid "dialog-password"
-msgstr "dialog-password"
 
 #: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
 msgid "PolicyKit Authentication Agent"
@@ -48,16 +44,19 @@ msgstr ""
 "認証エージェントは、アプリケーションが管理者権限の使用許可を要求した場合に表"
 "示されます。"
 
-#: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:25
+#: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:24
 #: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
-#: data/agent-polkit.appdata.xml.in:46
+#: data/agent-polkit.appdata.xml.in:46 data/agent-polkit.appdata.xml.in:53
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
-#: data/agent-polkit.appdata.xml.in:24
+#: data/agent-polkit.appdata.xml.in:31
 msgid "Fix a potential issue when ending the session"
 msgstr "セッション終了時に発生する可能性のある不具合を修正"
 
-#: data/agent-polkit.appdata.xml.in:89
+#: data/agent-polkit.appdata.xml.in:96
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
+
+#~ msgid "dialog-password"
+#~ msgstr "dialog-password"

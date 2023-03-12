@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 18:14+0000\n"
+"POT-Creation-Date: 2023-03-12 22:26+0000\n"
 "PO-Revision-Date: 2020-10-14 18:14+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/polkit-"
@@ -22,10 +22,6 @@ msgstr ""
 #: data/agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
 msgstr "प्रमाणीकरण संवाद"
-
-#: data/agent-polkit.desktop.in.in:5
-msgid "dialog-password"
-msgstr "dialog-password"
 
 #: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
 msgid "PolicyKit Authentication Agent"
@@ -47,16 +43,19 @@ msgstr ""
 "अनुप्रयोग जेव्हा प्रशासकीय शक्ती वापरण्याच्या परवानगीची विनंती करु इच्छिते तेव्हा "
 "प्रमाणीकरण एजंट दिसून येतो."
 
-#: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:25
+#: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:24
 #: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
-#: data/agent-polkit.appdata.xml.in:46
+#: data/agent-polkit.appdata.xml.in:46 data/agent-polkit.appdata.xml.in:53
 msgid "Updated translations"
 msgstr "अद्ययावत भाषांतर"
 
-#: data/agent-polkit.appdata.xml.in:24
+#: data/agent-polkit.appdata.xml.in:31
 msgid "Fix a potential issue when ending the session"
 msgstr "सत्र संपताना संभाव्य समस्येचे निराकरण करा"
 
-#: data/agent-polkit.appdata.xml.in:89
+#: data/agent-polkit.appdata.xml.in:96
 msgid "elementary, Inc."
 msgstr "एलिमेंटरी,Inc."
+
+#~ msgid "dialog-password"
+#~ msgstr "dialog-password"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 18:14+0000\n"
+"POT-Creation-Date: 2023-03-12 22:26+0000\n"
 "PO-Revision-Date: 2020-05-26 20:11+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/desktop/polkit-"
@@ -22,10 +22,6 @@ msgstr ""
 #: data/agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
 msgstr "Autentificeringsdialog"
-
-#: data/agent-polkit.desktop.in.in:5
-msgid "dialog-password"
-msgstr "dialog-adgangskode"
 
 #: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
 msgid "PolicyKit Authentication Agent"
@@ -47,16 +43,19 @@ msgstr ""
 "Autentificerings agenten vises, når en applikation ønsker at anmode om "
 "tilladelse til at bruge administrative beføjelser."
 
-#: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:25
+#: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:24
 #: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
-#: data/agent-polkit.appdata.xml.in:46
+#: data/agent-polkit.appdata.xml.in:46 data/agent-polkit.appdata.xml.in:53
 msgid "Updated translations"
 msgstr "Opdaterede oversættelser"
 
-#: data/agent-polkit.appdata.xml.in:24
+#: data/agent-polkit.appdata.xml.in:31
 msgid "Fix a potential issue when ending the session"
 msgstr ""
 
-#: data/agent-polkit.appdata.xml.in:89
+#: data/agent-polkit.appdata.xml.in:96
 msgid "elementary, Inc."
 msgstr "elementary, Incorporated."
+
+#~ msgid "dialog-password"
+#~ msgstr "dialog-adgangskode"

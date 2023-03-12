@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 18:14+0000\n"
+"POT-Creation-Date: 2023-03-12 22:26+0000\n"
 "PO-Revision-Date: 2022-04-15 22:18+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -22,10 +22,6 @@ msgstr ""
 #: data/agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
 msgstr "دایەلۆگی پشتڕاستکردنەوە"
-
-#: data/agent-polkit.desktop.in.in:5
-msgid "dialog-password"
-msgstr ""
 
 #: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
 msgid "PolicyKit Authentication Agent"
@@ -45,16 +41,16 @@ msgid ""
 "permission to use administrative powers."
 msgstr ""
 
-#: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:25
+#: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:24
 #: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
-#: data/agent-polkit.appdata.xml.in:46
+#: data/agent-polkit.appdata.xml.in:46 data/agent-polkit.appdata.xml.in:53
 msgid "Updated translations"
 msgstr "وەرگێڕانەکان نوێکراونەوە"
 
-#: data/agent-polkit.appdata.xml.in:24
+#: data/agent-polkit.appdata.xml.in:31
 msgid "Fix a potential issue when ending the session"
 msgstr ""
 
-#: data/agent-polkit.appdata.xml.in:89
+#: data/agent-polkit.appdata.xml.in:96
 msgid "elementary, Inc."
 msgstr "کۆمپانیای ئێلەمێنتەری هاوپشک."

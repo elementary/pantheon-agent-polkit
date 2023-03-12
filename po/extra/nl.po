@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 18:14+0000\n"
+"POT-Creation-Date: 2023-03-12 22:26+0000\n"
 "PO-Revision-Date: 2020-06-22 07:11+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/desktop/polkit-"
@@ -23,10 +23,6 @@ msgstr ""
 #: data/agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
 msgstr "administrator venster"
-
-#: data/agent-polkit.desktop.in.in:5
-msgid "dialog-password"
-msgstr "dialog-password"
 
 #: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
 msgid "PolicyKit Authentication Agent"
@@ -48,16 +44,19 @@ msgstr ""
 "De authenticatie agent verschijnt als een applicatie toestemming vraagt om "
 "beheerdersrechten."
 
-#: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:25
+#: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:24
 #: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
-#: data/agent-polkit.appdata.xml.in:46
+#: data/agent-polkit.appdata.xml.in:46 data/agent-polkit.appdata.xml.in:53
 msgid "Updated translations"
 msgstr "Bijgewerkte vertalingen"
 
-#: data/agent-polkit.appdata.xml.in:24
+#: data/agent-polkit.appdata.xml.in:31
 msgid "Fix a potential issue when ending the session"
 msgstr "Een mogelijk probleem opgelost bij het beëindigen van een sessie"
 
-#: data/agent-polkit.appdata.xml.in:89
+#: data/agent-polkit.appdata.xml.in:96
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
+
+#~ msgid "dialog-password"
+#~ msgstr "dialog-password"
