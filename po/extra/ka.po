@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-12 22:26+0000\n"
-"PO-Revision-Date: 2023-04-14 00:13+0000\n"
+"PO-Revision-Date: 2023-04-15 00:59+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/desktop/"
 "polkit-agent-extra/ka/>\n"
@@ -25,15 +25,15 @@ msgstr "ავთენტიკაციის ფანჯარა"
 
 #: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
 msgid "PolicyKit Authentication Agent"
-msgstr ""
+msgstr "PolicyKit -ის ავთენტიკაციის აგენტი"
 
 #: data/agent-polkit.appdata.xml.in:8
 msgid "Authentication Agent"
-msgstr ""
+msgstr "ავთენტიკაციის აგენტი"
 
 #: data/agent-polkit.appdata.xml.in:9
 msgid "Approve or deny access to administrative powers"
-msgstr ""
+msgstr "ადმინისტრირების უფლებების მინიჭება ან ყარყოფა"
 
 #: data/agent-polkit.appdata.xml.in:11
 msgid ""
