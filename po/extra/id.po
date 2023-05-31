@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-12 22:26+0000\n"
-"PO-Revision-Date: 2023-05-20 17:06+0000\n"
+"PO-Revision-Date: 2023-06-01 14:07+0000\n"
 "Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
 "io>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/desktop/"
@@ -23,25 +23,27 @@ msgstr ""
 
 #: data/agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
-msgstr ""
+msgstr "Dialog Otentikasi"
 
 #: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
 msgid "PolicyKit Authentication Agent"
-msgstr ""
+msgstr "Agen Otentikasi PolicyKit"
 
 #: data/agent-polkit.appdata.xml.in:8
 msgid "Authentication Agent"
-msgstr ""
+msgstr "Agen Otentikasi"
 
 #: data/agent-polkit.appdata.xml.in:9
 msgid "Approve or deny access to administrative powers"
-msgstr ""
+msgstr "Menyetujui atau menolak akses ke kekuasaan administratif"
 
 #: data/agent-polkit.appdata.xml.in:11
 msgid ""
 "The authentication agent appears whenever an application wants to request "
 "permission to use administrative powers."
 msgstr ""
+"Agen autentikasi muncul setiap kali aplikasi ingin meminta izin untuk "
+"menggunakan kekuatan administratif."
 
 #: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:24
 #: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
@@ -51,7 +53,7 @@ msgstr "Terjemahan yang diperbarui"
 
 #: data/agent-polkit.appdata.xml.in:31
 msgid "Fix a potential issue when ending the session"
-msgstr ""
+msgstr "Perbaikan potensi masalah saat mengakhiri sesi"
 
 #: data/agent-polkit.appdata.xml.in:96
 msgid "elementary, Inc."
