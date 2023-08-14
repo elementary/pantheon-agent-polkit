@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-12 22:26+0000\n"
+"POT-Creation-Date: 2023-08-14 18:20+0000\n"
 "PO-Revision-Date: 2020-06-22 07:11+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/desktop/polkit-"
@@ -28,15 +28,15 @@ msgstr "Boîte de dialogue d'authentification"
 msgid "PolicyKit Authentication Agent"
 msgstr "Agent d'authentification PolicyKit"
 
-#: data/agent-polkit.appdata.xml.in:8
+#: data/agent-polkit.metainfo.xml.in:10
 msgid "Authentication Agent"
 msgstr "Agent d'authentification"
 
-#: data/agent-polkit.appdata.xml.in:9
+#: data/agent-polkit.metainfo.xml.in:11
 msgid "Approve or deny access to administrative powers"
 msgstr "Accordez ou refusez l'accès aux droits d'administrateur"
 
-#: data/agent-polkit.appdata.xml.in:11
+#: data/agent-polkit.metainfo.xml.in:13
 msgid ""
 "The authentication agent appears whenever an application wants to request "
 "permission to use administrative powers."
@@ -44,19 +44,19 @@ msgstr ""
 "L'agent d'authentification apparaît lorsqu'une application veut demander "
 "l'autorisation d'utiliser les droits d'administrateur."
 
-#: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:24
-#: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
-#: data/agent-polkit.appdata.xml.in:46 data/agent-polkit.appdata.xml.in:53
+#: data/agent-polkit.metainfo.xml.in:34
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/agent-polkit.metainfo.xml.in:42 data/agent-polkit.metainfo.xml.in:50
+#: data/agent-polkit.metainfo.xml.in:59 data/agent-polkit.metainfo.xml.in:67
+#: data/agent-polkit.metainfo.xml.in:75
 msgid "Updated translations"
 msgstr "Mise à jour des traductions"
 
-#: data/agent-polkit.appdata.xml.in:31
+#: data/agent-polkit.metainfo.xml.in:58
 msgid "Fix a potential issue when ending the session"
 msgstr "Correction d'un problème potentiel à la fermeture de session"
-
-#: data/agent-polkit.appdata.xml.in:96
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
 
 #~ msgid "dialog-password"
 #~ msgstr "dialog-password"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-12 22:26+0000\n"
+"POT-Creation-Date: 2023-08-14 18:20+0000\n"
 "PO-Revision-Date: 2023-07-26 20:07+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/desktop/"
@@ -29,17 +29,17 @@ msgstr "Autentiseringsvindu"
 msgid "PolicyKit Authentication Agent"
 msgstr "Autentiseringsvindu"
 
-#: data/agent-polkit.appdata.xml.in:8
+#: data/agent-polkit.metainfo.xml.in:10
 #, fuzzy
 msgid "Authentication Agent"
 msgstr "Autentiseringsvindu"
 
-#: data/agent-polkit.appdata.xml.in:9
+#: data/agent-polkit.metainfo.xml.in:11
 #, fuzzy
 msgid "Approve or deny access to administrative powers"
 msgstr "Innvilg eller nekt tilgang til administrative foretagende"
 
-#: data/agent-polkit.appdata.xml.in:11
+#: data/agent-polkit.metainfo.xml.in:13
 msgid ""
 "The authentication agent appears whenever an application wants to request "
 "permission to use administrative powers."
@@ -47,20 +47,20 @@ msgstr ""
 "Identitetbekreftelsesagenten vises når et program ønsker å forespørre "
 "tilgang til administrative foretagende."
 
-#: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:24
-#: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
-#: data/agent-polkit.appdata.xml.in:46 data/agent-polkit.appdata.xml.in:53
-msgid "Updated translations"
-msgstr "Oppdaterte oversettelser"
-
-#: data/agent-polkit.appdata.xml.in:31
-msgid "Fix a potential issue when ending the session"
-msgstr "Fikset potensielt problem ved avslutting av økt"
-
-#: data/agent-polkit.appdata.xml.in:96
+#: data/agent-polkit.metainfo.xml.in:34
 #, fuzzy
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
+
+#: data/agent-polkit.metainfo.xml.in:42 data/agent-polkit.metainfo.xml.in:50
+#: data/agent-polkit.metainfo.xml.in:59 data/agent-polkit.metainfo.xml.in:67
+#: data/agent-polkit.metainfo.xml.in:75
+msgid "Updated translations"
+msgstr "Oppdaterte oversettelser"
+
+#: data/agent-polkit.metainfo.xml.in:58
+msgid "Fix a potential issue when ending the session"
+msgstr "Fikset potensielt problem ved avslutting av økt"
 
 #~ msgid "dialog-password"
 #~ msgstr "dialog-password"
