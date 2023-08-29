@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-14 18:20+0000\n"
-"PO-Revision-Date: 2020-06-22 07:11+0000\n"
-"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
-"Language-Team: Czech <https://l10n.elementary.io/projects/desktop/polkit-"
-"agent-extra/cs/>\n"
+"PO-Revision-Date: 2023-08-30 11:08+0000\n"
+"Last-Translator: Jakub Kyzr <jakubkyzr@gmail.com>\n"
+"Language-Team: Czech <https://l10n.elementary.io/projects/desktop/"
+"polkit-agent-extra/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-03-09 06:01+0000\n"
 
 #: data/agent-polkit.desktop.in.in:3
@@ -52,7 +52,7 @@ msgstr "elementary, Inc."
 #: data/agent-polkit.metainfo.xml.in:59 data/agent-polkit.metainfo.xml.in:67
 #: data/agent-polkit.metainfo.xml.in:75
 msgid "Updated translations"
-msgstr "Aktualizovány překlady"
+msgstr "Aktualizované překlady"
 
 #: data/agent-polkit.metainfo.xml.in:58
 msgid "Fix a potential issue when ending the session"
