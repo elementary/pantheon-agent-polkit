@@ -40,7 +40,7 @@ namespace Ag {
                 return false;
             }
 
-            var dialog = new Widgets.PolkitDialog (message, icon_name, cookie, identities, cancellable);
+            var dialog = new PolkitDialog (message, icon_name, cookie, identities, cancellable);
             dialog.done.connect (() => initiate_authentication.callback ());
 
             dialog.show_all ();
