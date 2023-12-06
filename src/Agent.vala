@@ -77,31 +77,7 @@ namespace Ag {
         }
 
         private void session_stop () {
-            Gtk.main_quit ();
+            GLib.Application.get_default ().release ();
         }
-    }
-
-    public static int main (string[] args) {
-        Gtk.init (ref args);
-
-        var agent = new Agent ();
-        int pid = Posix.getpid ();
-
-        Polkit.Subject? subject = null;
-        try {
-            subject = new Polkit.UnixSession.for_process_sync (pid, null);
-        } catch (Error e) {
-            critical ("Unable to initiate Polkit: %s", e.message);
-            return 1;
-        }
-
-        try {
-            PolkitAgent.register_listener (agent, subject, null);
-        } catch (Error e) {
-            return 1;
-        }
-
-        Gtk.main ();
-        return 0;
     }
 }
