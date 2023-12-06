@@ -1,11 +1,15 @@
 /*
- * SPDX-License-Identifier: LGPL-2.1+
+ * SPDX-License-Identifier: LGPL-2.1-or-later
  * SPDX-FileCopyrightText: 2023 elementary, Inc. (https://elementary.io)
  */
 
 public class Ag.Application : Gtk.Application {
     public Application () {
-        Object (application_id: "io.elementary.pantheon-agent-polkit");
+        Object (
+            application_id: "io.elementary.PolkitAgent",
+            flags: GLib.ApplicationFlags.IS_SERVICE,
+            register_session: true
+        );
     }
 
     protected override void startup () {
@@ -21,19 +25,11 @@ public class Ag.Application : Gtk.Application {
         gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == DARK;
 
         var agent = new Agent ();
-        int pid = Posix.getpid ();
-
-        Polkit.Subject? subject = null;
         try {
-            subject = new Polkit.UnixSession.for_process_sync (pid, null);
+            var subject = new Polkit.UnixSession.for_process_sync (Posix.getpid (), null);
+            agent.register (NONE, subject, resource_base_path, null);
         } catch (Error e) {
             critical ("Unable to initiate Polkit: %s", e.message);
-            quit ();
-        }
-
-        try {
-            PolkitAgent.register_listener (agent, subject, null);
-        } catch (Error e) {
             quit ();
         }
 
