@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 18:14+0000\n"
+"POT-Creation-Date: 2023-08-14 18:20+0000\n"
 "PO-Revision-Date: 2020-04-06 15:10+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/desktop/polkit-"
@@ -25,40 +25,36 @@ msgstr ""
 msgid "Authentication Dialog"
 msgstr "Pogovorno okno overitve"
 
-#: data/agent-polkit.desktop.in.in:5
-msgid "dialog-password"
-msgstr ""
-
 #: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
 #, fuzzy
 msgid "PolicyKit Authentication Agent"
 msgstr "Pogovorno okno overitve"
 
-#: data/agent-polkit.appdata.xml.in:8
+#: data/agent-polkit.metainfo.xml.in:10
 #, fuzzy
 msgid "Authentication Agent"
 msgstr "Pogovorno okno overitve"
 
-#: data/agent-polkit.appdata.xml.in:9
+#: data/agent-polkit.metainfo.xml.in:11
 msgid "Approve or deny access to administrative powers"
 msgstr ""
 
-#: data/agent-polkit.appdata.xml.in:11
+#: data/agent-polkit.metainfo.xml.in:13
 msgid ""
 "The authentication agent appears whenever an application wants to request "
 "permission to use administrative powers."
 msgstr ""
 
-#: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:25
-#: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
-#: data/agent-polkit.appdata.xml.in:46
+#: data/agent-polkit.metainfo.xml.in:34
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/agent-polkit.metainfo.xml.in:42 data/agent-polkit.metainfo.xml.in:50
+#: data/agent-polkit.metainfo.xml.in:59 data/agent-polkit.metainfo.xml.in:67
+#: data/agent-polkit.metainfo.xml.in:75
 msgid "Updated translations"
 msgstr "Posodobljeni prevodi"
 
-#: data/agent-polkit.appdata.xml.in:24
+#: data/agent-polkit.metainfo.xml.in:58
 msgid "Fix a potential issue when ending the session"
 msgstr ""
-
-#: data/agent-polkit.appdata.xml.in:89
-msgid "elementary, Inc."
-msgstr "elementary, Inc."

@@ -15,11 +15,11 @@ i18n.merge_file(
 )
 
 i18n.merge_file(
-    input: 'agent-polkit.appdata.xml.in',
-    output: meson.project_name() + '.appdata.xml',
+    input: 'agent-polkit.metainfo.xml.in',
+    output: meson.project_name() + '.metainfo.xml',
     install: true,
-    install_dir: join_paths(get_option('datadir'), 'metainfo'),
-    po_dir: join_paths(meson.source_root (), 'po', 'extra')
+    install_dir: get_option('datadir') / 'metainfo',
+    po_dir: meson.source_root () / 'po' / 'extra'
 )
 
 # Daemon File

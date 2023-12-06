@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 18:14+0000\n"
-"PO-Revision-Date: 2020-09-22 14:23+0000\n"
+"POT-Creation-Date: 2023-08-14 18:20+0000\n"
+"PO-Revision-Date: 2022-10-27 18:57+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/polkit-"
 "agent-extra/uk/>\n"
@@ -18,30 +18,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:08+0000\n"
 
 #: data/agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
 msgstr "Запит автентифікації"
 
-#: data/agent-polkit.desktop.in.in:5
-msgid "dialog-password"
-msgstr "dialog-password"
-
 #: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
 msgid "PolicyKit Authentication Agent"
 msgstr "Служба автентифікації PolicyKit"
 
-#: data/agent-polkit.appdata.xml.in:8
+#: data/agent-polkit.metainfo.xml.in:10
 msgid "Authentication Agent"
 msgstr "Служба автентифікації"
 
-#: data/agent-polkit.appdata.xml.in:9
+#: data/agent-polkit.metainfo.xml.in:11
 msgid "Approve or deny access to administrative powers"
 msgstr "Затверджуйте або забороняйте доступ до прав адміністратора"
 
-#: data/agent-polkit.appdata.xml.in:11
+#: data/agent-polkit.metainfo.xml.in:13
 msgid ""
 "The authentication agent appears whenever an application wants to request "
 "permission to use administrative powers."
@@ -49,16 +45,19 @@ msgstr ""
 "Служба автентифікації надсилає запит щоразу, коли застосунок хоче запитати "
 "дозвіл на отримання прав адміністратора."
 
-#: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:25
-#: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
-#: data/agent-polkit.appdata.xml.in:46
-msgid "Updated translations"
-msgstr "Оновлено переклади"
+#: data/agent-polkit.metainfo.xml.in:34
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
-#: data/agent-polkit.appdata.xml.in:24
+#: data/agent-polkit.metainfo.xml.in:42 data/agent-polkit.metainfo.xml.in:50
+#: data/agent-polkit.metainfo.xml.in:59 data/agent-polkit.metainfo.xml.in:67
+#: data/agent-polkit.metainfo.xml.in:75
+msgid "Updated translations"
+msgstr "Оновлені переклади"
+
+#: data/agent-polkit.metainfo.xml.in:58
 msgid "Fix a potential issue when ending the session"
 msgstr "Виправлено загрозу проблеми завершення сеансу"
 
-#: data/agent-polkit.appdata.xml.in:89
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
+#~ msgid "dialog-password"
+#~ msgstr "dialog-password"

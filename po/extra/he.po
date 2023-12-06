@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 18:14+0000\n"
-"PO-Revision-Date: 2021-11-23 17:47+0000\n"
+"POT-Creation-Date: 2023-08-14 18:20+0000\n"
+"PO-Revision-Date: 2022-10-26 16:10+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/"
-"polkit-agent-extra/he/>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/polkit-"
+"agent-extra/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,39 +23,38 @@ msgstr ""
 msgid "Authentication Dialog"
 msgstr "דו־שיח אימות"
 
-#: data/agent-polkit.desktop.in.in:5
-msgid "dialog-password"
-msgstr "dialog-password"
-
 #: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
 msgid "PolicyKit Authentication Agent"
 msgstr "סוכן אימות של PolicyKit"
 
-#: data/agent-polkit.appdata.xml.in:8
+#: data/agent-polkit.metainfo.xml.in:10
 msgid "Authentication Agent"
 msgstr "סוכן אימות"
 
-#: data/agent-polkit.appdata.xml.in:9
+#: data/agent-polkit.metainfo.xml.in:11
 msgid "Approve or deny access to administrative powers"
 msgstr "אישור או דחייה של גישה ליכולות ניהוליות"
 
-#: data/agent-polkit.appdata.xml.in:11
+#: data/agent-polkit.metainfo.xml.in:13
 msgid ""
 "The authentication agent appears whenever an application wants to request "
 "permission to use administrative powers."
 msgstr ""
 "סוכן האימות מופיע בכל פעם שיישום רוצה לבקש הרשאה להשתמש ביכולות ניהוליות."
 
-#: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:25
-#: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
-#: data/agent-polkit.appdata.xml.in:46
-msgid "Updated translations"
-msgstr "תרגומים עודכנו"
+#: data/agent-polkit.metainfo.xml.in:34
+msgid "elementary, Inc."
+msgstr "elementary בע״מ."
 
-#: data/agent-polkit.appdata.xml.in:24
+#: data/agent-polkit.metainfo.xml.in:42 data/agent-polkit.metainfo.xml.in:50
+#: data/agent-polkit.metainfo.xml.in:59 data/agent-polkit.metainfo.xml.in:67
+#: data/agent-polkit.metainfo.xml.in:75
+msgid "Updated translations"
+msgstr "התרגומים עודכנו"
+
+#: data/agent-polkit.metainfo.xml.in:58
 msgid "Fix a potential issue when ending the session"
 msgstr "תיקון תקלות אפשרויות בסגירת פעילות"
 
-#: data/agent-polkit.appdata.xml.in:89
-msgid "elementary, Inc."
-msgstr "elementary בע״מ."
+#~ msgid "dialog-password"
+#~ msgstr "dialog-password"

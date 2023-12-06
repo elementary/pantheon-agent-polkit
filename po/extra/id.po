@@ -7,53 +7,54 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 18:14+0000\n"
-"PO-Revision-Date: 2016-07-29 23:04+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Indonesian <id@li.org>\n"
+"POT-Creation-Date: 2023-08-14 18:20+0000\n"
+"PO-Revision-Date: 2023-06-01 14:07+0000\n"
+"Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
+"io>\n"
+"Language-Team: Indonesian <https://l10n.elementary.io/projects/desktop/"
+"polkit-agent-extra/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:08+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: data/agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
-msgstr ""
-
-#: data/agent-polkit.desktop.in.in:5
-msgid "dialog-password"
-msgstr ""
+msgstr "Dialog Otentikasi"
 
 #: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
 msgid "PolicyKit Authentication Agent"
-msgstr ""
+msgstr "Agen Otentikasi PolicyKit"
 
-#: data/agent-polkit.appdata.xml.in:8
+#: data/agent-polkit.metainfo.xml.in:10
 msgid "Authentication Agent"
-msgstr ""
+msgstr "Agen Otentikasi"
 
-#: data/agent-polkit.appdata.xml.in:9
+#: data/agent-polkit.metainfo.xml.in:11
 msgid "Approve or deny access to administrative powers"
-msgstr ""
+msgstr "Menyetujui atau menolak akses ke kekuasaan administratif"
 
-#: data/agent-polkit.appdata.xml.in:11
+#: data/agent-polkit.metainfo.xml.in:13
 msgid ""
 "The authentication agent appears whenever an application wants to request "
 "permission to use administrative powers."
 msgstr ""
+"Agen autentikasi muncul setiap kali aplikasi ingin meminta izin untuk "
+"menggunakan kekuatan administratif."
 
-#: data/agent-polkit.appdata.xml.in:17 data/agent-polkit.appdata.xml.in:25
-#: data/agent-polkit.appdata.xml.in:32 data/agent-polkit.appdata.xml.in:39
-#: data/agent-polkit.appdata.xml.in:46
-msgid "Updated translations"
-msgstr ""
-
-#: data/agent-polkit.appdata.xml.in:24
-msgid "Fix a potential issue when ending the session"
-msgstr ""
-
-#: data/agent-polkit.appdata.xml.in:89
+#: data/agent-polkit.metainfo.xml.in:34
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
+
+#: data/agent-polkit.metainfo.xml.in:42 data/agent-polkit.metainfo.xml.in:50
+#: data/agent-polkit.metainfo.xml.in:59 data/agent-polkit.metainfo.xml.in:67
+#: data/agent-polkit.metainfo.xml.in:75
+msgid "Updated translations"
+msgstr "Terjemahan yang diperbarui"
+
+#: data/agent-polkit.metainfo.xml.in:58
+msgid "Fix a potential issue when ending the session"
+msgstr "Perbaikan potensi masalah saat mengakhiri sesi"

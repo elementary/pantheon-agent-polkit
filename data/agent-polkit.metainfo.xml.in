@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2018-2023 elementary, Inc. <contact@elementary.io> -->
+<component type="desktop-application">
+  <id>io.elementary.desktop.agent-polkit</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0</project_license>
+  <translation type="gettext">io.elementary.desktop.agent-polkit</translation>
+  <compulsory_for_desktop>Pantheon</compulsory_for_desktop>
+
+  <name>Authentication Agent</name>
+  <summary>Approve or deny access to administrative powers</summary>
+  <description>
+    <p>The authentication agent appears whenever an application wants to request permission to use administrative powers.</p>
+  </description>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/pantheon-agent-polkit/master/data/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+
+  <content_rating type="oars-1.1" />
+
+  <provides>
+    <binary>io.elementary.desktop.agent-polkit</binary>
+  </provides>
+
+  <url type="bugtracker">https://github.com/elementary/pantheon-agent-polkit/issues</url>
+  <url type="donation">https://elementary.io/get-involved#funding</url>
+  <url type="help">https://github.com/elementary/pantheon-agent-polkit/discussions/categories/q-a</url>
+  <url type="homepage">https://elementary.io/</url>
+  <url type="translate">https://l10n.elementary.io/engage/desktop/</url>
+
+  <developer_name>elementary, Inc.</developer_name>
+  <project_group>elementary</project_group>
+  <update_contact>contact_at_elementary.io</update_contact>
+
+  <releases>
+    <release version="1.0.5" date="2022-04-27" urgency="medium">
+      <description>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="1.0.4" date="2021-07-14" urgency="medium">
+      <description>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="1.0.3" date="2020-06-19" urgency="medium">
+      <description>
+        <ul>
+          <li>Fix a potential issue when ending the session</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="1.0.2" date="2020-05-28" urgency="medium">
+      <description>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="1.0.1" date="2020-04-06" urgency="medium">
+      <description>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="1.0.0" date="2019-11-15" urgency="medium" />
+  </releases>
+</component>
