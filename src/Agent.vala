@@ -25,15 +25,6 @@
 
 namespace Ag {
     public class Agent : PolkitAgent.Listener {
-        public Agent () {
-            register_with_session.begin ((obj, res)=> {
-                bool success = register_with_session.end (res);
-                if (!success) {
-                    warning ("Failed to register with Session manager");
-                }
-            });
-        }
-
         public override async bool initiate_authentication (string action_id, string message, string icon_name,
             Polkit.Details details, string cookie, GLib.List<Polkit.Identity> identities, GLib.Cancellable? cancellable) throws Polkit.Error {
             if (identities == null) {
@@ -53,31 +44,6 @@ namespace Ag {
             }
 
             return true;
-        }
-
-        private async bool register_with_session () {
-            var sclient = yield Utils.register_with_session ("io.elementary.pantheon-agent-polkit");
-            if (sclient == null) {
-                return false;
-            }
-
-            sclient.query_end_session.connect ((flags) => session_respond (sclient, flags));
-            sclient.end_session.connect ((flags) => session_respond (sclient, flags));
-            sclient.stop.connect (session_stop);
-
-            return true;
-        }
-
-        private void session_respond (SessionClient sclient, uint flags) {
-            try {
-                sclient.end_session_response (true, "");
-            } catch (Error e) {
-                warning ("Unable to respond to session manager: %s", e.message);
-            }
-        }
-
-        private void session_stop () {
-            GLib.Application.get_default ().release ();
         }
     }
 }
