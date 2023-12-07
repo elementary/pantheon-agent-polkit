@@ -15,7 +15,6 @@ executable(
     'src/Agent.vala',
     'src/PolkitDialog.vala',
     'src/Interfaces.vala',
-    'src/Utils.vala',
     dependencies: [
         dependency('glib-2.0'),
         dependency('gobject-2.0'),

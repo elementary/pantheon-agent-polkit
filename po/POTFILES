@@ -1,4 +1,4 @@
 src/Agent.vala
-src/PolkitDialog.vala
+src/Application.vala
 src/Interfaces.vala
-src/Utils.vala
+src/PolkitDialog.vala
