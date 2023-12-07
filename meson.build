@@ -16,10 +16,12 @@ executable(
     'src/PolkitDialog.vala',
     'src/Interfaces.vala',
     dependencies: [
+        dependency('accountsservice'),
         dependency('glib-2.0'),
         dependency('gobject-2.0'),
         dependency('granite-7', version: '>=7.0.0'),
         dependency('gtk4'),
+        dependency('libadwaita-1'),
         dependency('polkit-agent-1'),
         dependency('polkit-gobject-1'),
         meson.get_compiler('vala').find_library('posix')
