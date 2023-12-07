@@ -11,10 +11,10 @@ add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format(meson.project_name()), lan
 
 executable(
     meson.project_name(),
+    'src/Application.vala',
     'src/Agent.vala',
     'src/PolkitDialog.vala',
     'src/Interfaces.vala',
-    'src/Utils.vala',
     dependencies: [
         dependency('glib-2.0'),
         dependency('gobject-2.0'),
