@@ -95,13 +95,10 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
         idents_combo.add_attribute (renderer, "text", 1);
         idents_combo.set_id_column (1);
 
-        var credentials_grid = new Gtk.Grid () {
-            column_spacing = 12,
-            row_spacing = 6
-        };
-        credentials_grid.attach (idents_combo, 0, 0);
-        credentials_grid.attach (password_entry, 0, 2);
-        credentials_grid.attach (feedback_revealer, 0, 3);
+        var credentials_box = new Gtk.Box (VERTICAL, 6);
+        credentials_box.append (idents_combo);
+        credentials_box.append (password_entry);
+        credentials_box.append (feedback_revealer);
 
         image_icon = new ThemedIcon ("dialog-password");
 
@@ -109,7 +106,7 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
             badge_icon = new ThemedIcon (icon_name);
         }
 
-        custom_bin.append (credentials_grid);
+        custom_bin.append (credentials_box);
 
         var cancel_button = (Gtk.Button)add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
         cancel_button.clicked.connect (() => cancel ());
@@ -125,18 +122,10 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
 
         update_idents ();
         select_session ();
-    }
 
-    public override void show () {
-        base.show ();
-
-        // var window = get_window ();
-        // if (window == null) {
-        //     return;
-        // }
-
-        // window.focus (Gdk.CURRENT_TIME);
-        password_entry.grab_focus ();
+        ((Gtk.Widget) this).realize.connect (() => {
+            password_entry.grab_focus ();
+        });
     }
 
     private void update_idents () {
