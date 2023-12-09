@@ -117,15 +117,12 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
         authenticate_button.clicked.connect (authenticate);
 
         default_widget = authenticate_button;
+        focus_widget = password_entry;
 
         close.connect (cancel);
 
         update_idents ();
         select_session ();
-
-        ((Gtk.Widget) this).realize.connect (() => {
-            password_entry.grab_focus ();
-        });
     }
 
     private void update_idents () {
