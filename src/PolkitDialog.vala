@@ -74,7 +74,7 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
             wrap = true,
             xalign = 1
         };
-        password_feedback.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
+        password_feedback.add_css_class (Granite.STYLE_CLASS_ERROR);
 
         feedback_revealer = new Gtk.Revealer () {
             child = password_feedback
@@ -95,48 +95,34 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
         idents_combo.add_attribute (renderer, "text", 1);
         idents_combo.set_id_column (1);
 
-        var credentials_grid = new Gtk.Grid () {
-            column_spacing = 12,
-            row_spacing = 6
-        };
-        credentials_grid.attach (idents_combo, 0, 0);
-        credentials_grid.attach (password_entry, 0, 2);
-        credentials_grid.attach (feedback_revealer, 0, 3);
+        var credentials_box = new Gtk.Box (VERTICAL, 6);
+        credentials_box.append (idents_combo);
+        credentials_box.append (password_entry);
+        credentials_box.append (feedback_revealer);
 
         image_icon = new ThemedIcon ("dialog-password");
 
-        if (icon_name != "" && Gtk.IconTheme.get_default ().has_icon (icon_name)) {
+        if (icon_name != "" && Gtk.IconTheme.get_for_display (Gdk.Display.get_default ()).has_icon (icon_name)) {
             badge_icon = new ThemedIcon (icon_name);
         }
 
-        custom_bin.add (credentials_grid);
+        custom_bin.append (credentials_box);
 
         var cancel_button = (Gtk.Button)add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
         cancel_button.clicked.connect (() => cancel ());
 
         var authenticate_button = (Gtk.Button)add_button (_("Authenticate"), Gtk.ResponseType.APPLY);
-        authenticate_button.can_default = true;
-        authenticate_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        authenticate_button.receives_default = true;
+        authenticate_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
         authenticate_button.clicked.connect (authenticate);
 
-        set_default (authenticate_button);
+        default_widget = authenticate_button;
+        focus_widget = password_entry;
 
         close.connect (cancel);
 
         update_idents ();
         select_session ();
-    }
-
-    public override void show () {
-        base.show ();
-
-        var window = get_window ();
-        if (window == null) {
-            return;
-        }
-
-        window.focus (Gdk.CURRENT_TIME);
-        password_entry.grab_focus ();
     }
 
     private void update_idents () {
@@ -188,7 +174,6 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
         if (length < 2) {
             if (target_user == Environment.get_user_name ()) {
                 idents_combo.visible = false;
-                idents_combo.no_show_all = true;
             } else {
                 idents_combo.sensitive = false;
             }

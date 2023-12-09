@@ -6,8 +6,8 @@
 ## Building, Testing, and Installation
 
 You'll need the following dependencies:
-* libgranite-dev (>= 6.0.0)
-* libgtk-3-dev
+* libgranite-7-dev (>= 7.0.0)
+* libgtk-4-dev
 * libpolkit-gobject-1-dev
 * libpolkit-agent-1-dev
 * meson

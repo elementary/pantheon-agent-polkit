@@ -34,7 +34,7 @@ namespace Ag {
             var dialog = new PolkitDialog (message, icon_name, cookie, identities, cancellable);
             dialog.done.connect (() => initiate_authentication.callback ());
 
-            dialog.show_all ();
+            dialog.present ();
             yield;
 
             dialog.destroy ();
