@@ -6,6 +6,7 @@
 ## Building, Testing, and Installation
 
 You'll need the following dependencies:
+* libadwaita-1-dev
 * libgranite-7-dev (>= 7.0.0)
 * libgtk-4-dev
 * libpolkit-gobject-1-dev

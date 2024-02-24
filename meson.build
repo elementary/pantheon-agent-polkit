@@ -16,6 +16,7 @@ executable(
     'src/PolkitDialog.vala',
     'src/Interfaces.vala',
     dependencies: [
+        dependency('libadwaita-1'),
         dependency('glib-2.0'),
         dependency('gobject-2.0'),
         dependency('granite-7', version: '>=7.0.0'),
