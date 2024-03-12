@@ -44,7 +44,13 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
     private Gtk.Label password_label;
     private Gtk.Label password_feedback;
     private Gtk.Entry password_entry;
-    private Gtk.ComboBox idents_combo;
+    private Gtk.DropDown dropdown;
+
+    private static Act.UserManager usermanager;
+
+    static construct {
+        usermanager = Act.UserManager.get_default ();
+    }
 
     public PolkitDialog (string message, string icon_name, string _cookie,
                          List<Polkit.Identity?>? _idents, GLib.Cancellable _cancellable) {
@@ -80,23 +86,19 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
             child = password_feedback
         };
 
-        idents_combo = new Gtk.ComboBox () {
+        var list_factory = new Gtk.SignalListItemFactory ();
+        list_factory.setup.connect (setup_factory);
+        list_factory.bind.connect (bind_factory);
+
+        var model = new ListStore (typeof (Polkit.Identity));
+
+        dropdown = new Gtk.DropDown (model, null) {
+            factory = list_factory,
             hexpand = true
         };
-        idents_combo.changed.connect (on_ident_changed);
-
-        Gtk.CellRenderer renderer = new Gtk.CellRendererPixbuf ();
-        idents_combo.pack_start (renderer, false);
-        idents_combo.add_attribute (renderer, "icon-name", 0);
-
-        renderer = new Gtk.CellRendererText ();
-        renderer.xpad = 6;
-        idents_combo.pack_start (renderer, true);
-        idents_combo.add_attribute (renderer, "text", 1);
-        idents_combo.set_id_column (1);
 
         var credentials_box = new Gtk.Box (VERTICAL, 6);
-        credentials_box.append (idents_combo);
+        credentials_box.append (dropdown);
         credentials_box.append (password_entry);
         credentials_box.append (feedback_revealer);
 
@@ -121,61 +123,79 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
 
         close.connect (cancel);
 
-        update_idents ();
+        dropdown.notify["selected"].connect (() => {
+            pk_identity = (Polkit.Identity) dropdown.get_selected_item ();
+            select_session ();
+        });
+
+        foreach (unowned Polkit.Identity? identity in idents) {
+            if (identity != null) {
+                model.append (identity);
+            }
+        }
+
+        if (model.get_n_items () < 2) {
+        //     if (target_user == Environment.get_user_name ()) {
+        //         dropdown.visible = false;
+        //     } else {
+        //         dropdown.sensitive = false;
+        //     }
+        }
+
         select_session ();
     }
 
-    private void update_idents () {
-        var model = new Gtk.ListStore (3, typeof (string), typeof (string), typeof (Polkit.Identity));
-        Gtk.TreeIter iter;
+    private void setup_factory (Object object) {
+        var avatar = new Adw.Avatar (24, null, true);
 
-        int length = 0;
-        int active = 0;
+        var user_name = new Gtk.Label ("");
 
-        string? target_user = null;
+        var box = new Gtk.Box (HORIZONTAL, 6);
+        box.append (avatar);
+        box.append (user_name);
 
-        foreach (unowned Polkit.Identity? ident in idents) {
-            if (ident == null) {
-                continue;
-            }
+        var list_item = (Gtk.ListItem) object;
+        list_item.set_data ("avatar", avatar);
+        list_item.set_data ("username", user_name);
+        list_item.set_child (box);
+    }
 
-            string name = ident.to_string ();
+    private void bind_factory (Object object) {
+        var list_item = (Gtk.ListItem) object;
 
-            if (ident is Polkit.UnixUser) {
-                unowned Posix.Passwd? pwd = Posix.getpwuid (((Polkit.UnixUser)ident).get_uid ());
-                if (pwd != null) {
-                    string pw_name = pwd.pw_name;
-                    if (target_user == null && length < 2) {
-                        target_user = pw_name;
+        var identity = (Polkit.Identity) list_item.get_item ();
+
+        var user_name = list_item.get_data<Gtk.Label>("username");
+        user_name.label = identity.to_string ();
+
+        var avatar = list_item.get_data<Adw.Avatar>("avatar");
+
+        if (identity is Polkit.UnixUser) {
+            unowned Posix.Passwd? pwd = Posix.getpwuid (((Polkit.UnixUser)identity).get_uid ());
+            if (pwd != null) {
+                string pw_name = pwd.pw_name;
+
+                if (usermanager.is_loaded) {
+                    var user = usermanager.get_user (pw_name);
+
+                    user_name.label = user.get_real_name ();
+
+                    var user_icon_file = File.new_for_path (user.get_icon_file ());
+                    if (user_icon_file.query_exists ()) {
+                        avatar.set_custom_image (new Gtk.IconPaintable.for_file (user_icon_file, avatar.size, 1));
+                    } else {
+                        avatar.text = user.get_real_name ();
                     }
-
-                    name = pw_name;
-                }
-            } else if (ident is Polkit.UnixGroup) {
-                unowned Posix.Group? gwd = Posix.getgrgid (((Polkit.UnixGroup)ident).get_gid ());
-                if (gwd != null) {
-                    name = _("Group: %s").printf (gwd.gr_name);
+                } else {
+                    user_name.label = pw_name;
+                    avatar.text = pw_name;
                 }
             }
-
-            model.append (out iter);
-            model.set (iter, 0, "avatar-default-symbolic", 1, name, 2, ident);
-
-            if (name == Environment.get_user_name ()) {
-                active = length;
-            }
-
-            length++;
-        }
-
-        idents_combo.set_model (model);
-        idents_combo.active = active;
-
-        if (length < 2) {
-            if (target_user == Environment.get_user_name ()) {
-                idents_combo.visible = false;
-            } else {
-                idents_combo.sensitive = false;
+        } else if (identity is Polkit.UnixGroup) {
+            unowned Posix.Group? gwd = Posix.getgrgid (((Polkit.UnixGroup)identity).get_gid ());
+            if (gwd != null) {
+                user_name.label = _("Group: %s").printf (gwd.gr_name);
+                avatar.text = gwd.gr_name;
             }
         }
     }
@@ -226,23 +246,6 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
 
         canceling = false;
         done ();
-    }
-
-    private void on_ident_changed () {
-        Gtk.TreeIter iter;
-
-        if (!idents_combo.get_active_iter (out iter)) {
-            deselect_session ();
-            return;
-        }
-
-        var model = idents_combo.get_model ();
-        if (model == null) {
-            return;
-        }
-
-        model.get (iter, 2, out pk_identity, -1);
-        select_session ();
     }
 
     private void on_pk_session_completed (bool authorized) {

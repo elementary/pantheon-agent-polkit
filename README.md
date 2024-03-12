@@ -6,8 +6,10 @@
 ## Building, Testing, and Installation
 
 You'll need the following dependencies:
+* accountsservice
 * libgranite-7-dev (>= 7.0.0)
 * libgtk-4-dev
+* libadwaita-1-dev
 * libpolkit-gobject-1-dev
 * libpolkit-agent-1-dev
 * meson
