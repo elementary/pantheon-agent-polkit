@@ -3,6 +3,7 @@ Section: admin
 Priority: optional
 Maintainer: Cody Garver <cody@elementary.io>
 Build-Depends: debhelper (>= 10.5.1),
+               libadwaita-1-dev,
                libgranite-7-dev,
                libgtk-4-dev,
                libpolkit-gobject-1-dev,
