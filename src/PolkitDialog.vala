@@ -246,7 +246,6 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
     }
 
     private void on_pk_session_completed (bool authorized) {
-        sensitive = true;
         if (!authorized || cancellable.is_cancelled ()) {
             if (!canceling) {
                 on_pk_show_error (_("Authentication failed. Please try again."));
@@ -260,6 +259,7 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
         } else {
             done ();
         }
+        sensitive = true;
     }
 
     private void on_pk_request (string request, bool echo_on) {
@@ -270,9 +270,39 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
     }
 
     private void on_pk_show_error (string text) {
-        password_entry.secondary_icon_name = "dialog-error-symbolic";
-        password_feedback.label = text;
-        feedback_revealer.reveal_child = true;
+        var width = get_width ();
+        var height = get_height ();
+
+        var shake = new Adw.TimedAnimation (
+            child, 0, -24, 70,
+            new Adw.CallbackAnimationTarget ((val) => {
+                child.allocate (
+                    width, height, -1,
+                    new Gsk.Transform ().translate (Graphene.Point () { x = (int) val })
+                );
+            })
+        ) {
+            easing = EASE_OUT_CIRC,
+            reverse = true,
+        };
+        shake.play ();
+
+        int repeat_count = 0;
+        ulong iterate = 0;
+        iterate = shake.done.connect (() => {
+            if (repeat_count == 4) {
+                feedback_revealer.reveal_child = true;
+                password_entry.secondary_icon_name = "dialog-error-symbolic";
+                password_feedback.label = text;
+                sensitive = true;
+                disconnect (iterate);
+                return;
+            }
+
+            shake.value_to = -1 * shake.value_to;
+            shake.play ();
+            repeat_count++;
+        });
     }
 
     private void on_pk_show_info (string text) {
