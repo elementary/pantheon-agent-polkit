@@ -38,6 +38,15 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
+    <release version="8.0.0" date="2024-05-08" urgency="medium">
+      <description>
+        <ul>
+          <li>Update to the latest platform libraries</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
     <release version="1.0.5" date="2022-04-27" urgency="medium">
       <description>
         <ul>
@@ -71,14 +80,7 @@
       </description>
     </release>
 
-    <release version="1.0.1" date="2020-04-06" urgency="medium">
-      <description>
-        <ul>
-          <li>Updated translations</li>
-        </ul>
-      </description>
-    </release>
-
+    <release version="1.0.1" date="2020-04-06" urgency="medium" />
     <release version="1.0.0" date="2019-11-15" urgency="medium" />
   </releases>
 </component>
