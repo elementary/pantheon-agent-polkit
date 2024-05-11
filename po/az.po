@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-14 18:20+0000\n"
+"POT-Creation-Date: 2024-05-11 02:29+0000\n"
 "PO-Revision-Date: 2017-12-18 14:25+0000\n"
 "Last-Translator: Вагиф Кязым <vaqif134@gmail.com>\n"
 "Language-Team: Azerbaijani <https://weblate.elementary.io/projects/desktop/"
@@ -15,15 +15,15 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:07+0000\n"
 
-#: src/PolkitDialog.vala:53
+#: src/PolkitDialog.vala:52
 msgid "Authentication Dialog"
 msgstr "Kimliyi yoxlama dialoqu"
 
-#: src/PolkitDialog.vala:61
+#: src/PolkitDialog.vala:60
 msgid "Authentication Required"
 msgstr "Kimlik yoxlanılmalıdır"
 
-#: src/PolkitDialog.vala:70
+#: src/PolkitDialog.vala:68
 msgid "Password"
 msgstr "Şifrə"
 
@@ -35,12 +35,12 @@ msgstr "İmtina et"
 msgid "Authenticate"
 msgstr "Kimliyi təsdiqlə"
 
-#: src/PolkitDialog.vala:177
+#: src/PolkitDialog.vala:157
 #, c-format
 msgid "Group: %s"
 msgstr "Qrup: %s"
 
-#: src/PolkitDialog.vala:273
+#: src/PolkitDialog.vala:251
 msgid "Authentication failed. Please try again."
 msgstr "Kimliyi təsdiqləmək alınmadı. Yenidən cəhd edin."
 

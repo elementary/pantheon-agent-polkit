@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-14 18:20+0000\n"
+"POT-Creation-Date: 2024-05-11 02:29+0000\n"
 "PO-Revision-Date: 2017-07-22 09:15+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.elementary.io/projects/"
@@ -15,15 +15,15 @@ msgstr ""
 "X-Generator: Weblate 2.15\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:08+0000\n"
 
-#: src/PolkitDialog.vala:53
+#: src/PolkitDialog.vala:52
 msgid "Authentication Dialog"
 msgstr "身份核對對話盒"
 
-#: src/PolkitDialog.vala:61
+#: src/PolkitDialog.vala:60
 msgid "Authentication Required"
 msgstr "需要核對身份"
 
-#: src/PolkitDialog.vala:70
+#: src/PolkitDialog.vala:68
 msgid "Password"
 msgstr "密碼"
 
@@ -35,12 +35,12 @@ msgstr "取消"
 msgid "Authenticate"
 msgstr "核對"
 
-#: src/PolkitDialog.vala:177
+#: src/PolkitDialog.vala:157
 #, c-format
 msgid "Group: %s"
 msgstr "群組：%s"
 
-#: src/PolkitDialog.vala:273
+#: src/PolkitDialog.vala:251
 msgid "Authentication failed. Please try again."
 msgstr "身份核對失敗。請重試。"
 
