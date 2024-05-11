@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-14 18:20+0000\n"
+"POT-Creation-Date: 2024-05-11 02:29+0000\n"
 "PO-Revision-Date: 2023-04-06 23:59+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/polkit-"
@@ -43,16 +43,19 @@ msgstr ""
 "Az autentikációs ágens akkor jelenik meg, ha egy alkalmazás rendszergazdai "
 "jogokat szeretne kérni."
 
-#: data/agent-polkit.metainfo.xml.in:34
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
+#: data/agent-polkit.metainfo.xml.in:44
+msgid "Update to the latest platform libraries"
+msgstr ""
 
-#: data/agent-polkit.metainfo.xml.in:42 data/agent-polkit.metainfo.xml.in:50
-#: data/agent-polkit.metainfo.xml.in:59 data/agent-polkit.metainfo.xml.in:67
-#: data/agent-polkit.metainfo.xml.in:75
+#: data/agent-polkit.metainfo.xml.in:45 data/agent-polkit.metainfo.xml.in:53
+#: data/agent-polkit.metainfo.xml.in:61 data/agent-polkit.metainfo.xml.in:70
+#: data/agent-polkit.metainfo.xml.in:78
 msgid "Updated translations"
 msgstr "Frissített fordítások"
 
-#: data/agent-polkit.metainfo.xml.in:58
+#: data/agent-polkit.metainfo.xml.in:69
 msgid "Fix a potential issue when ending the session"
 msgstr "Egy, a munkamenet befejezésekor lehetségesen előjövő hiba megelőzése"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."

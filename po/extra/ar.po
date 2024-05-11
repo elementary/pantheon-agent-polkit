@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-14 18:20+0000\n"
+"POT-Creation-Date: 2024-05-11 02:29+0000\n"
 "PO-Revision-Date: 2021-09-04 17:03+0000\n"
 "Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/polkit-"
@@ -42,19 +42,22 @@ msgid ""
 "permission to use administrative powers."
 msgstr "يظهر مفوض التوثيق في أي وقت يقوم تطبيق بطلب إذن للصلاحيات الإدارية."
 
-#: data/agent-polkit.metainfo.xml.in:34
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
+#: data/agent-polkit.metainfo.xml.in:44
+msgid "Update to the latest platform libraries"
+msgstr ""
 
-#: data/agent-polkit.metainfo.xml.in:42 data/agent-polkit.metainfo.xml.in:50
-#: data/agent-polkit.metainfo.xml.in:59 data/agent-polkit.metainfo.xml.in:67
-#: data/agent-polkit.metainfo.xml.in:75
+#: data/agent-polkit.metainfo.xml.in:45 data/agent-polkit.metainfo.xml.in:53
+#: data/agent-polkit.metainfo.xml.in:61 data/agent-polkit.metainfo.xml.in:70
+#: data/agent-polkit.metainfo.xml.in:78
 msgid "Updated translations"
 msgstr "تحديثات على الترجمة"
 
-#: data/agent-polkit.metainfo.xml.in:58
+#: data/agent-polkit.metainfo.xml.in:69
 msgid "Fix a potential issue when ending the session"
 msgstr "إصلاح مشكلة محتملة عند إنهاء الجلسة"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #~ msgid "dialog-password"
 #~ msgstr "dialog-password"
