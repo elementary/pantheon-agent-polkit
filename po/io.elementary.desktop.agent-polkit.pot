@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.desktop.agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-14 18:20+0000\n"
+"POT-Creation-Date: 2024-05-11 02:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/PolkitDialog.vala:53
+#: src/PolkitDialog.vala:52
 msgid "Authentication Dialog"
 msgstr ""
 
-#: src/PolkitDialog.vala:61
+#: src/PolkitDialog.vala:60
 msgid "Authentication Required"
 msgstr ""
 
-#: src/PolkitDialog.vala:70
+#: src/PolkitDialog.vala:68
 msgid "Password"
 msgstr ""
 
@@ -37,11 +37,11 @@ msgstr ""
 msgid "Authenticate"
 msgstr ""
 
-#: src/PolkitDialog.vala:177
+#: src/PolkitDialog.vala:157
 #, c-format
 msgid "Group: %s"
 msgstr ""
 
-#: src/PolkitDialog.vala:273
+#: src/PolkitDialog.vala:251
 msgid "Authentication failed. Please try again."
 msgstr ""
