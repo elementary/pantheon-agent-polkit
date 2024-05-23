@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-14 18:20+0000\n"
+"POT-Creation-Date: 2024-05-11 02:29+0000\n"
 "PO-Revision-Date: 2021-09-04 17:03+0000\n"
 "Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/pantheon-"
@@ -16,15 +16,15 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:07+0000\n"
 
-#: src/PolkitDialog.vala:53
+#: src/PolkitDialog.vala:52
 msgid "Authentication Dialog"
 msgstr "رسالة التوثيق"
 
-#: src/PolkitDialog.vala:61
+#: src/PolkitDialog.vala:60
 msgid "Authentication Required"
 msgstr "التوثيق مطلوب"
 
-#: src/PolkitDialog.vala:70
+#: src/PolkitDialog.vala:68
 msgid "Password"
 msgstr "كلمة المرور"
 
@@ -36,11 +36,11 @@ msgstr "ألغ"
 msgid "Authenticate"
 msgstr "وثق"
 
-#: src/PolkitDialog.vala:177
+#: src/PolkitDialog.vala:157
 #, c-format
 msgid "Group: %s"
 msgstr "المجموعة: %s"
 
-#: src/PolkitDialog.vala:273
+#: src/PolkitDialog.vala:251
 msgid "Authentication failed. Please try again."
 msgstr "فشل التوثيق. الرجاء المحاولة مرة أخرى."

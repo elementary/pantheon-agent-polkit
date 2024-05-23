@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-14 18:20+0000\n"
-"PO-Revision-Date: 2023-06-14 11:07+0000\n"
+"POT-Creation-Date: 2024-05-11 02:29+0000\n"
+"PO-Revision-Date: 2024-05-15 08:13+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/polkit-"
-"agent-extra/ca/>\n"
+"Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/"
+"polkit-agent-extra/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:08+0000\n"
 
 #: data/agent-polkit.desktop.in.in:3
@@ -44,19 +44,22 @@ msgstr ""
 "L’agent d’autenticació apareix sempre que una aplicació vol sol·licitar "
 "permís per utilitzar poders administratius."
 
-#: data/agent-polkit.metainfo.xml.in:34
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
+#: data/agent-polkit.metainfo.xml.in:44
+msgid "Update to the latest platform libraries"
+msgstr "Actualització a les biblioteques de la plataforma més recents"
 
-#: data/agent-polkit.metainfo.xml.in:42 data/agent-polkit.metainfo.xml.in:50
-#: data/agent-polkit.metainfo.xml.in:59 data/agent-polkit.metainfo.xml.in:67
-#: data/agent-polkit.metainfo.xml.in:75
+#: data/agent-polkit.metainfo.xml.in:45 data/agent-polkit.metainfo.xml.in:53
+#: data/agent-polkit.metainfo.xml.in:61 data/agent-polkit.metainfo.xml.in:70
+#: data/agent-polkit.metainfo.xml.in:78
 msgid "Updated translations"
 msgstr "Traduccions actualitzades"
 
-#: data/agent-polkit.metainfo.xml.in:58
+#: data/agent-polkit.metainfo.xml.in:69
 msgid "Fix a potential issue when ending the session"
 msgstr "Solució d'un problema potencial en acabar la sessió"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #~ msgid "dialog-password"
 #~ msgstr "diàleg-contrasenya"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-14 18:20+0000\n"
+"POT-Creation-Date: 2024-05-11 02:29+0000\n"
 "PO-Revision-Date: 2021-08-27 04:18+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
@@ -15,15 +15,15 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:07+0000\n"
 
-#: src/PolkitDialog.vala:53
+#: src/PolkitDialog.vala:52
 msgid "Authentication Dialog"
 msgstr "Hitelesítési párbeszédablak"
 
-#: src/PolkitDialog.vala:61
+#: src/PolkitDialog.vala:60
 msgid "Authentication Required"
 msgstr "Hitelesítés szükséges"
 
-#: src/PolkitDialog.vala:70
+#: src/PolkitDialog.vala:68
 msgid "Password"
 msgstr "Jelszó"
 
@@ -35,11 +35,11 @@ msgstr "Mégse"
 msgid "Authenticate"
 msgstr "Hitelesítés"
 
-#: src/PolkitDialog.vala:177
+#: src/PolkitDialog.vala:157
 #, c-format
 msgid "Group: %s"
 msgstr "Csoport: %s"
 
-#: src/PolkitDialog.vala:273
+#: src/PolkitDialog.vala:251
 msgid "Authentication failed. Please try again."
 msgstr "Hitelesítés sikertelen. Kérem próbálja újra."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-14 18:20+0000\n"
+"POT-Creation-Date: 2024-05-11 02:29+0000\n"
 "PO-Revision-Date: 2016-08-02 10:15+0000\n"
 "Last-Translator: Mikael Nyberg <mikanybe@gmail.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -42,16 +42,16 @@ msgid ""
 "permission to use administrative powers."
 msgstr ""
 
-#: data/agent-polkit.metainfo.xml.in:34
-msgid "elementary, Inc."
+#: data/agent-polkit.metainfo.xml.in:44
+msgid "Update to the latest platform libraries"
 msgstr ""
 
-#: data/agent-polkit.metainfo.xml.in:42 data/agent-polkit.metainfo.xml.in:50
-#: data/agent-polkit.metainfo.xml.in:59 data/agent-polkit.metainfo.xml.in:67
-#: data/agent-polkit.metainfo.xml.in:75
+#: data/agent-polkit.metainfo.xml.in:45 data/agent-polkit.metainfo.xml.in:53
+#: data/agent-polkit.metainfo.xml.in:61 data/agent-polkit.metainfo.xml.in:70
+#: data/agent-polkit.metainfo.xml.in:78
 msgid "Updated translations"
 msgstr ""
 
-#: data/agent-polkit.metainfo.xml.in:58
+#: data/agent-polkit.metainfo.xml.in:69
 msgid "Fix a potential issue when ending the session"
 msgstr ""
