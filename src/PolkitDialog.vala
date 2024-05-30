@@ -46,6 +46,8 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
     private Gtk.Entry password_entry;
     private Gtk.ComboBox idents_combo;
 
+    private Pantheon.Desktop.Widget? widget;
+
     public PolkitDialog (string message, string icon_name, string _cookie,
                          List<Polkit.Identity?>? _idents, GLib.Cancellable _cancellable) {
         Object (
@@ -123,6 +125,18 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
 
         update_idents ();
         select_session ();
+
+        var gesture_click = new Gtk.GestureClick () {
+            propagation_phase = CAPTURE
+        };
+        child.add_controller (gesture_click);
+        gesture_click.pressed.connect (() => {
+            if (widget != null) {
+                widget.focus ();
+            }
+        });
+
+        child.realize.connect (init_wl);
     }
 
     private void update_idents () {
@@ -307,5 +321,34 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
 
     private void on_pk_show_info (string text) {
         info (text);
+    }
+
+    public void registry_handle_global (Wl.Registry wl_registry, uint32 name, string @interface, uint32 version) {
+        if (@interface == "io_elementary_pantheon_shell_v1") {
+            var desktop_shell = wl_registry.bind<Pantheon.Desktop.Shell> (name, ref Pantheon.Desktop.Shell.iface, uint32.min (version, 1));
+            unowned var surface = get_surface ();
+            if (surface is Gdk.Wayland.Surface) {
+                unowned var wl_surface = ((Gdk.Wayland.Surface) surface).get_wl_surface ();
+                widget = desktop_shell.get_widget (wl_surface);
+            }
+        }
+    }
+
+    private static Wl.RegistryListener registry_listener;
+    private void init_wl () {
+        registry_listener.global = registry_handle_global;
+        unowned var display = Gdk.Display.get_default ();
+        if (display is Gdk.Wayland.Display) {
+            unowned var wl_display = ((Gdk.Wayland.Display) display).get_wl_display ();
+            var wl_registry = wl_display.get_registry ();
+            wl_registry.add_listener (
+                registry_listener,
+                this
+            );
+
+            if (wl_display.roundtrip () < 0) {
+                return;
+            }
+        }
     }
 }
