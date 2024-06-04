@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-11 02:29+0000\n"
-"PO-Revision-Date: 2020-07-01 22:27+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
-"Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/polkit-"
-"agent-extra/es/>\n"
+"PO-Revision-Date: 2024-06-05 03:13+0000\n"
+"Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
+"Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/"
+"polkit-agent-extra/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:08+0000\n"
 
 #: data/agent-polkit.desktop.in.in:3
@@ -34,7 +34,7 @@ msgstr "Agente de autenticación"
 
 #: data/agent-polkit.metainfo.xml.in:11
 msgid "Approve or deny access to administrative powers"
-msgstr "Apruebe o rechace el acceso a las funciones administrativas"
+msgstr "Apruebe o rechace el acceso a funciones administrativas"
 
 #: data/agent-polkit.metainfo.xml.in:13
 msgid ""
@@ -46,7 +46,7 @@ msgstr ""
 
 #: data/agent-polkit.metainfo.xml.in:44
 msgid "Update to the latest platform libraries"
-msgstr ""
+msgstr "Se ha actualizado con las últimas librerías de la plataforma"
 
 #: data/agent-polkit.metainfo.xml.in:45 data/agent-polkit.metainfo.xml.in:53
 #: data/agent-polkit.metainfo.xml.in:61 data/agent-polkit.metainfo.xml.in:70
@@ -56,7 +56,7 @@ msgstr "Traducciones actualizadas"
 
 #: data/agent-polkit.metainfo.xml.in:69
 msgid "Fix a potential issue when ending the session"
-msgstr "Se corrigió un problema en potencia al finalizar la sesión"
+msgstr "Se corrigió un potencial problema al finalizar la sesión"
 
 #~ msgid "elementary, Inc."
 #~ msgstr "elementary, Inc."
