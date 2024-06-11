@@ -57,7 +57,6 @@ namespace Pantheon.Desktop {
         public void* get_user_data ();
         public uint32 get_version ();
         public void destroy ();
-        public void focus ();
     }
 
     [CCode (cheader_filename = "pantheon-desktop-shell-client-protocol.h", cname = "struct io_elementary_pantheon_extended_behavior_v1", cprefix = "io_elementary_pantheon_extended_behavior_v1_")]
@@ -69,5 +68,7 @@ namespace Pantheon.Desktop {
         public uint32 get_version ();
         public void destroy ();
         public void set_keep_above ();
+        public void make_centered ();
+        public void focus ();
     }
 }

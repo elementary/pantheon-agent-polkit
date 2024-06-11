@@ -46,7 +46,7 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
     private Gtk.Entry password_entry;
     private Gtk.ComboBox idents_combo;
 
-    private Pantheon.Desktop.Widget? widget;
+    private Pantheon.Desktop.ExtendedBehavior? extended_behavior;
 
     public PolkitDialog (string message, string icon_name, string _cookie,
                          List<Polkit.Identity?>? _idents, GLib.Cancellable _cancellable) {
@@ -131,8 +131,8 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
         };
         child.add_controller (gesture_click);
         gesture_click.pressed.connect (() => {
-            if (widget != null) {
-                widget.focus ();
+            if (extended_behavior != null) {
+                extended_behavior.focus ();
             }
         });
 
@@ -329,7 +329,8 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
             unowned var surface = get_surface ();
             if (surface is Gdk.Wayland.Surface) {
                 unowned var wl_surface = ((Gdk.Wayland.Surface) surface).get_wl_surface ();
-                widget = desktop_shell.get_widget (wl_surface);
+                extended_behavior = desktop_shell.get_extended_behavior (wl_surface);
+                extended_behavior.make_centered ();
             }
         }
     }
