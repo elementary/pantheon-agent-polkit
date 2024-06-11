@@ -4,10 +4,14 @@ project(
     version: '8.0.0'
 )
 
+vala = meson.get_compiler('vala')
+
 install_path = join_paths(get_option('prefix'), get_option('libexecdir'), 'policykit-1-pantheon')
 i18n = import('i18n')
 
 add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format(meson.project_name()), language:'c')
+
+subdir('protocol')
 
 executable(
     meson.project_name(),
@@ -21,9 +25,12 @@ executable(
         dependency('gobject-2.0'),
         dependency('granite-7', version: '>=7.0.0'),
         dependency('gtk4'),
+        dependency('gtk4-wayland'),
+        pantheon_desktop_shell_dep,
         dependency('polkit-agent-1'),
         dependency('polkit-gobject-1'),
-        meson.get_compiler('vala').find_library('posix')
+        vala.find_library('posix'),
+        dependency('wayland-client'),
     ],
     c_args: [
         '-DPOLKIT_AGENT_I_KNOW_API_IS_SUBJECT_TO_CHANGE',
