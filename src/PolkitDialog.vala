@@ -23,7 +23,7 @@
  * https://github.com/solus-project/budgie-desktop
  */
 
-public class Ag.PolkitDialog : Granite.MessageDialog {
+public class Ag.PolkitDialog : Gtk.Window {
     public signal void done ();
     public bool was_canceled = false;
 
@@ -57,8 +57,41 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
         cancellable = _cancellable;
         cancellable.cancelled.connect (cancel);
 
-        primary_text = _("Authentication Required");
-        secondary_text = message;
+        var image = new Gtk.Image.from_icon_name ("dialog-password") {
+            pixel_size = 48
+        };
+
+        var overlay = new Gtk.Overlay () {
+            child = image,
+            valign = START
+        };
+
+        if (icon_name != "" && Gtk.IconTheme.get_for_display (Gdk.Display.get_default ()).has_icon (icon_name)) {
+            var badge = new Gtk.Image.from_icon_name (icon_name) {
+                pixel_size = 24,
+                halign = END,
+                valign = END
+            };
+
+            overlay.add_overlay (badge);
+        }
+
+        var primary_label = new Gtk.Label (_("Authentication Required")) {
+            max_width_chars = 0, // Wrap, but secondary label sets the width
+            selectable = true,
+            wrap = true,
+            xalign = 0
+        };
+        primary_label.add_css_class (Granite.STYLE_CLASS_TITLE_LABEL);
+
+        var secondary_label = new Gtk.Label (message) {
+            max_width_chars = 50,
+            width_chars = 50, // Prevents a bug where extra height is preserved
+            selectable = true,
+            use_markup = true,
+            wrap = true,
+            xalign = 0
+        };
 
         password_entry = new Gtk.Entry () {
             activates_default = true,
@@ -100,26 +133,57 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
         credentials_box.append (password_entry);
         credentials_box.append (feedback_revealer);
 
-        image_icon = new ThemedIcon ("dialog-password");
+        var content_area = new Gtk.Grid () {
+            column_spacing = 12,
+            row_spacing = 6,
+            vexpand = true
+        };
+        content_area.attach (overlay, 0, 0, 1, 2);
+        content_area.attach (primary_label, 1, 0);
+        content_area.attach (secondary_label, 1, 1);
+        content_area.attach (credentials_box, 1, 3);
+        content_area.add_css_class (Granite.STYLE_CLASS_DIALOG_CONTENT_AREA);
 
-        if (icon_name != "" && Gtk.IconTheme.get_for_display (Gdk.Display.get_default ()).has_icon (icon_name)) {
-            badge_icon = new ThemedIcon (icon_name);
-        }
-
-        custom_bin.append (credentials_box);
-
-        var cancel_button = (Gtk.Button)add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
+        var cancel_button = new Gtk.Button.with_label (_("Cancel"));
         cancel_button.clicked.connect (() => cancel ());
 
-        var authenticate_button = (Gtk.Button)add_button (_("Authenticate"), Gtk.ResponseType.APPLY);
-        authenticate_button.receives_default = true;
+        var authenticate_button = new Gtk.Button.with_label (_("Authenticate")) {
+            receives_default = true
+        };
         authenticate_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
         authenticate_button.clicked.connect (authenticate);
+
+        var button_box = new Gtk.Box (HORIZONTAL, 0) {
+            halign = END
+        };
+        button_box.append (cancel_button);
+        button_box.append (authenticate_button);
+        button_box.add_css_class ("dialog-action-area");
 
         default_widget = authenticate_button;
         focus_widget = password_entry;
 
-        close.connect (cancel);
+        var vbox = new Gtk.Box (VERTICAL, 0);
+        vbox.append (content_area);
+        vbox.append (button_box);
+        vbox.add_css_class ("dialog-vbox");
+
+        add_css_class ("dialog");
+        add_css_class (Granite.STYLE_CLASS_MESSAGE_DIALOG);
+        child = vbox;
+        deletable = false;
+        resizable = false;
+        modal = true;
+
+        // We need to hide the title area
+        titlebar = new Gtk.Grid () {
+            visible = false
+        };
+
+        close_request.connect (() => {
+            cancel ();
+            return Gdk.EVENT_PROPAGATE;
+        });
 
         update_idents ();
         select_session ();
