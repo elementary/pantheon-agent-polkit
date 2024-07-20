@@ -23,7 +23,7 @@
  * https://github.com/solus-project/budgie-desktop
  */
 
-public class Ag.PolkitDialog : Granite.MessageDialog {
+public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBehavior {
     public signal void done ();
     public bool was_canceled = false;
 
@@ -123,6 +123,17 @@ public class Ag.PolkitDialog : Granite.MessageDialog {
 
         update_idents ();
         select_session ();
+
+        child.realize.connect (() => {
+            connect_to_shell ();
+            set_keep_above ();
+            make_centered ();
+
+            var surface = get_surface ();
+            if (surface is Gdk.Toplevel) {
+                ((Gdk.Toplevel) surface).inhibit_system_shortcuts (null);
+            }
+        });
     }
 
     private void update_idents () {
