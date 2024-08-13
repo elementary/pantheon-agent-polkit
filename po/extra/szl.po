@@ -2,19 +2,21 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-11 02:29+0000\n"
-"PO-Revision-Date: 2019-06-26 18:53+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-08-07 17:16+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Silesian <https://l10n.elementary.io/projects/desktop/"
+"polkit-agent-extra/szl/>\n"
 "Language: szl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
-msgstr ""
+msgstr "Ôkno dialogowe autoryzacyje"
 
 #: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
 msgid "PolicyKit Authentication Agent"
@@ -42,7 +44,7 @@ msgstr ""
 #: data/agent-polkit.metainfo.xml.in:61 data/agent-polkit.metainfo.xml.in:70
 #: data/agent-polkit.metainfo.xml.in:78
 msgid "Updated translations"
-msgstr ""
+msgstr "Zaktualizowane przekłady"
 
 #: data/agent-polkit.metainfo.xml.in:69
 msgid "Fix a potential issue when ending the session"
