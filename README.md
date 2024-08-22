@@ -9,6 +9,7 @@ You'll need the following dependencies:
 * libadwaita-1-dev
 * libgranite-7-dev (>= 7.0.0)
 * libgtk-4-dev
+* libpantheon-wayland-1-dev
 * libpolkit-gobject-1-dev
 * libpolkit-agent-1-dev
 * meson
