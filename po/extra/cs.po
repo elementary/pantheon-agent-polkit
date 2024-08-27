@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-11 02:29+0000\n"
+"POT-Creation-Date: 2024-08-27 20:23+0000\n"
 "PO-Revision-Date: 2023-08-30 11:08+0000\n"
 "Last-Translator: Jakub Kyzr <jakubkyzr@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/desktop/polkit-"
@@ -44,6 +44,10 @@ msgstr ""
 "Agent ověřování se objeví kdykoli aplikace vyžaduje oprávnění na úrovni "
 "správce systému."
 
+#: data/agent-polkit.metainfo.xml.in:35
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
 #: data/agent-polkit.metainfo.xml.in:44
 msgid "Update to the latest platform libraries"
 msgstr ""
@@ -57,9 +61,6 @@ msgstr "Aktualizované překlady"
 #: data/agent-polkit.metainfo.xml.in:69
 msgid "Fix a potential issue when ending the session"
 msgstr "Opraven potenciální problém při ukončování relace"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "dialog-password"
 #~ msgstr "dialog-password"

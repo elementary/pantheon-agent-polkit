@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-11 02:29+0000\n"
+"POT-Creation-Date: 2024-08-27 20:23+0000\n"
 "PO-Revision-Date: 2017-02-01 23:54+0000\n"
 "Last-Translator: Christos Iatropoulos <Unknown>\n"
 "Language-Team: Greek <el@li.org>\n"
@@ -40,6 +40,10 @@ msgstr ""
 msgid ""
 "The authentication agent appears whenever an application wants to request "
 "permission to use administrative powers."
+msgstr ""
+
+#: data/agent-polkit.metainfo.xml.in:35
+msgid "elementary, Inc."
 msgstr ""
 
 #: data/agent-polkit.metainfo.xml.in:44

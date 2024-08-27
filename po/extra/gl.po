@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-11 02:29+0000\n"
+"POT-Creation-Date: 2024-08-27 20:23+0000\n"
 "PO-Revision-Date: 2019-09-19 18:26+0000\n"
 "Last-Translator: Daniel R. <riesp@pm.me>\n"
 "Language-Team: Galician <https://l10n.elementary.io/projects/desktop/polkit-"
@@ -41,6 +41,10 @@ msgstr ""
 msgid ""
 "The authentication agent appears whenever an application wants to request "
 "permission to use administrative powers."
+msgstr ""
+
+#: data/agent-polkit.metainfo.xml.in:35
+msgid "elementary, Inc."
 msgstr ""
 
 #: data/agent-polkit.metainfo.xml.in:44

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-11 02:29+0000\n"
+"POT-Creation-Date: 2024-08-27 20:23+0000\n"
 "PO-Revision-Date: 2020-04-06 15:10+0000\n"
 "Last-Translator: Mejans <farga@mejans.fr>\n"
 "Language-Team: Occitan <https://l10n.elementary.io/projects/desktop/polkit-"
@@ -41,6 +41,10 @@ msgid ""
 "permission to use administrative powers."
 msgstr ""
 
+#: data/agent-polkit.metainfo.xml.in:35
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
 #: data/agent-polkit.metainfo.xml.in:44
 msgid "Update to the latest platform libraries"
 msgstr ""
@@ -54,6 +58,3 @@ msgstr "Traduccions actualizadas"
 #: data/agent-polkit.metainfo.xml.in:69
 msgid "Fix a potential issue when ending the session"
 msgstr ""
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

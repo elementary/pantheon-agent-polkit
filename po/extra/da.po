@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-11 02:29+0000\n"
+"POT-Creation-Date: 2024-08-27 20:23+0000\n"
 "PO-Revision-Date: 2020-05-26 20:11+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/desktop/polkit-"
@@ -43,6 +43,10 @@ msgstr ""
 "Autentificerings agenten vises, når en applikation ønsker at anmode om "
 "tilladelse til at bruge administrative beføjelser."
 
+#: data/agent-polkit.metainfo.xml.in:35
+msgid "elementary, Inc."
+msgstr "elementary, Incorporated."
+
 #: data/agent-polkit.metainfo.xml.in:44
 msgid "Update to the latest platform libraries"
 msgstr ""
@@ -56,9 +60,6 @@ msgstr "Opdaterede oversættelser"
 #: data/agent-polkit.metainfo.xml.in:69
 msgid "Fix a potential issue when ending the session"
 msgstr ""
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Incorporated."
 
 #~ msgid "dialog-password"
 #~ msgstr "dialog-adgangskode"
