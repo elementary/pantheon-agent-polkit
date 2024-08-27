@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-11 02:29+0000\n"
+"POT-Creation-Date: 2024-08-27 20:23+0000\n"
 "PO-Revision-Date: 2020-04-23 19:10+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop/"
@@ -35,12 +35,12 @@ msgstr "Cancelar"
 msgid "Authenticate"
 msgstr "Autenticar"
 
-#: src/PolkitDialog.vala:157
+#: src/PolkitDialog.vala:168
 #, c-format
 msgid "Group: %s"
 msgstr "Grupo: %s"
 
-#: src/PolkitDialog.vala:251
+#: src/PolkitDialog.vala:262
 msgid "Authentication failed. Please try again."
 msgstr "A autenticação falhou. Tente de novo."
 

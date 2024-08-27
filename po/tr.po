@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-11 02:29+0000\n"
+"POT-Creation-Date: 2024-08-27 20:23+0000\n"
 "PO-Revision-Date: 2021-10-22 20:43+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/pantheon-"
@@ -35,12 +35,12 @@ msgstr "İptal"
 msgid "Authenticate"
 msgstr "Kimlik Doğrula"
 
-#: src/PolkitDialog.vala:157
+#: src/PolkitDialog.vala:168
 #, c-format
 msgid "Group: %s"
 msgstr "Gruplar: %s"
 
-#: src/PolkitDialog.vala:251
+#: src/PolkitDialog.vala:262
 msgid "Authentication failed. Please try again."
 msgstr "Kimlik doğrulama başarısız oldu. Lütfen yeniden deneyin."
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-11 02:29+0000\n"
+"POT-Creation-Date: 2024-08-27 20:23+0000\n"
 "PO-Revision-Date: 2024-02-22 04:12+0000\n"
 "Last-Translator: Shukrullo Turgunov <shookrullo@gmail.com>\n"
 "Language-Team: Uzbek <https://l10n.elementary.io/projects/desktop/pantheon-"
@@ -35,11 +35,11 @@ msgstr "Bekor qilish"
 msgid "Authenticate"
 msgstr "Authentifikasiya"
 
-#: src/PolkitDialog.vala:157
+#: src/PolkitDialog.vala:168
 #, c-format
 msgid "Group: %s"
 msgstr "Guruh: %s"
 
-#: src/PolkitDialog.vala:251
+#: src/PolkitDialog.vala:262
 msgid "Authentication failed. Please try again."
 msgstr "Authentikasiyada xatolik. Qaytadan urinib ko'ring."
