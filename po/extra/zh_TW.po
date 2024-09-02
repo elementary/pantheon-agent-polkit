@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-27 20:23+0000\n"
-"PO-Revision-Date: 2024-08-28 21:16+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-09-02 22:33+0000\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "desktop/polkit-agent-extra/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -25,24 +25,22 @@ msgid "Authentication Dialog"
 msgstr "身份核對對話盒"
 
 #: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
-#, fuzzy
 msgid "PolicyKit Authentication Agent"
-msgstr "身份核對對話盒"
+msgstr "PolicyKit 身份核對代理程式"
 
 #: data/agent-polkit.metainfo.xml.in:10
-#, fuzzy
 msgid "Authentication Agent"
-msgstr "身份核對對話盒"
+msgstr "身份核對代理程式"
 
 #: data/agent-polkit.metainfo.xml.in:11
 msgid "Approve or deny access to administrative powers"
-msgstr ""
+msgstr "准許或回絕管理員權限的存取"
 
 #: data/agent-polkit.metainfo.xml.in:13
 msgid ""
 "The authentication agent appears whenever an application wants to request "
 "permission to use administrative powers."
-msgstr ""
+msgstr "身份核對代理程式會在應用程式希望請求管理員權限時出現。"
 
 #: data/agent-polkit.metainfo.xml.in:35
 msgid "elementary, Inc."
@@ -50,14 +48,14 @@ msgstr "elementary, Inc."
 
 #: data/agent-polkit.metainfo.xml.in:44
 msgid "Update to the latest platform libraries"
-msgstr ""
+msgstr "更新使用最新的平台函式庫"
 
 #: data/agent-polkit.metainfo.xml.in:45 data/agent-polkit.metainfo.xml.in:53
 #: data/agent-polkit.metainfo.xml.in:61 data/agent-polkit.metainfo.xml.in:70
 #: data/agent-polkit.metainfo.xml.in:78
 msgid "Updated translations"
-msgstr ""
+msgstr "更新翻譯"
 
 #: data/agent-polkit.metainfo.xml.in:69
 msgid "Fix a potential issue when ending the session"
-msgstr ""
+msgstr "修正工作階段結束時可能會發生的某個問題"
