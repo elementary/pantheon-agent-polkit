@@ -1,3 +1,9 @@
+pantheon-agent-polkit (8.0.1) noble; urgency=medium
+
+  * Release 8.0.1 (#84)
+
+ -- Cody Garver <cody@elementary.io>  Wed, 20 Nov 2024 21:23:16 +0000
+
 pantheon-agent-polkit (8.0.0) noble; urgency=medium
 
   * Release 8.0.0
