@@ -35,6 +35,15 @@ namespace Ag {
             dialog.done.connect (() => initiate_authentication.callback ());
 
             dialog.present ();
+
+            Canberra.Context? ca_context = null;
+            Canberra.Context.create (out ca_context);
+            if (ca_context != null) {
+                ca_context.change_props (Canberra.PROP_CANBERRA_XDG_THEME_NAME, "elementary");
+                ca_context.open ();
+                ca_context.play (0, Canberra.PROP_EVENT_ID, "dialog-question");
+            }
+
             yield;
 
             dialog.destroy ();
