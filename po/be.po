@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-19 22:17+0000\n"
-"PO-Revision-Date: 2025-07-19 10:55+0000\n"
+"PO-Revision-Date: 2025-08-12 10:55+0000\n"
 "Last-Translator: lenify <lenify@tutanota.com>\n"
 "Language-Team: Belarusian <https://l10n.elementaryos.org/projects/desktop/"
 "pantheon-agent-polkit/be/>\n"
@@ -22,25 +22,25 @@ msgstr "Дыялог праверкі сапраўднасці"
 
 #: src/PolkitDialog.vala:60
 msgid "Authentication Required"
-msgstr ""
+msgstr "Патрабуецца праверка"
 
 #: src/PolkitDialog.vala:68
 msgid "Password"
-msgstr ""
+msgstr "Пароль"
 
 #: src/PolkitDialog.vala:111
 msgid "Cancel"
-msgstr ""
+msgstr "Скасаваць"
 
 #: src/PolkitDialog.vala:114
 msgid "Authenticate"
-msgstr ""
+msgstr "Пацвердзіць"
 
 #: src/PolkitDialog.vala:168
 #, c-format
 msgid "Group: %s"
-msgstr ""
+msgstr "Група: %s"
 
 #: src/PolkitDialog.vala:262
 msgid "Authentication failed. Please try again."
-msgstr ""
+msgstr "Памылка падчас праверкі. Паспрабуйце ізноў."
