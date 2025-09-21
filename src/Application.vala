@@ -4,6 +4,8 @@
  */
 
 public class Ag.Application : Gtk.Application {
+    public static FPrintManager fingerprint_manager;
+
     public Application () {
         Object (
             application_id: "io.elementary.PolkitAgent",
@@ -23,6 +25,17 @@ public class Ag.Application : Gtk.Application {
         );
 
         gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == DARK;
+
+        try {
+            Ag.Application.fingerprint_manager = Bus.get_proxy_sync (
+                BusType.SYSTEM,
+                "net.reactivated.Fprint",
+                "/net/reactivated/Fprint/Manager",
+                DBusProxyFlags.NONE
+            );
+        } catch (Error e) {
+            warning ("Unable to initialize Fingerprint Manager %s", e.message);
+        }
 
         var agent = new Agent ();
         try {
