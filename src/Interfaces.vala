@@ -1,6 +1,6 @@
 /*-
  * Copyright (c) 2015-2016 elementary LLC.
- * Copyright (C) 2015-2016 Ikey Doherty <ikey@solus-project.com>   
+ * Copyright (C) 2015-2016 Ikey Doherty <ikey@solus-project.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -37,5 +37,23 @@ namespace Ag {
         public signal void query_end_session (uint flags);
         public signal void end_session (uint flags);
         public signal void cancel_end_session ();
+    }
+
+    [DBus (name = "net.reactivated.Fprint.Device")]
+    public interface FPrintDevice : GLib.Object {
+        [DBus (name = "name")]
+        public abstract string name { owned get; }
+        [DBus (name = "scan-type")]
+        public abstract string scan_type { owned get; }
+        [DBus (name = "finger-needed")]
+        public abstract bool finger_needed { owned get; }
+        [DBus (name = "finger-present")]
+        public abstract bool finger_present { owned get; }
+        public signal void verify_status (string result, bool done);
+    }
+
+    [DBus (name = "net.reactivated.Fprint.Manager")]
+    public interface FPrintManager : GLib.Object {
+        public abstract ObjectPath get_default_device () throws GLib.Error;
     }
 }

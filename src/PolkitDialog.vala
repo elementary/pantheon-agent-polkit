@@ -31,6 +31,9 @@ public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBe
     private Polkit.Identity? pk_identity = null;
     private unowned Cancellable cancellable;
 
+    private FPrintDevice fprint_device = null;
+    private bool fp_activation_polling = true;
+
     private ulong error_signal_id;
     private ulong request_signal_id;
     private ulong info_signal_id;
@@ -42,8 +45,11 @@ public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBe
 
     private Gtk.Revealer feedback_revealer;
     private Gtk.Label password_label;
-    private Gtk.Label password_feedback;
+    private Gtk.Label auth_feedback;
     private Gtk.Entry password_entry;
+    private Gtk.Revealer password_auth_revealer;
+    private Gtk.Image fingerprint_icon;
+    private Gtk.Revealer fingerprint_revealer;
     private Gtk.ComboBox idents_combo;
 
     public PolkitDialog (string message, string icon_name, string _cookie,
@@ -60,24 +66,62 @@ public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBe
         primary_text = _("Authentication Required");
         secondary_text = message;
 
+        try {
+            var device_path = Application.fingerprint_manager.get_default_device ();
+            fprint_device = GLib.Bus.get_proxy_sync (
+                    GLib.BusType.SYSTEM,
+                    "net.reactivated.Fprint",
+                    device_path
+            );
+
+            fprint_device.verify_status.connect ((status) => {
+                switch (status) {
+                    case "verify-no-match":
+                    case "verify-retry-scan":
+                    case "verify-disconnected":
+                        feedback_revealer.reveal_child = true;
+                        auth_feedback.label = _("Fingerprint authentication failed.");
+                        break;
+                }
+            });
+        } catch (Error e) {
+            warning ("Failed to get default finger device: %s", e.message);
+        }
+
         password_entry = new Gtk.Entry () {
             activates_default = true,
             hexpand = true,
             input_purpose = PASSWORD,
+            visibility = false,
             primary_icon_name = "dialog-password-symbolic",
             primary_icon_tooltip_text = _("Password")
         };
 
-        password_feedback = new Gtk.Label (null) {
+        auth_feedback = new Gtk.Label (null) {
             justify = RIGHT,
             max_width_chars = 40,
             wrap = true,
             xalign = 1
         };
-        password_feedback.add_css_class (Granite.STYLE_CLASS_ERROR);
+        auth_feedback.add_css_class (Granite.STYLE_CLASS_ERROR);
 
         feedback_revealer = new Gtk.Revealer () {
-            child = password_feedback
+            child = auth_feedback
+        };
+
+        password_auth_revealer = new Gtk.Revealer () {
+            child = password_entry,
+        };
+
+        fingerprint_icon = new Gtk.Image.from_icon_name ("fingerprint-symbolic") {
+            pixel_size = 64,
+            margin_end = 48,
+            halign = Gtk.Align.CENTER
+        };
+
+        fingerprint_revealer = new Gtk.Revealer () {
+            child = fingerprint_icon,
+            reveal_child = fprint_device != null && fprint_device.finger_needed
         };
 
         idents_combo = new Gtk.ComboBox () {
@@ -97,7 +141,8 @@ public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBe
 
         var credentials_box = new Gtk.Box (VERTICAL, 6);
         credentials_box.append (idents_combo);
-        credentials_box.append (password_entry);
+        credentials_box.append (password_auth_revealer);
+        credentials_box.append (fingerprint_revealer);
         credentials_box.append (feedback_revealer);
 
         image_icon = new ThemedIcon ("dialog-password");
@@ -133,6 +178,20 @@ public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBe
             if (surface is Gdk.Toplevel) {
                 ((Gdk.Toplevel) surface).inhibit_system_shortcuts (null);
             }
+        });
+
+        look_for_fp_activation ();
+    }
+
+    private void look_for_fp_activation () {
+        fp_activation_polling = true;
+        Idle.add (() => {
+            if (fprint_device.finger_needed) {
+                fp_activation_polling = false;
+                fingerprint_revealer.reveal_child = true;
+            }
+
+            return fp_activation_polling;
         });
     }
 
@@ -259,6 +318,7 @@ public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBe
     private void on_pk_session_completed (bool authorized) {
         if (!authorized || cancellable.is_cancelled ()) {
             if (!canceling) {
+                password_auth_revealer.reveal_child = false;
                 on_pk_show_error (_("Authentication failed. Please try again."));
             }
 
@@ -275,8 +335,15 @@ public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBe
 
     private void on_pk_request (string request, bool echo_on) {
         password_entry.visibility = echo_on;
-        if (!request.has_prefix ("Password:")) {
+        print ("Request: %s\n", request);
+        if (request.has_prefix ("Password:")) {
+            password_auth_revealer.reveal_child = true;
+            fp_activation_polling = false;
+            fingerprint_revealer.reveal_child = false;
+        } else {
             password_label.label = request;
+            password_auth_revealer.reveal_child = false;
+            look_for_fp_activation ();
         }
     }
 
@@ -304,8 +371,9 @@ public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBe
             if (repeat_count == 4) {
                 feedback_revealer.reveal_child = true;
                 password_entry.secondary_icon_name = "dialog-error-symbolic";
-                password_feedback.label = text;
+                auth_feedback.label = text;
                 sensitive = true;
+                look_for_fp_activation ();
                 disconnect (iterate);
                 return;
             }
