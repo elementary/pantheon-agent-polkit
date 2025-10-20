@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-19 22:17+0000\n"
+"POT-Creation-Date: 2025-10-20 14:30+0000\n"
 "PO-Revision-Date: 2016-11-13 17:38+0000\n"
 "Last-Translator: Damian Woźniak <fiszet@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,26 +21,25 @@ msgstr "Okno uwierzytelniania"
 msgid "Authentication Required"
 msgstr "Wymagane uwierzytelnienie"
 
-#: src/PolkitDialog.vala:68
-msgid "Password"
-msgstr "Hasło"
-
-#: src/PolkitDialog.vala:111
+#: src/PolkitDialog.vala:109
 msgid "Cancel"
 msgstr "Anuluj"
 
-#: src/PolkitDialog.vala:114
+#: src/PolkitDialog.vala:112
 msgid "Authenticate"
 msgstr "Uwierzytelnij"
 
-#: src/PolkitDialog.vala:168
+#: src/PolkitDialog.vala:166
 #, c-format
 msgid "Group: %s"
 msgstr "Grupa: %s"
 
-#: src/PolkitDialog.vala:262
+#: src/PolkitDialog.vala:259
 msgid "Authentication failed. Please try again."
 msgstr "Uwierzytelnianie nie powiodło się. Proszę spróbować ponownie."
+
+#~ msgid "Password"
+#~ msgstr "Hasło"
 
 #~ msgid "Identity:"
 #~ msgstr "Tożsamość:"

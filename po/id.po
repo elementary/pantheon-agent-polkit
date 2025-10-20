@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-19 22:17+0000\n"
+"POT-Creation-Date: 2025-10-20 14:30+0000\n"
 "PO-Revision-Date: 2018-06-13 15:54+0000\n"
 "Last-Translator: Liffindra Angga Zaaldian <liffindra.zaaldian@icloud.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/desktop/"
@@ -23,26 +23,25 @@ msgstr "Dialog Otentikasi"
 msgid "Authentication Required"
 msgstr "Otentikasi Diperlukan"
 
-#: src/PolkitDialog.vala:68
-msgid "Password"
-msgstr "Kata Sandi"
-
-#: src/PolkitDialog.vala:111
+#: src/PolkitDialog.vala:109
 msgid "Cancel"
 msgstr "Batal"
 
-#: src/PolkitDialog.vala:114
+#: src/PolkitDialog.vala:112
 msgid "Authenticate"
 msgstr "Otentikasi"
 
-#: src/PolkitDialog.vala:168
+#: src/PolkitDialog.vala:166
 #, c-format
 msgid "Group: %s"
 msgstr "Grup: %s"
 
-#: src/PolkitDialog.vala:262
+#: src/PolkitDialog.vala:259
 msgid "Authentication failed. Please try again."
 msgstr "Otentikasi gagal. Silakan coba lagi."
+
+#~ msgid "Password"
+#~ msgstr "Kata Sandi"
 
 #~ msgid "Identity:"
 #~ msgstr "Identitas:"

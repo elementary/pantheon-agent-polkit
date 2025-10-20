@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-19 22:17+0000\n"
+"POT-Creation-Date: 2025-10-20 14:30+0000\n"
 "PO-Revision-Date: 2016-12-07 15:33+0000\n"
 "Last-Translator: aberba <karabutaworld@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,26 +21,25 @@ msgstr "Pono a Ɛma Wo Hokwan Ma Woyɛ Biribi"
 msgid "Authentication Required"
 msgstr "Ɛwɔ sɛ woma hokwan"
 
-#: src/PolkitDialog.vala:68
-msgid "Password"
-msgstr "Password"
-
-#: src/PolkitDialog.vala:111
+#: src/PolkitDialog.vala:109
 msgid "Cancel"
 msgstr "Gyae"
 
-#: src/PolkitDialog.vala:114
+#: src/PolkitDialog.vala:112
 msgid "Authenticate"
 msgstr "Ma Hokwan"
 
-#: src/PolkitDialog.vala:168
+#: src/PolkitDialog.vala:166
 #, c-format
 msgid "Group: %s"
 msgstr "Kuo: %s"
 
-#: src/PolkitDialog.vala:262
+#: src/PolkitDialog.vala:259
 msgid "Authentication failed. Please try again."
 msgstr "Antumi amma wo hokwan. Mesrɛ wo, yɛ no bio."
+
+#~ msgid "Password"
+#~ msgstr "Password"
 
 #~ msgid "Identity:"
 #~ msgstr "Wo Nipaban:"

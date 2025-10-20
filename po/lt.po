@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-19 22:17+0000\n"
+"POT-Creation-Date: 2025-10-20 14:30+0000\n"
 "PO-Revision-Date: 2016-10-31 09:54+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,26 +21,25 @@ msgstr "Tapatybės nustatymo dialogas"
 msgid "Authentication Required"
 msgstr "Reikalingas tapatybės nustatymas"
 
-#: src/PolkitDialog.vala:68
-msgid "Password"
-msgstr "Slaptažodis"
-
-#: src/PolkitDialog.vala:111
+#: src/PolkitDialog.vala:109
 msgid "Cancel"
 msgstr "Atsisakyti"
 
-#: src/PolkitDialog.vala:114
+#: src/PolkitDialog.vala:112
 msgid "Authenticate"
 msgstr "Nustatyti tapatybę"
 
-#: src/PolkitDialog.vala:168
+#: src/PolkitDialog.vala:166
 #, c-format
 msgid "Group: %s"
 msgstr "Grupė: %s"
 
-#: src/PolkitDialog.vala:262
+#: src/PolkitDialog.vala:259
 msgid "Authentication failed. Please try again."
 msgstr "Tapatybės nustatymas nepavyko. Prašome bandyti vėl."
+
+#~ msgid "Password"
+#~ msgstr "Slaptažodis"
 
 #~ msgid "Identity:"
 #~ msgstr "Tapatybė:"

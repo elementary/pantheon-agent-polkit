@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-19 22:17+0000\n"
+"POT-Creation-Date: 2025-10-20 14:30+0000\n"
 "PO-Revision-Date: 2018-10-27 13:50+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/desktop/"
@@ -23,23 +23,22 @@ msgstr "प्रमाणीकरण संवाद"
 msgid "Authentication Required"
 msgstr "प्रमाणीकरण आवश्यक"
 
-#: src/PolkitDialog.vala:68
-msgid "Password"
-msgstr "पासवर्ड"
-
-#: src/PolkitDialog.vala:111
+#: src/PolkitDialog.vala:109
 msgid "Cancel"
 msgstr "रद्द"
 
-#: src/PolkitDialog.vala:114
+#: src/PolkitDialog.vala:112
 msgid "Authenticate"
 msgstr "प्रमाणित करा"
 
-#: src/PolkitDialog.vala:168
+#: src/PolkitDialog.vala:166
 #, c-format
 msgid "Group: %s"
 msgstr "गटः%s"
 
-#: src/PolkitDialog.vala:262
+#: src/PolkitDialog.vala:259
 msgid "Authentication failed. Please try again."
 msgstr "प्रमाणीकरण अयशस्वी. कृपया पुन्हा प्रयत्न करा."
+
+#~ msgid "Password"
+#~ msgstr "पासवर्ड"
