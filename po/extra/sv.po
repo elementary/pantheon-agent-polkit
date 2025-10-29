@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-10-20 14:30+0000\n"
-"PO-Revision-Date: 2025-10-23 12:55+0000\n"
+"PO-Revision-Date: 2025-10-29 17:23+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/desktop/"
 "polkit-agent-extra/sv/>\n"
@@ -60,7 +60,7 @@ msgstr "Uppdaterade översättningar"
 
 #: data/agent-polkit.metainfo.xml.in:53
 msgid "Update to the latest platform libraries"
-msgstr "Uppdatera till de senaste plattformsbiblioteken"
+msgstr "Uppdatering till de senaste plattformsbiblioteken"
 
 #: data/agent-polkit.metainfo.xml.in:78
 msgid "Fix a potential issue when ending the session"
