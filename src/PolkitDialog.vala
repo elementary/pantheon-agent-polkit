@@ -126,6 +126,7 @@ public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBe
             connect_to_shell ();
             set_keep_above ();
             make_centered ();
+            make_modal (true);
 
             var surface = get_surface ();
             if (surface is Gdk.Toplevel) {
