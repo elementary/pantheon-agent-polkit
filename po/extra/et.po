@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-19 22:17+0000\n"
+"POT-Creation-Date: 2025-10-29 17:23+0000\n"
 "PO-Revision-Date: 2016-07-28 16:56+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
@@ -46,20 +46,21 @@ msgstr ""
 msgid "elementary, Inc."
 msgstr ""
 
-#: data/agent-polkit.metainfo.xml.in:44
-msgid "Always on top and centered"
-msgstr ""
-
-#: data/agent-polkit.metainfo.xml.in:45 data/agent-polkit.metainfo.xml.in:54
-#: data/agent-polkit.metainfo.xml.in:62 data/agent-polkit.metainfo.xml.in:70
-#: data/agent-polkit.metainfo.xml.in:79 data/agent-polkit.metainfo.xml.in:87
+#: data/agent-polkit.metainfo.xml.in:44 data/agent-polkit.metainfo.xml.in:56
+#: data/agent-polkit.metainfo.xml.in:65 data/agent-polkit.metainfo.xml.in:73
+#: data/agent-polkit.metainfo.xml.in:81 data/agent-polkit.metainfo.xml.in:90
+#: data/agent-polkit.metainfo.xml.in:98
 msgid "Updated translations"
 msgstr ""
 
-#: data/agent-polkit.metainfo.xml.in:53
+#: data/agent-polkit.metainfo.xml.in:55
+msgid "Always on top and centered"
+msgstr ""
+
+#: data/agent-polkit.metainfo.xml.in:64
 msgid "Update to the latest platform libraries"
 msgstr ""
 
-#: data/agent-polkit.metainfo.xml.in:78
+#: data/agent-polkit.metainfo.xml.in:89
 msgid "Fix a potential issue when ending the session"
 msgstr ""

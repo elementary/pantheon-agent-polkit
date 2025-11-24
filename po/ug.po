@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-19 22:17+0000\n"
+"POT-Creation-Date: 2025-10-29 17:23+0000\n"
 "PO-Revision-Date: 2016-12-07 10:30+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,26 +21,25 @@ msgstr "باشقۇرغۇچى پارولى"
 msgid "Authentication Required"
 msgstr "سالاھىيەت دەلىللەش زۆرۈر"
 
-#: src/PolkitDialog.vala:68
-msgid "Password"
-msgstr "پارول"
-
-#: src/PolkitDialog.vala:111
+#: src/PolkitDialog.vala:109
 msgid "Cancel"
 msgstr "ئەمەلدىن قالدۇراي"
 
-#: src/PolkitDialog.vala:114
+#: src/PolkitDialog.vala:112
 msgid "Authenticate"
 msgstr "سالاھىيەت دەلىللەش"
 
-#: src/PolkitDialog.vala:168
+#: src/PolkitDialog.vala:166
 #, c-format
 msgid "Group: %s"
 msgstr "گۇرۇپپا:%s"
 
-#: src/PolkitDialog.vala:262
+#: src/PolkitDialog.vala:259
 msgid "Authentication failed. Please try again."
 msgstr "سالاھىيەت دەلىللەش مەغلۇپ بولدى"
+
+#~ msgid "Password"
+#~ msgstr "پارول"
 
 #~ msgid "Identity:"
 #~ msgstr "سالاھىيەت"

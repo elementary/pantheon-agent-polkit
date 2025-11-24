@@ -43,7 +43,7 @@ public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBe
     private Gtk.Revealer feedback_revealer;
     private Gtk.Label password_label;
     private Gtk.Label password_feedback;
-    private Gtk.Entry password_entry;
+    private Gtk.PasswordEntry password_entry;
     private Gtk.ComboBox idents_combo;
 
     public PolkitDialog (string message, string icon_name, string _cookie,
@@ -60,12 +60,10 @@ public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBe
         primary_text = _("Authentication Required");
         secondary_text = message;
 
-        password_entry = new Gtk.Entry () {
+        password_entry = new Gtk.PasswordEntry () {
             activates_default = true,
             hexpand = true,
-            input_purpose = PASSWORD,
-            primary_icon_name = "dialog-password-symbolic",
-            primary_icon_tooltip_text = _("Password")
+            show_peek_icon = true
         };
 
         password_feedback = new Gtk.Label (null) {
@@ -220,7 +218,6 @@ public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBe
             select_session ();
         }
 
-        password_entry.secondary_icon_name = "";
         feedback_revealer.reveal_child = false;
 
         sensitive = false;
@@ -275,7 +272,6 @@ public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBe
     }
 
     private void on_pk_request (string request, bool echo_on) {
-        password_entry.visibility = echo_on;
         if (!request.has_prefix ("Password:")) {
             password_label.label = request;
         }
@@ -304,7 +300,6 @@ public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBe
         iterate = shake.done.connect (() => {
             if (repeat_count == 4) {
                 feedback_revealer.reveal_child = true;
-                password_entry.secondary_icon_name = "dialog-error-symbolic";
                 password_feedback.label = text;
                 sensitive = true;
                 disconnect (iterate);

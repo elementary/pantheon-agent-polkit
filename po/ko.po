@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-19 22:17+0000\n"
+"POT-Creation-Date: 2025-10-29 17:23+0000\n"
 "PO-Revision-Date: 2021-10-07 17:05+0000\n"
 "Last-Translator: harrylim05 <harry_lim@naver.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/desktop/pantheon-"
@@ -23,26 +23,25 @@ msgstr "인증 창"
 msgid "Authentication Required"
 msgstr "인증이 필요합니다"
 
-#: src/PolkitDialog.vala:68
-msgid "Password"
-msgstr "비밀번호"
-
-#: src/PolkitDialog.vala:111
+#: src/PolkitDialog.vala:109
 msgid "Cancel"
 msgstr "뒤로"
 
-#: src/PolkitDialog.vala:114
+#: src/PolkitDialog.vala:112
 msgid "Authenticate"
 msgstr "인증"
 
-#: src/PolkitDialog.vala:168
+#: src/PolkitDialog.vala:166
 #, c-format
 msgid "Group: %s"
 msgstr "그룹: %s"
 
-#: src/PolkitDialog.vala:262
+#: src/PolkitDialog.vala:259
 msgid "Authentication failed. Please try again."
 msgstr "인증에 실패했습니다. 다시 해보세요."
+
+#~ msgid "Password"
+#~ msgstr "비밀번호"
 
 #~ msgid "Identity:"
 #~ msgstr "아이디:"
