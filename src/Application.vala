@@ -15,14 +15,7 @@ public class Ag.Application : Gtk.Application {
     protected override void startup () {
         base.startup ();
 
-        unowned var granite_settings = Granite.Settings.get_default ();
-        unowned var gtk_settings = Gtk.Settings.get_default ();
-
-        granite_settings.notify["prefers-color-scheme"].connect (() =>
-            gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == DARK
-        );
-
-        gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == DARK;
+        Granite.init ();
 
         var agent = new Agent ();
         try {
