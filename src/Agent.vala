@@ -25,6 +25,13 @@
 
 namespace Ag {
     public class Agent : PolkitAgent.Listener {
+
+        private static Settings sound_settings;
+
+        static construct {
+            sound_settings = new Settings ("org.gnome.desktop.sound");
+        }
+
         public override async bool initiate_authentication (string action_id, string message, string icon_name,
             Polkit.Details details, string cookie, GLib.List<Polkit.Identity> identities, GLib.Cancellable? cancellable) throws Polkit.Error {
             if (identities == null) {
@@ -35,6 +42,19 @@ namespace Ag {
             dialog.done.connect (() => initiate_authentication.callback ());
 
             dialog.present ();
+
+            Canberra.Context? ca_context = null;
+
+            if (sound_settings.get_boolean ("event-sounds")) {
+                Canberra.Context.create (out ca_context);
+                if (ca_context != null) {
+                    ca_context.change_props (Canberra.PROP_CANBERRA_XDG_THEME_NAME, "elementary",
+                                            Canberra.PROP_MEDIA_LANGUAGE, "");
+                    ca_context.open ();
+                    ca_context.play (0, Canberra.PROP_EVENT_ID, "dialog-question");
+                }
+            }
+
             yield;
 
             dialog.destroy ();
