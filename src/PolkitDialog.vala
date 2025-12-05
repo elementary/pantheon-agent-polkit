@@ -72,7 +72,7 @@ public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBe
             wrap = true,
             xalign = 1
         };
-        password_feedback.add_css_class (Granite.STYLE_CLASS_ERROR);
+        password_feedback.add_css_class (Granite.CssClass.ERROR);
 
         feedback_revealer = new Gtk.Revealer () {
             child = password_feedback
@@ -111,7 +111,7 @@ public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBe
 
         var authenticate_button = (Gtk.Button)add_button (_("Authenticate"), Gtk.ResponseType.APPLY);
         authenticate_button.receives_default = true;
-        authenticate_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
+        authenticate_button.add_css_class (Granite.CssClass.SUGGESTED);
         authenticate_button.clicked.connect (authenticate);
 
         default_widget = authenticate_button;
