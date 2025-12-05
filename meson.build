@@ -19,11 +19,11 @@ executable(
         dependency('libadwaita-1'),
         dependency('glib-2.0'),
         dependency('gobject-2.0'),
-        dependency('granite-7', version: '>=7.0.0'),
+        dependency('granite-7', version: '>=7.7.0'),
         dependency('gtk4'),
         dependency('polkit-agent-1'),
         dependency('polkit-gobject-1'),
-        dependency('pantheon-wayland-1'),
+        dependency('pantheon-wayland-1', version: '>=1.1.0'),
         meson.get_compiler('vala').find_library('posix')
     ],
     c_args: [
