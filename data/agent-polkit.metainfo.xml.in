@@ -46,6 +46,7 @@
       </description>
       <issues>
         <issue url="https://github.com/elementary/pantheon-agent-polkit/issues/66">Toggle password visibility</issue>
+        <issue url="https://github.com/elementary/pantheon-agent-polkit/issues/89">a window can steal focus from keyring login dialog</issue>
       </issues>
     </release>
 
