@@ -12,7 +12,7 @@ You'll need the following dependencies:
 * libpantheon-wayland-1-dev (>=1.1.0)
 * libpolkit-gobject-1-dev
 * libpolkit-agent-1-dev
-* meson
+* meson (>= 0.56.0)
 * valac (>= 0.34.1)
 
 Run `meson` to configure the build environment and then `ninja` to build
