@@ -8,7 +8,7 @@ desktop_in = configure_file(
 i18n.merge_file(
     input: desktop_in,
     output: meson.project_name() + '.desktop',
-    po_dir: join_paths(meson.source_root(), 'po'),
+    po_dir: join_paths(meson.project_source_root(), 'po'),
     type: 'desktop',
     install: true,
     install_dir: join_paths(get_option('datadir'), 'applications')
@@ -19,7 +19,7 @@ i18n.merge_file(
     output: meson.project_name() + '.metainfo.xml',
     install: true,
     install_dir: get_option('datadir') / 'metainfo',
-    po_dir: meson.source_root () / 'po' / 'extra'
+    po_dir: meson.project_source_root () / 'po' / 'extra'
 )
 
 # Daemon File

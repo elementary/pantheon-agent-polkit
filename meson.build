@@ -1,7 +1,8 @@
 project(
     'io.elementary.desktop.agent-polkit',
     'vala', 'c',
-    version: '8.0.2'
+    version: '8.0.2',
+    meson_version: '>= 0.56.0'
 )
 
 install_path = join_paths(get_option('prefix'), get_option('libexecdir'), 'policykit-1-pantheon')
