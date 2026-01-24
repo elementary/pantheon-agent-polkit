@@ -10,9 +10,10 @@ You'll need the following dependencies:
 * libgranite-7-dev (>= 7.7.0)
 * libgtk-4-dev
 * libpantheon-wayland-1-dev (>=1.1.0)
-* libpolkit-gobject-1-dev
 * libpolkit-agent-1-dev
-* meson (>= 0.56.0)
+* libpolkit-gobject-1-dev
+* libsystemd-dev
+* meson (>= 1.1)
 * valac (>= 0.34.1)
 
 Run `meson` to configure the build environment and then `ninja` to build
