@@ -22,10 +22,20 @@ i18n.merge_file(
     po_dir: meson.project_source_root () / 'po' / 'extra'
 )
 
-# Daemon File
-configure_file(
-    input: 'agent-polkit-daemon.desktop.in',
-    output: meson.project_name() + '.desktop',
-    configuration: conf_data,
-    install_dir: join_paths(get_option('sysconfdir'), 'xdg', 'autostart')
-)
+systemd_user_unit_dir = get_option('systemduserunitdir')
+
+if systemd_user_unit_dir != 'no'
+    systemd = dependency('systemd')
+    prefix = get_option('prefix')
+    if systemd_user_unit_dir == ''
+        systemd_user_unit_dir = systemd.get_variable('systemduserunitdir', pkgconfig_define: ['prefix', prefix])
+    endif
+
+    # Daemon File
+    configure_file(
+        input: 'agent-polkit-daemon.service.in',
+        output: meson.project_name() + '.service',
+        configuration: conf_data,
+        install_dir: systemd_user_unit_dir
+    )
+endif
