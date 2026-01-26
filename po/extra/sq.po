@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-29 17:23+0000\n"
+"POT-Creation-Date: 2026-01-26 17:01+0000\n"
 "PO-Revision-Date: 2016-08-29 23:20+0000\n"
 "Last-Translator: Indrit Bashkimi <indrit.bashkimi@gmail.com>\n"
 "Language-Team: Albanian <sq@li.org>\n"
@@ -20,11 +20,6 @@ msgstr ""
 
 #: data/agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
-msgstr "Dialogu i identifikimit"
-
-#: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
-#, fuzzy
-msgid "PolicyKit Authentication Agent"
 msgstr "Dialogu i identifikimit"
 
 #: data/agent-polkit.metainfo.xml.in:10
@@ -46,21 +41,25 @@ msgstr ""
 msgid "elementary, Inc."
 msgstr ""
 
-#: data/agent-polkit.metainfo.xml.in:44 data/agent-polkit.metainfo.xml.in:56
-#: data/agent-polkit.metainfo.xml.in:65 data/agent-polkit.metainfo.xml.in:73
-#: data/agent-polkit.metainfo.xml.in:81 data/agent-polkit.metainfo.xml.in:90
-#: data/agent-polkit.metainfo.xml.in:98
+#: data/agent-polkit.metainfo.xml.in:44 data/agent-polkit.metainfo.xml.in:57
+#: data/agent-polkit.metainfo.xml.in:66 data/agent-polkit.metainfo.xml.in:74
+#: data/agent-polkit.metainfo.xml.in:82 data/agent-polkit.metainfo.xml.in:91
+#: data/agent-polkit.metainfo.xml.in:99
 msgid "Updated translations"
 msgstr ""
 
-#: data/agent-polkit.metainfo.xml.in:55
+#: data/agent-polkit.metainfo.xml.in:56
 msgid "Always on top and centered"
 msgstr ""
 
-#: data/agent-polkit.metainfo.xml.in:64
+#: data/agent-polkit.metainfo.xml.in:65
 msgid "Update to the latest platform libraries"
 msgstr ""
 
-#: data/agent-polkit.metainfo.xml.in:89
+#: data/agent-polkit.metainfo.xml.in:90
 msgid "Fix a potential issue when ending the session"
 msgstr ""
+
+#, fuzzy
+#~ msgid "PolicyKit Authentication Agent"
+#~ msgstr "Dialogu i identifikimit"
