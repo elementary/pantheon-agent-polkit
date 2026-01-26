@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-29 17:23+0000\n"
+"POT-Creation-Date: 2026-01-26 17:01+0000\n"
 "PO-Revision-Date: 2025-10-29 17:23+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/desktop/"
@@ -23,10 +23,6 @@ msgstr ""
 #: data/agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
 msgstr "Autentiseringsdialog"
-
-#: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
-msgid "PolicyKit Authentication Agent"
-msgstr "Autentiseringsagenten PolicyKit"
 
 #: data/agent-polkit.metainfo.xml.in:10
 msgid "Authentication Agent"
@@ -48,21 +44,24 @@ msgstr ""
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/agent-polkit.metainfo.xml.in:44 data/agent-polkit.metainfo.xml.in:56
-#: data/agent-polkit.metainfo.xml.in:65 data/agent-polkit.metainfo.xml.in:73
-#: data/agent-polkit.metainfo.xml.in:81 data/agent-polkit.metainfo.xml.in:90
-#: data/agent-polkit.metainfo.xml.in:98
+#: data/agent-polkit.metainfo.xml.in:44 data/agent-polkit.metainfo.xml.in:57
+#: data/agent-polkit.metainfo.xml.in:66 data/agent-polkit.metainfo.xml.in:74
+#: data/agent-polkit.metainfo.xml.in:82 data/agent-polkit.metainfo.xml.in:91
+#: data/agent-polkit.metainfo.xml.in:99
 msgid "Updated translations"
 msgstr "Uppdaterade översättningar"
 
-#: data/agent-polkit.metainfo.xml.in:55
+#: data/agent-polkit.metainfo.xml.in:56
 msgid "Always on top and centered"
 msgstr "Alltid överst och centrerad"
 
-#: data/agent-polkit.metainfo.xml.in:64
+#: data/agent-polkit.metainfo.xml.in:65
 msgid "Update to the latest platform libraries"
 msgstr "Uppdatering till de senaste plattformsbiblioteken"
 
-#: data/agent-polkit.metainfo.xml.in:89
+#: data/agent-polkit.metainfo.xml.in:90
 msgid "Fix a potential issue when ending the session"
 msgstr "Åtgärda ett potentiellt problem när sessionen avslutas"
+
+#~ msgid "PolicyKit Authentication Agent"
+#~ msgstr "Autentiseringsagenten PolicyKit"

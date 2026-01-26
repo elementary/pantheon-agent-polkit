@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-29 17:23+0000\n"
+"POT-Creation-Date: 2026-01-26 17:01+0000\n"
 "PO-Revision-Date: 2024-12-09 11:10+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://l10n.elementary.io/"
@@ -23,10 +23,6 @@ msgstr ""
 #: data/agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
 msgstr "身份核對對話盒"
-
-#: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
-msgid "PolicyKit Authentication Agent"
-msgstr "PolicyKit 身份核對代理程式"
 
 #: data/agent-polkit.metainfo.xml.in:10
 msgid "Authentication Agent"
@@ -46,21 +42,24 @@ msgstr "身份核對代理程式會在應用程式希望請求管理員權限時
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/agent-polkit.metainfo.xml.in:44 data/agent-polkit.metainfo.xml.in:56
-#: data/agent-polkit.metainfo.xml.in:65 data/agent-polkit.metainfo.xml.in:73
-#: data/agent-polkit.metainfo.xml.in:81 data/agent-polkit.metainfo.xml.in:90
-#: data/agent-polkit.metainfo.xml.in:98
+#: data/agent-polkit.metainfo.xml.in:44 data/agent-polkit.metainfo.xml.in:57
+#: data/agent-polkit.metainfo.xml.in:66 data/agent-polkit.metainfo.xml.in:74
+#: data/agent-polkit.metainfo.xml.in:82 data/agent-polkit.metainfo.xml.in:91
+#: data/agent-polkit.metainfo.xml.in:99
 msgid "Updated translations"
 msgstr "更新翻譯"
 
-#: data/agent-polkit.metainfo.xml.in:55
+#: data/agent-polkit.metainfo.xml.in:56
 msgid "Always on top and centered"
 msgstr "總是置於其他視窗上方並置中顯示"
 
-#: data/agent-polkit.metainfo.xml.in:64
+#: data/agent-polkit.metainfo.xml.in:65
 msgid "Update to the latest platform libraries"
 msgstr "更新使用最新的平台函式庫"
 
-#: data/agent-polkit.metainfo.xml.in:89
+#: data/agent-polkit.metainfo.xml.in:90
 msgid "Fix a potential issue when ending the session"
 msgstr "修正工作階段結束時可能會發生的某個問題"
+
+#~ msgid "PolicyKit Authentication Agent"
+#~ msgstr "PolicyKit 身份核對代理程式"

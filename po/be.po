@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-29 17:23+0000\n"
+"POT-Creation-Date: 2026-01-26 17:01+0000\n"
 "PO-Revision-Date: 2025-08-12 10:55+0000\n"
 "Last-Translator: lenify <lenify@tutanota.com>\n"
 "Language-Team: Belarusian <https://l10n.elementaryos.org/projects/desktop/"
@@ -32,12 +32,12 @@ msgstr "Скасаваць"
 msgid "Authenticate"
 msgstr "Пацвердзіць"
 
-#: src/PolkitDialog.vala:166
+#: src/PolkitDialog.vala:167
 #, c-format
 msgid "Group: %s"
 msgstr "Група: %s"
 
-#: src/PolkitDialog.vala:259
+#: src/PolkitDialog.vala:260
 msgid "Authentication failed. Please try again."
 msgstr "Памылка падчас праверкі. Паспрабуйце ізноў."
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-29 17:23+0000\n"
+"POT-Creation-Date: 2026-01-26 17:01+0000\n"
 "PO-Revision-Date: 2018-02-23 20:58+0000\n"
 "Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
 "Language-Team: English (Canada) <https://weblate.elementary.io/projects/"
@@ -31,12 +31,12 @@ msgstr "Cancel"
 msgid "Authenticate"
 msgstr "Authenticate"
 
-#: src/PolkitDialog.vala:166
+#: src/PolkitDialog.vala:167
 #, c-format
 msgid "Group: %s"
 msgstr "Group: %s"
 
-#: src/PolkitDialog.vala:259
+#: src/PolkitDialog.vala:260
 msgid "Authentication failed. Please try again."
 msgstr "Authentication failed. Please try again."
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.desktop.agent-polkit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-29 17:23+0000\n"
+"POT-Creation-Date: 2026-01-26 17:01+0000\n"
 "PO-Revision-Date: 2025-04-25 03:55+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Scots <https://l10n.elementaryos.org/projects/desktop/"
@@ -35,11 +35,11 @@ msgstr "Cancel"
 msgid "Authenticate"
 msgstr ""
 
-#: src/PolkitDialog.vala:166
+#: src/PolkitDialog.vala:167
 #, c-format
 msgid "Group: %s"
 msgstr ""
 
-#: src/PolkitDialog.vala:259
+#: src/PolkitDialog.vala:260
 msgid "Authentication failed. Please try again."
 msgstr ""

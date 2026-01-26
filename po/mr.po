@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-29 17:23+0000\n"
+"POT-Creation-Date: 2026-01-26 17:01+0000\n"
 "PO-Revision-Date: 2018-10-27 13:50+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/desktop/"
@@ -31,12 +31,12 @@ msgstr "रद्द"
 msgid "Authenticate"
 msgstr "प्रमाणित करा"
 
-#: src/PolkitDialog.vala:166
+#: src/PolkitDialog.vala:167
 #, c-format
 msgid "Group: %s"
 msgstr "गटः%s"
 
-#: src/PolkitDialog.vala:259
+#: src/PolkitDialog.vala:260
 msgid "Authentication failed. Please try again."
 msgstr "प्रमाणीकरण अयशस्वी. कृपया पुन्हा प्रयत्न करा."
 

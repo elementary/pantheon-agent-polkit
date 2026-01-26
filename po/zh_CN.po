@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-29 17:23+0000\n"
+"POT-Creation-Date: 2026-01-26 17:01+0000\n"
 "PO-Revision-Date: 2016-11-03 05:35+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,12 +29,12 @@ msgstr "取消"
 msgid "Authenticate"
 msgstr "认证"
 
-#: src/PolkitDialog.vala:166
+#: src/PolkitDialog.vala:167
 #, c-format
 msgid "Group: %s"
 msgstr "群组：%s"
 
-#: src/PolkitDialog.vala:259
+#: src/PolkitDialog.vala:260
 msgid "Authentication failed. Please try again."
 msgstr "认证失败，请重试。"
 
