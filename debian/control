@@ -9,8 +9,8 @@ Build-Depends: debhelper (>= 10.5.1),
                libpantheon-wayland-1-dev (>=1.1),
                libpolkit-agent-1-dev,
                libpolkit-gobject-1-dev,
-               libsystemd-dev,
                meson (>= 1.1),
+               systemd-dev,
                valac (>= 0.34.1)
 Standards-Version: 4.1.1
 Homepage: https://github.com/elementary/pantheon-agent-polkit
