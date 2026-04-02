@@ -23,7 +23,7 @@ jobs:
     - name: Install Dependencies
       run: |
         apt update
-        apt install -y libgcr-4-dev libgranite-7-dev libgtk-4-dev libpantheon-wayland-1-dev libpolkit-agent-1-dev libpolkit-gobject-1-dev meson valac
+        apt install -y libgcr-4-dev libgranite-7-dev libgtk-4-dev libpantheon-wayland-1-dev libpolkit-agent-1-dev libpolkit-gobject-1-dev meson systemd-dev valac
     - name: Build
       env:
         DESTDIR: out
