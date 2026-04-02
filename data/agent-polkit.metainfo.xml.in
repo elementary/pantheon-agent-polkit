@@ -38,7 +38,7 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
-    <release version="8.0.3" date="2026-01-25" urgency="medium">
+    <release version="8.1.0" date="2026-01-25" urgency="medium">
       <description>
         <ul>
           <li>Updated translations</li>
@@ -46,6 +46,7 @@
       </description>
       <issues>
         <issue url="https://github.com/elementary/pantheon-agent-polkit/issues/105">Autostart using systemd instead of gnome-session</issue>
+        <issue url="https://github.com/elementary/pantheon-agent-polkit/issues/109">Consistent authentication dialogs</issue>
       </issues>
     </release>
 
