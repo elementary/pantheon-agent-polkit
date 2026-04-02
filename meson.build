@@ -13,11 +13,16 @@ add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format(meson.project_name()), lan
 executable(
     meson.project_name(),
     'src/Application.vala',
+    'src/GcrAgent.vala',
+    'src/GcrConfirmDialog.vala',
+    'src/GcrPasswordDialog.vala',
+    'src/GcrPrompt.vala',
     'src/Agent.vala',
     'src/PolkitDialog.vala',
     'src/Interfaces.vala',
     dependencies: [
         dependency('libadwaita-1'),
+        dependency('gcr-4'),
         dependency('glib-2.0'),
         dependency('gobject-2.0'),
         dependency('granite-7', version: '>=7.7.0'),
@@ -29,6 +34,7 @@ executable(
     ],
     c_args: [
         '-DPOLKIT_AGENT_I_KNOW_API_IS_SUBJECT_TO_CHANGE',
+        '-DGCR_API_SUBJECT_TO_CHANGE'
     ],
     install: true,
     install_dir: install_path
