@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-26 17:01+0000\n"
 "PO-Revision-Date: 2026-06-29 13:56+0000\n"
-"Last-Translator: kalligator <kalligator+github@gmail.com>\n"
+"Last-Translator: Jim Spentzos <jimspentzos2000@gmail.com>\n"
 "Language-Team: Greek <https://l10n.elementaryos.org/projects/desktop/polkit-"
 "agent-extra/el/>\n"
 "Language: el\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: data/agent-polkit.desktop.in.in:3
 msgid "Authentication Dialog"
-msgstr "Διάλογος επαλήθευσης"
+msgstr "Παράθυρο διαλόγου πιστοποίησης"
 
 #: data/agent-polkit.metainfo.xml.in:10
 #, fuzzy
