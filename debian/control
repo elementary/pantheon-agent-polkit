@@ -2,7 +2,7 @@ Source: pantheon-agent-polkit
 Section: admin
 Priority: optional
 Maintainer: elementary <builds@elementary.io>
-Build-Depends: debhelper (>= 10.5.1),
+Build-Depends: debhelper-compat (= 12),
                libadwaita-1-dev,
                libgcr-4-dev,
                libgranite-7-dev (>=7.7.0),
