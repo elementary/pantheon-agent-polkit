@@ -4,8 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-04 17:54+0000\n"
 "PO-Revision-Date: 2026-08-05 18:01+0000\n"
-"Last-Translator: Automatic translation add-on <noreply-addon-"
-"autotranslate@weblate.org>\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementaryos.org/projects/desktop/"
 "pantheon-agent-polkit/ja/>\n"
 "Language: ja\n"
@@ -39,7 +38,7 @@ msgstr "認証に失敗しました。もう一度お試しください。"
 
 #: src/PortalDialog.vala:105
 msgid "Don't Allow"
-msgstr ""
+msgstr "許可しない"
 
 #: src/PortalDialog.vala:107
 msgid "Allow"
