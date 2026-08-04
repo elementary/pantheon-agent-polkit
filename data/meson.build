@@ -22,6 +22,11 @@ i18n.merge_file(
     po_dir: meson.project_source_root () / 'po' / 'extra'
 )
 
+gresource = gnome.compile_resources(
+    'gresource',
+    'gresource.xml'
+)
+
 systemd_user_unit_dir = get_option('systemduserunitdir')
 
 if systemd_user_unit_dir != 'no'

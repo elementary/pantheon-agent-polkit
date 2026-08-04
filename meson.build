@@ -6,9 +6,16 @@ project(
 )
 
 install_path = join_paths(get_option('prefix'), get_option('libexecdir'), 'policykit-1-pantheon')
+gnome = import('gnome')
 i18n = import('i18n')
 
 add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format(meson.project_name()), language:'c')
+
+conf_data = configuration_data()
+conf_data.set('EXEC_NAME', meson.project_name())
+conf_data.set('PKEXECDIR', install_path)
+
+subdir('data')
 
 executable(
     meson.project_name(),
@@ -19,7 +26,9 @@ executable(
     'src/GcrPrompt.vala',
     'src/Agent.vala',
     'src/PolkitDialog.vala',
+    'src' / 'PortalDialog.vala',
     'src/Interfaces.vala',
+    gresource,
     dependencies: [
         dependency('libadwaita-1'),
         dependency('gcr-4'),
@@ -40,9 +49,4 @@ executable(
     install_dir: install_path
 )
 
-conf_data = configuration_data()
-conf_data.set('EXEC_NAME', meson.project_name())
-conf_data.set('PKEXECDIR', install_path)
-
-subdir('data')
 subdir('po')
