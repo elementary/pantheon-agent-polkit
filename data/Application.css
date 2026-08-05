@@ -1,0 +1,20 @@
+.dialog toolbox box.top,
+.dialog toolbox box.bottom {
+    padding: 1rem;
+}
+
+.dialog toolbox .top overlay {
+    min-width: calc((48px * 2) - 1em);
+}
+
+.dialog toolbox .top .large-icons {
+    -gtk-icon-size: 48px;
+}
+
+.dialog toolbox .bottom button {
+    min-width: 5em;
+}
+
+.dialog toolbox > box {
+    padding: 1rem;
+}

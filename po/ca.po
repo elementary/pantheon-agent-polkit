@@ -2,41 +2,50 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-26 17:01+0000\n"
-"PO-Revision-Date: 2016-11-18 10:34+0000\n"
-"Last-Translator: Davidmp <rbndavid@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2026-08-04 17:54+0000\n"
+"PO-Revision-Date: 2026-08-05 18:01+0000\n"
+"Last-Translator: David M <rbndavid@gmail.com>\n"
+"Language-Team: Catalan <https://l10n.elementaryos.org/projects/desktop/"
+"pantheon-agent-polkit/ca/>\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2026.5\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:07+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
-#: src/PolkitDialog.vala:52
-msgid "Authentication Dialog"
-msgstr "Diàleg d'autenticació"
-
-#: src/PolkitDialog.vala:60
+#: src/PolkitDialog.vala:56
 msgid "Authentication Required"
 msgstr "Cal autenticació"
 
-#: src/PolkitDialog.vala:109
-msgid "Cancel"
-msgstr "Cancel·la"
-
-#: src/PolkitDialog.vala:112
+#: src/PolkitDialog.vala:103
 msgid "Authenticate"
 msgstr "Autentica"
 
-#: src/PolkitDialog.vala:167
+#: src/PolkitDialog.vala:104
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#: src/PolkitDialog.vala:154
 #, c-format
 msgid "Group: %s"
 msgstr "Grup: %s"
 
-#: src/PolkitDialog.vala:260
+#: src/PolkitDialog.vala:247
 msgid "Authentication failed. Please try again."
 msgstr "Ha fallat l'autenticació. Torneu a intentar-ho."
+
+#: src/PortalDialog.vala:105
+msgid "Don't Allow"
+msgstr "No li ho permetis"
+
+#: src/PortalDialog.vala:107
+msgid "Allow"
+msgstr "Permet-ho"
+
+#~ msgid "Authentication Dialog"
+#~ msgstr "Diàleg d'autenticació"
 
 #~ msgid "Password"
 #~ msgstr "Contrasenya"

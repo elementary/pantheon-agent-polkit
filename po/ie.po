@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-26 17:01+0000\n"
+"POT-Creation-Date: 2026-08-04 17:54+0000\n"
 "PO-Revision-Date: 2025-03-19 19:56+0000\n"
 "Last-Translator: Carmina16 <mistresssilvara@hotmail.com>\n"
 "Language-Team: Occidental <https://l10n.elementaryos.org/projects/desktop/"
@@ -13,30 +13,37 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.10.4\n"
 
-#: src/PolkitDialog.vala:52
-msgid "Authentication Dialog"
-msgstr "Dialog de autentification"
-
-#: src/PolkitDialog.vala:60
+#: src/PolkitDialog.vala:56
 msgid "Authentication Required"
 msgstr "Autentification es besonat"
 
-#: src/PolkitDialog.vala:109
-msgid "Cancel"
-msgstr "Anullar"
-
-#: src/PolkitDialog.vala:112
+#: src/PolkitDialog.vala:103
 msgid "Authenticate"
 msgstr "Autentificar"
 
-#: src/PolkitDialog.vala:167
+#: src/PolkitDialog.vala:104
+msgid "Cancel"
+msgstr "Anullar"
+
+#: src/PolkitDialog.vala:154
 #, c-format
 msgid "Group: %s"
 msgstr "Gruppe: %s"
 
-#: src/PolkitDialog.vala:260
+#: src/PolkitDialog.vala:247
 msgid "Authentication failed. Please try again."
 msgstr "Autentification ne successat. Ples provar denov."
+
+#: src/PortalDialog.vala:105
+msgid "Don't Allow"
+msgstr ""
+
+#: src/PortalDialog.vala:107
+msgid "Allow"
+msgstr ""
+
+#~ msgid "Authentication Dialog"
+#~ msgstr "Dialog de autentification"
 
 #~ msgid "Password"
 #~ msgstr "Contrasigne"

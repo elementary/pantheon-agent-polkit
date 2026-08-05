@@ -2,43 +2,51 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-26 17:01+0000\n"
-"PO-Revision-Date: 2021-10-22 20:43+0000\n"
-"Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
-"Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/pantheon-"
-"agent-polkit/tr/>\n"
+"POT-Creation-Date: 2026-08-04 17:54+0000\n"
+"PO-Revision-Date: 2026-08-05 18:01+0000\n"
+"Last-Translator: Automatic translation add-on <noreply-addon-"
+"autotranslate@weblate.org>\n"
+"Language-Team: Turkish <https://l10n.elementaryos.org/projects/desktop/"
+"pantheon-agent-polkit/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 2026.5\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:08+0000\n"
 
-#: src/PolkitDialog.vala:52
-msgid "Authentication Dialog"
-msgstr "Kimlik Doğrulama İletişim Kutusu"
-
-#: src/PolkitDialog.vala:60
+#: src/PolkitDialog.vala:56
 msgid "Authentication Required"
 msgstr "Kimlik Doğrulaması Gerekli"
 
-#: src/PolkitDialog.vala:109
-msgid "Cancel"
-msgstr "İptal"
-
-#: src/PolkitDialog.vala:112
+#: src/PolkitDialog.vala:103
 msgid "Authenticate"
 msgstr "Kimlik Doğrula"
 
-#: src/PolkitDialog.vala:167
+#: src/PolkitDialog.vala:104
+msgid "Cancel"
+msgstr "İptal"
+
+#: src/PolkitDialog.vala:154
 #, c-format
 msgid "Group: %s"
 msgstr "Gruplar: %s"
 
-#: src/PolkitDialog.vala:260
+#: src/PolkitDialog.vala:247
 msgid "Authentication failed. Please try again."
 msgstr "Kimlik doğrulama başarısız oldu. Lütfen yeniden deneyin."
+
+#: src/PortalDialog.vala:105
+msgid "Don't Allow"
+msgstr ""
+
+#: src/PortalDialog.vala:107
+msgid "Allow"
+msgstr "İzin ver"
+
+#~ msgid "Authentication Dialog"
+#~ msgstr "Kimlik Doğrulama İletişim Kutusu"
 
 #~ msgid "Password"
 #~ msgstr "Parola"

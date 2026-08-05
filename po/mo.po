@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-26 17:01+0000\n"
+"POT-Creation-Date: 2026-08-04 17:54+0000\n"
 "PO-Revision-Date: 2018-05-27 00:04+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/desktop/"
@@ -13,30 +13,37 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
 
-#: src/PolkitDialog.vala:52
-msgid "Authentication Dialog"
-msgstr "Dialogul de autentificare"
-
-#: src/PolkitDialog.vala:60
+#: src/PolkitDialog.vala:56
 msgid "Authentication Required"
 msgstr "Autentificare necesară"
 
-#: src/PolkitDialog.vala:109
-msgid "Cancel"
-msgstr "Anulare"
-
-#: src/PolkitDialog.vala:112
+#: src/PolkitDialog.vala:103
 msgid "Authenticate"
 msgstr "Autentifică"
 
-#: src/PolkitDialog.vala:167
+#: src/PolkitDialog.vala:104
+msgid "Cancel"
+msgstr "Anulare"
+
+#: src/PolkitDialog.vala:154
 #, c-format
 msgid "Group: %s"
 msgstr "Grup: %s"
 
-#: src/PolkitDialog.vala:260
+#: src/PolkitDialog.vala:247
 msgid "Authentication failed. Please try again."
 msgstr "Autentificare eșuată. Vă rugăm să încercați din nou."
+
+#: src/PortalDialog.vala:105
+msgid "Don't Allow"
+msgstr ""
+
+#: src/PortalDialog.vala:107
+msgid "Allow"
+msgstr ""
+
+#~ msgid "Authentication Dialog"
+#~ msgstr "Dialogul de autentificare"
 
 #~ msgid "Password"
 #~ msgstr "Parolă"

@@ -2,10 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-26 17:01+0000\n"
-"PO-Revision-Date: 2021-05-04 20:43+0000\n"
-"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
-"Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/"
+"POT-Creation-Date: 2026-08-04 17:54+0000\n"
+"PO-Revision-Date: 2026-08-05 18:01+0000\n"
+"Last-Translator: Automatic translation add-on <noreply-addon-"
+"autotranslate@weblate.org>\n"
+"Language-Team: Ukrainian <https://l10n.elementaryos.org/projects/desktop/"
 "pantheon-agent-polkit/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
@@ -13,33 +14,40 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 2026.5\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:08+0000\n"
 
-#: src/PolkitDialog.vala:52
-msgid "Authentication Dialog"
-msgstr "Запит автентифікації"
-
-#: src/PolkitDialog.vala:60
+#: src/PolkitDialog.vala:56
 msgid "Authentication Required"
 msgstr "Потрібна автентифікація"
 
-#: src/PolkitDialog.vala:109
-msgid "Cancel"
-msgstr "Скасувати"
-
-#: src/PolkitDialog.vala:112
+#: src/PolkitDialog.vala:103
 msgid "Authenticate"
 msgstr "Автентифікувати"
 
-#: src/PolkitDialog.vala:167
+#: src/PolkitDialog.vala:104
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: src/PolkitDialog.vala:154
 #, c-format
 msgid "Group: %s"
 msgstr "Група: %s"
 
-#: src/PolkitDialog.vala:260
+#: src/PolkitDialog.vala:247
 msgid "Authentication failed. Please try again."
 msgstr "Помилка автентифікації. Повторіть спробу."
+
+#: src/PortalDialog.vala:105
+msgid "Don't Allow"
+msgstr ""
+
+#: src/PortalDialog.vala:107
+msgid "Allow"
+msgstr "Дозволити"
+
+#~ msgid "Authentication Dialog"
+#~ msgstr "Запит автентифікації"
 
 #~ msgid "Password"
 #~ msgstr "Пароль"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-26 17:01+0000\n"
+"POT-Creation-Date: 2026-08-04 17:54+0000\n"
 "PO-Revision-Date: 2020-02-25 22:08+0000\n"
 "Last-Translator: gkkulik <g.kulik@o2.pl>\n"
 "Language-Team: Silesian <https://l10n.elementary.io/projects/desktop/"
@@ -14,30 +14,37 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.9.1\n"
 
-#: src/PolkitDialog.vala:52
-msgid "Authentication Dialog"
-msgstr "Ôkno dialogowe autoryzacyje"
-
-#: src/PolkitDialog.vala:60
+#: src/PolkitDialog.vala:56
 msgid "Authentication Required"
 msgstr "Wymogano autoryzacyjo"
 
-#: src/PolkitDialog.vala:109
-msgid "Cancel"
-msgstr "Pociep"
-
-#: src/PolkitDialog.vala:112
+#: src/PolkitDialog.vala:103
 msgid "Authenticate"
 msgstr "Autoryzacyjo"
 
-#: src/PolkitDialog.vala:167
+#: src/PolkitDialog.vala:104
+msgid "Cancel"
+msgstr "Pociep"
+
+#: src/PolkitDialog.vala:154
 #, c-format
 msgid "Group: %s"
 msgstr "Grupa: %s"
 
-#: src/PolkitDialog.vala:260
+#: src/PolkitDialog.vala:247
 msgid "Authentication failed. Please try again."
 msgstr "Autoryzacyjo sie niy podarziła. Sprōbuj zaś."
+
+#: src/PortalDialog.vala:105
+msgid "Don't Allow"
+msgstr ""
+
+#: src/PortalDialog.vala:107
+msgid "Allow"
+msgstr ""
+
+#~ msgid "Authentication Dialog"
+#~ msgstr "Ôkno dialogowe autoryzacyje"
 
 #~ msgid "Password"
 #~ msgstr "Hasło"
