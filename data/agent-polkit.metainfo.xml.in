@@ -15,7 +15,7 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/pantheon-agent-polkit/8.0.0/data/screenshot.png</image>
+      <image>https://raw.githubusercontent.com/elementary/pantheon-agent-polkit/8.1.0/data/screenshot.png</image>
     </screenshot>
   </screenshots>
 
@@ -38,7 +38,7 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
-    <release version="8.1.0" date="2026-01-25" urgency="medium">
+    <release version="8.1.0" date="2026-08-05" urgency="medium">
       <description>
         <ul>
           <li>Updated translations</li>
