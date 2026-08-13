@@ -3,9 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-04 17:54+0000\n"
-"PO-Revision-Date: 2026-08-05 18:01+0000\n"
-"Last-Translator: Automatic translation add-on <noreply-addon-"
-"autotranslate@weblate.org>\n"
+"PO-Revision-Date: 2026-08-14 07:01+0000\n"
+"Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementaryos.org/projects/desktop/"
 "pantheon-agent-polkit/ru/>\n"
 "Language: ru\n"
@@ -40,7 +39,7 @@ msgstr "Ошибка аутентификации. Попробуйте снов
 
 #: src/PortalDialog.vala:105
 msgid "Don't Allow"
-msgstr ""
+msgstr "Не разрешать"
 
 #: src/PortalDialog.vala:107
 msgid "Allow"
