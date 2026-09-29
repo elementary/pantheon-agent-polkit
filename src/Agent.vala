@@ -48,10 +48,12 @@ namespace Ag {
             if (sound_settings.get_boolean ("event-sounds")) {
                 Canberra.Context.create (out ca_context);
                 if (ca_context != null) {
-                    ca_context.change_props (Canberra.PROP_CANBERRA_XDG_THEME_NAME, "elementary",
-                                            Canberra.PROP_MEDIA_LANGUAGE, "");
+                    ca_context.change_props (
+                        Canberra.PROP_CANBERRA_XDG_THEME_NAME,
+                        Gtk.Settings.get_default ().gtk_sound_theme_name
+                    );
                     ca_context.open ();
-                    ca_context.play (0, Canberra.PROP_EVENT_ID, "dialog-question");
+                    ca_context.play (0, Canberra.PROP_EVENT_ID, "dialog-warning-auth");
                 }
             }
 
