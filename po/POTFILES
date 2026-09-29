@@ -2,3 +2,4 @@ src/Agent.vala
 src/Application.vala
 src/Interfaces.vala
 src/PolkitDialog.vala
+src/PortalDialog.vala

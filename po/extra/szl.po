@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-19 22:17+0000\n"
+"POT-Creation-Date: 2026-08-04 17:54+0000\n"
 "PO-Revision-Date: 2024-08-28 21:16+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Silesian <https://l10n.elementary.io/projects/desktop/polkit-"
@@ -14,13 +14,9 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.6.2\n"
 
-#: data/agent-polkit.desktop.in.in:3
+#: data/agent-polkit.desktop.in.in:2
 msgid "Authentication Dialog"
 msgstr "Ôkno dialogowe autoryzacyje"
-
-#: data/agent-polkit-daemon.desktop.in:3 data/agent-polkit-daemon.desktop.in:4
-msgid "PolicyKit Authentication Agent"
-msgstr ""
 
 #: data/agent-polkit.metainfo.xml.in:10
 msgid "Authentication Agent"
@@ -40,20 +36,21 @@ msgstr ""
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/agent-polkit.metainfo.xml.in:44
-msgid "Always on top and centered"
-msgstr ""
-
-#: data/agent-polkit.metainfo.xml.in:45 data/agent-polkit.metainfo.xml.in:54
-#: data/agent-polkit.metainfo.xml.in:62 data/agent-polkit.metainfo.xml.in:70
-#: data/agent-polkit.metainfo.xml.in:79 data/agent-polkit.metainfo.xml.in:87
+#: data/agent-polkit.metainfo.xml.in:44 data/agent-polkit.metainfo.xml.in:56
+#: data/agent-polkit.metainfo.xml.in:69 data/agent-polkit.metainfo.xml.in:78
+#: data/agent-polkit.metainfo.xml.in:86 data/agent-polkit.metainfo.xml.in:94
+#: data/agent-polkit.metainfo.xml.in:103 data/agent-polkit.metainfo.xml.in:111
 msgid "Updated translations"
 msgstr "Zaktualizowane przekłady"
 
-#: data/agent-polkit.metainfo.xml.in:53
+#: data/agent-polkit.metainfo.xml.in:68
+msgid "Always on top and centered"
+msgstr ""
+
+#: data/agent-polkit.metainfo.xml.in:77
 msgid "Update to the latest platform libraries"
 msgstr ""
 
-#: data/agent-polkit.metainfo.xml.in:78
+#: data/agent-polkit.metainfo.xml.in:102
 msgid "Fix a potential issue when ending the session"
 msgstr ""

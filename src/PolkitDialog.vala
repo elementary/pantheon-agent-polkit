@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2015-2019 elementary, Inc. (https://elementary.io)
+ * Copyright (c) 2015-2026 elementary, Inc. (https://elementary.io)
  * Copyright (C) 2015-2016 Ikey Doherty <ikey@solus-project.com>
  *
  * This program is free software: you can redistribute it and/or modify
@@ -23,7 +23,7 @@
  * https://github.com/solus-project/budgie-desktop
  */
 
-public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBehavior {
+public class Ag.PolkitDialog : PortalDialog {
     public signal void done ();
     public bool was_canceled = false;
 
@@ -43,29 +43,23 @@ public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBe
     private Gtk.Revealer feedback_revealer;
     private Gtk.Label password_label;
     private Gtk.Label password_feedback;
-    private Gtk.Entry password_entry;
+    private Gtk.PasswordEntry password_entry;
     private Gtk.ComboBox idents_combo;
 
     public PolkitDialog (string message, string icon_name, string _cookie,
                          List<Polkit.Identity?>? _idents, GLib.Cancellable _cancellable) {
-        Object (
-            title: _("Authentication Dialog")
-        );
-
         idents = _idents;
         cookie = _cookie;
         cancellable = _cancellable;
         cancellable.cancelled.connect (cancel);
 
-        primary_text = _("Authentication Required");
+        title = _("Authentication Required");
         secondary_text = message;
 
-        password_entry = new Gtk.Entry () {
+        password_entry = new Gtk.PasswordEntry () {
             activates_default = true,
             hexpand = true,
-            input_purpose = PASSWORD,
-            primary_icon_name = "dialog-password-symbolic",
-            primary_icon_tooltip_text = _("Password")
+            show_peek_icon = true
         };
 
         password_feedback = new Gtk.Label (null) {
@@ -74,7 +68,7 @@ public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBe
             wrap = true,
             xalign = 1
         };
-        password_feedback.add_css_class (Granite.STYLE_CLASS_ERROR);
+        password_feedback.add_css_class (Granite.CssClass.ERROR);
 
         feedback_revealer = new Gtk.Revealer () {
             child = password_feedback
@@ -100,38 +94,30 @@ public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBe
         credentials_box.append (password_entry);
         credentials_box.append (feedback_revealer);
 
-        image_icon = new ThemedIcon ("dialog-password");
+        secondary_icon = new ThemedIcon ("dialog-password");
 
         if (icon_name != "" && Gtk.IconTheme.get_for_display (Gdk.Display.get_default ()).has_icon (icon_name)) {
-            badge_icon = new ThemedIcon (icon_name);
+            primary_icon = new ThemedIcon (icon_name);
         }
 
-        custom_bin.append (credentials_box);
-
-        var cancel_button = (Gtk.Button)add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
-        cancel_button.clicked.connect (() => cancel ());
-
-        var authenticate_button = (Gtk.Button)add_button (_("Authenticate"), Gtk.ResponseType.APPLY);
-        authenticate_button.receives_default = true;
-        authenticate_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
-        authenticate_button.clicked.connect (authenticate);
-
-        default_widget = authenticate_button;
+        allow_label = _("Authenticate");
+        cancel_label = _("Cancel");
+        content = credentials_box;
         focus_widget = password_entry;
-
-        close.connect (cancel);
+        resizable = false;
 
         update_idents ();
         select_session ();
 
-        child.realize.connect (() => {
-            connect_to_shell ();
-            set_keep_above ();
-            make_centered ();
-
-            var surface = get_surface ();
-            if (surface is Gdk.Toplevel) {
-                ((Gdk.Toplevel) surface).inhibit_system_shortcuts (null);
+        response.connect ((response) => {
+            switch (response) {
+                case ALLOW:
+                    authenticate ();
+                    break;
+                case CANCEL:
+                case DELETE_EVENT:
+                    cancel ();
+                    break;
             }
         });
     }
@@ -219,7 +205,6 @@ public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBe
             select_session ();
         }
 
-        password_entry.secondary_icon_name = "";
         feedback_revealer.reveal_child = false;
 
         sensitive = false;
@@ -274,7 +259,6 @@ public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBe
     }
 
     private void on_pk_request (string request, bool echo_on) {
-        password_entry.visibility = echo_on;
         if (!request.has_prefix ("Password:")) {
             password_label.label = request;
         }
@@ -303,7 +287,6 @@ public class Ag.PolkitDialog : Granite.MessageDialog, PantheonWayland.ExtendedBe
         iterate = shake.done.connect (() => {
             if (repeat_count == 4) {
                 feedback_revealer.reveal_child = true;
-                password_entry.secondary_icon_name = "dialog-error-symbolic";
                 password_feedback.label = text;
                 sensitive = true;
                 disconnect (iterate);

@@ -1,0 +1,12 @@
+[Unit]
+Description=PolicyKit Authentication Agent
+After=gnome-session-initialized.target
+
+[Install]
+WantedBy=gnome-session-initialized.target
+
+[Service]
+Type=exec
+ExecStart=@PKEXECDIR@/@EXEC_NAME@
+Restart=on-failure
+Slice=session.slice

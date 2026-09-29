@@ -8,7 +8,7 @@ desktop_in = configure_file(
 i18n.merge_file(
     input: desktop_in,
     output: meson.project_name() + '.desktop',
-    po_dir: join_paths(meson.source_root(), 'po'),
+    po_dir: join_paths(meson.project_source_root(), 'po'),
     type: 'desktop',
     install: true,
     install_dir: join_paths(get_option('datadir'), 'applications')
@@ -19,13 +19,28 @@ i18n.merge_file(
     output: meson.project_name() + '.metainfo.xml',
     install: true,
     install_dir: get_option('datadir') / 'metainfo',
-    po_dir: meson.source_root () / 'po' / 'extra'
+    po_dir: meson.project_source_root () / 'po' / 'extra'
 )
 
-# Daemon File
-configure_file(
-    input: 'agent-polkit-daemon.desktop.in',
-    output: meson.project_name() + '.desktop',
-    configuration: conf_data,
-    install_dir: join_paths(get_option('sysconfdir'), 'xdg', 'autostart')
+gresource = gnome.compile_resources(
+    'gresource',
+    'gresource.xml'
 )
+
+systemd_user_unit_dir = get_option('systemduserunitdir')
+
+if systemd_user_unit_dir != 'no'
+    systemd = dependency('systemd')
+    prefix = get_option('prefix')
+    if systemd_user_unit_dir == ''
+        systemd_user_unit_dir = systemd.get_variable('systemduserunitdir', pkgconfig_define: ['prefix', prefix])
+    endif
+
+    # Daemon File
+    configure_file(
+        input: 'agent-polkit-daemon.service.in',
+        output: meson.project_name() + '.service',
+        configuration: conf_data,
+        install_dir: systemd_user_unit_dir
+    )
+endif

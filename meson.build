@@ -1,42 +1,52 @@
 project(
     'io.elementary.desktop.agent-polkit',
     'vala', 'c',
-    version: '8.0.1'
+    version: '8.1.0',
+    meson_version: '>= 1.1'
 )
 
 install_path = join_paths(get_option('prefix'), get_option('libexecdir'), 'policykit-1-pantheon')
+gnome = import('gnome')
 i18n = import('i18n')
 
 add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format(meson.project_name()), language:'c')
-
-executable(
-    meson.project_name(),
-    'src/Application.vala',
-    'src/Agent.vala',
-    'src/PolkitDialog.vala',
-    'src/Interfaces.vala',
-    dependencies: [
-        dependency('libadwaita-1'),
-        dependency('glib-2.0'),
-        dependency('gobject-2.0'),
-        dependency('granite-7', version: '>=7.0.0'),
-        dependency('gtk4'),
-        dependency('polkit-agent-1'),
-        dependency('polkit-gobject-1'),
-        dependency('pantheon-wayland-1'),
-        dependency('libcanberra'),
-        meson.get_compiler('vala').find_library('posix')
-    ],
-    c_args: [
-        '-DPOLKIT_AGENT_I_KNOW_API_IS_SUBJECT_TO_CHANGE',
-    ],
-    install: true,
-    install_dir: install_path
-)
 
 conf_data = configuration_data()
 conf_data.set('EXEC_NAME', meson.project_name())
 conf_data.set('PKEXECDIR', install_path)
 
 subdir('data')
+
+executable(
+    meson.project_name(),
+    'src/Application.vala',
+    'src/GcrAgent.vala',
+    'src/GcrConfirmDialog.vala',
+    'src/GcrPasswordDialog.vala',
+    'src/GcrPrompt.vala',
+    'src/Agent.vala',
+    'src/PolkitDialog.vala',
+    'src' / 'PortalDialog.vala',
+    'src/Interfaces.vala',
+    gresource,
+    dependencies: [
+        dependency('libadwaita-1'),
+        dependency('gcr-4'),
+        dependency('glib-2.0'),
+        dependency('gobject-2.0'),
+        dependency('granite-7', version: '>=7.7.0'),
+        dependency('gtk4'),
+        dependency('polkit-agent-1'),
+        dependency('polkit-gobject-1'),
+        dependency('pantheon-wayland-1', version: '>=1.1.0'),
+        meson.get_compiler('vala').find_library('posix')
+    ],
+    c_args: [
+        '-DPOLKIT_AGENT_I_KNOW_API_IS_SUBJECT_TO_CHANGE',
+        '-DGCR_API_SUBJECT_TO_CHANGE'
+    ],
+    install: true,
+    install_dir: install_path
+)
+
 subdir('po')
