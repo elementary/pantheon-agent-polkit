@@ -21,8 +21,8 @@ public sealed class Ag.GcrPasswordDialog : Granite.MessageDialog, PantheonWaylan
 
     construct {
         title = prompt.title;
-        primary_text = prompt.description;
-        secondary_text = prompt.message;
+        primary_text = prompt.message;
+        secondary_text = prompt.description;
         image_icon = new ThemedIcon ("dialog-password");
 
         password_entry = new Gtk.PasswordEntry () {
