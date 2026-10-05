@@ -249,7 +249,6 @@ public class Ag.PolkitDialog : PortalDialog {
 
             deselect_session ();
             password_entry.set_text ("");
-            password_entry.grab_focus ();
             select_session ();
             return;
         } else {
@@ -289,6 +288,7 @@ public class Ag.PolkitDialog : PortalDialog {
                 feedback_revealer.reveal_child = true;
                 password_feedback.label = text;
                 sensitive = true;
+                password_entry.grab_focus ();
                 disconnect (iterate);
                 return;
             }
