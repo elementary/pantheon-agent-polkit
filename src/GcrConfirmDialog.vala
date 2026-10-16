@@ -18,8 +18,8 @@ public sealed class Ag.GcrConfirmDialog : Granite.MessageDialog, PantheonWayland
 
     construct {
         title = prompt.title;
-        primary_text = prompt.description;
-        secondary_text = prompt.message;
+        primary_text = prompt.message;
+        secondary_text = prompt.description;
         image_icon = new ThemedIcon ("dialog-question");
 
         add_button (prompt.cancel_label, Gtk.ResponseType.CANCEL);
