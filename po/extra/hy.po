@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-04 17:54+0000\n"
-"PO-Revision-Date: 2026-11-09 21:04+0000\n"
+"PO-Revision-Date: 2026-11-13 20:04+0000\n"
 "Last-Translator: Davit Yedigaryan <davit.yedigaryan.1993@gmail.com>\n"
 "Language-Team: Armenian <https://l10n.elementaryos.org/projects/desktop/"
 "polkit-agent-extra/hy/>\n"
@@ -21,21 +21,23 @@ msgstr ""
 
 #: data/agent-polkit.desktop.in.in:2
 msgid "Authentication Dialog"
-msgstr ""
+msgstr "Նույնականացման երկխոսություն"
 
 #: data/agent-polkit.metainfo.xml.in:10
 msgid "Authentication Agent"
-msgstr ""
+msgstr "Նույնականացման գործակալ"
 
 #: data/agent-polkit.metainfo.xml.in:11
 msgid "Approve or deny access to administrative powers"
-msgstr ""
+msgstr "Թույլատրեք կամ մերժեք մուտքը ադմինիստրատորի արտոնություններին"
 
 #: data/agent-polkit.metainfo.xml.in:13
 msgid ""
 "The authentication agent appears whenever an application wants to request "
 "permission to use administrative powers."
 msgstr ""
+"Նույնականացման գործակալը հայտնվում է, երբ հավելվածը ցանկանում է խնդրել "
+"ադմինիստրատորի արտոնություններն օգտագործելու թույլտվություն։"
 
 #: data/agent-polkit.metainfo.xml.in:35
 msgid "elementary, Inc."
@@ -50,12 +52,12 @@ msgstr "Թարմացված թարգմանություններ"
 
 #: data/agent-polkit.metainfo.xml.in:68
 msgid "Always on top and centered"
-msgstr ""
+msgstr "Միշտ վերևում և կենտրոնում"
 
 #: data/agent-polkit.metainfo.xml.in:77
 msgid "Update to the latest platform libraries"
-msgstr ""
+msgstr "Թարմացում հարթակի վերջին գրադարաններին"
 
 #: data/agent-polkit.metainfo.xml.in:102
 msgid "Fix a potential issue when ending the session"
-msgstr ""
+msgstr "Շտկվել է աշխատաշրջանն ավարտելիս հնարավոր խնդիրը"
