@@ -39,6 +39,7 @@ executable(
         dependency('polkit-agent-1'),
         dependency('polkit-gobject-1'),
         dependency('pantheon-wayland-1', version: '>=1.1.0'),
+        dependency('libcanberra'),
         meson.get_compiler('vala').find_library('posix')
     ],
     c_args: [
